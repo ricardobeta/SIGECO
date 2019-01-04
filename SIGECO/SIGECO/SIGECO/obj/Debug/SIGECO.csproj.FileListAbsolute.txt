@@ -1,0 +1,14 @@
+F:\FALCOSE\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.csprojAssemblyReference.cache
+F:\FALCOSE\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Form1.resources
+F:\FALCOSE\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Properties.Resources.resources
+F:\FALCOSE\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.csproj.GenerateResource.cache
+F:\FALCOSE\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.csproj.CoreCompileInputs.cache
+F:\FALCOSE\SIGECO\SIGECO\SIGECO\bin\Debug\SIGECO.exe.config
+F:\FALCOSE\SIGECO\SIGECO\SIGECO\bin\Debug\SIGECO.exe
+F:\FALCOSE\SIGECO\SIGECO\SIGECO\bin\Debug\SIGECO.pdb
+F:\FALCOSE\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.exe
+F:\FALCOSE\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.pdb
+F:\FALCOSE\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.Login.resources
+F:\FALCOSE\SIGECO\SIGECO\SIGECO\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+F:\FALCOSE\SIGECO\SIGECO\SIGECO\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+F:\FALCOSE\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.csproj.CopyComplete
