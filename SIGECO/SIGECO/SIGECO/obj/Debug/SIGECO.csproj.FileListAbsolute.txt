@@ -12,3 +12,17 @@ F:\FALCOSE\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.Login.resources
 F:\FALCOSE\SIGECO\SIGECO\SIGECO\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 F:\FALCOSE\SIGECO\SIGECO\SIGECO\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 F:\FALCOSE\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.csproj.CopyComplete
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\bin\Debug\SIGECO.exe.config
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\bin\Debug\SIGECO.exe
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\bin\Debug\SIGECO.pdb
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.csprojAssemblyReference.cache
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Properties.Resources.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.Form1.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.Login.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.csproj.GenerateResource.cache
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.csproj.CopyComplete
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.exe
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.pdb
