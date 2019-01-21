@@ -1,5 +1,4 @@
-﻿using SIGECO.Modelo;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,17 +10,11 @@ using System.Windows.Forms;
 
 namespace SIGECO.Vistas
 {
-    public partial class AgregarVenta : Form
+    public partial class VistaAdministradorUsuarios : Form
     {
-        public AgregarVenta()
+        public VistaAdministradorUsuarios()
         {
             InitializeComponent();
-           
-        }
-
-        private void verificar(object sender, KeyPressEventArgs e)
-        {
-
         }
     }
 }

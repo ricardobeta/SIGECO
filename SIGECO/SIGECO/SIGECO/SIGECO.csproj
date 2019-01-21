@@ -100,6 +100,12 @@
     <Compile Include="Vistas\RegistrarProducto.Designer.cs">
       <DependentUpon>RegistrarProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\VistaAdministradorUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaAdministradorUsuarios.Designer.cs">
+      <DependentUpon>VistaAdministradorUsuarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\RegistrarProducto.resx">
       <DependentUpon>RegistrarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaAdministradorUsuarios.resx">
+      <DependentUpon>VistaAdministradorUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
