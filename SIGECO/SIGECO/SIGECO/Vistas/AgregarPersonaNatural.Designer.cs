@@ -216,7 +216,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 16);
             this.label6.TabIndex = 12;
-            this.label6.Text = "*Cedula";
+            this.label6.Text = "*Cédula";
             // 
             // label5
             // 
