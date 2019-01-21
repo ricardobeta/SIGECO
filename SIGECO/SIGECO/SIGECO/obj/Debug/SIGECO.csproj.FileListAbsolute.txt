@@ -32,3 +32,4 @@ C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vist
 C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.RegistrarEmpleado.resources
 C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.RegistrarProducto.resources
 C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.AgregarVenta.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.VistaAdministradorUsuarios.resources
