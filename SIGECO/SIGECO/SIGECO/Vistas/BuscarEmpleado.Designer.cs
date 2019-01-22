@@ -39,6 +39,7 @@
             this.bModificar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             this.panel2.SuspendLayout();
@@ -105,6 +106,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.bModificar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -120,9 +122,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(600, 5);
+            this.button2.Location = new System.Drawing.Point(756, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(325, 40);
+            this.button2.Size = new System.Drawing.Size(300, 40);
             this.button2.TabIndex = 3;
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = false;
@@ -134,9 +136,9 @@
             this.bModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bModificar.ForeColor = System.Drawing.Color.White;
-            this.bModificar.Location = new System.Drawing.Point(275, 5);
+            this.bModificar.Location = new System.Drawing.Point(144, 3);
             this.bModificar.Name = "bModificar";
-            this.bModificar.Size = new System.Drawing.Size(325, 40);
+            this.bModificar.Size = new System.Drawing.Size(300, 40);
             this.bModificar.TabIndex = 2;
             this.bModificar.Text = "Modificar";
             this.bModificar.UseVisualStyleBackColor = false;
@@ -159,6 +161,20 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1200, 420);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(450, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(300, 40);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Agregar Pago";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // BuscarEmpleado
             // 
@@ -194,5 +210,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button bModificar;
         private System.Windows.Forms.PictureBox pCerrar;
+        private System.Windows.Forms.Button button1;
     }
 }
