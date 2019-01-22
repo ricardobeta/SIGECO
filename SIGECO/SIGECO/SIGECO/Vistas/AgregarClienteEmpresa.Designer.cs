@@ -127,6 +127,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(650, 550);
             this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label14
             // 
@@ -269,7 +270,8 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 16);
             this.label7.TabIndex = 29;
-            this.label7.Text = "*Pais";
+            this.label7.Text = "*País";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -280,7 +282,8 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 16);
             this.label6.TabIndex = 28;
-            this.label6.Text = "*Cedula";
+            this.label6.Text = "*Cédula";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -342,9 +345,10 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(24, 230);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(113, 16);
+            this.label11.Size = new System.Drawing.Size(118, 16);
             this.label11.TabIndex = 22;
-            this.label11.Text = "*Primer Nombe";
+            this.label11.Text = "*Primer Nombre";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label3
             // 

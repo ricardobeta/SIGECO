@@ -80,7 +80,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(154, 16);
             this.label2.TabIndex = 70;
-            this.label2.Text = "Codigo del Producto:";
+            this.label2.Text = "Código del Producto:";
             // 
             // textBox1
             // 

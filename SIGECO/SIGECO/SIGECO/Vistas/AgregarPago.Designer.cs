@@ -172,7 +172,7 @@
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label3.Size = new System.Drawing.Size(129, 16);
             this.label3.TabIndex = 81;
-            this.label3.Text = "*Metodo de Pago";
+            this.label3.Text = "*Método de Pago";
             // 
             // textBox3
             // 
