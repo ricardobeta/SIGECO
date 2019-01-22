@@ -26,5 +26,12 @@ namespace SIGECO.Vistas
                 this.Close();
             }
         }
+
+        private void bModificar_Click(object sender, EventArgs e)
+        {
+            string mod = "Modificar Producto";
+            RegistrarProducto vista = new RegistrarProducto(mod);
+            vista.Show();
+        }
     }
 }
