@@ -40,6 +40,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pCerrar = new System.Windows.Forms.PictureBox();
+            this.bModificar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -48,6 +49,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.bModificar);
             this.panel1.Controls.Add(this.pCerrar);
             this.panel1.Controls.Add(this.bBuscarF);
             this.panel1.Controls.Add(this.lFechaFin);
@@ -69,7 +71,7 @@
             this.bBuscarF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bBuscarF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bBuscarF.ForeColor = System.Drawing.Color.White;
-            this.bBuscarF.Location = new System.Drawing.Point(994, 37);
+            this.bBuscarF.Location = new System.Drawing.Point(935, 37);
             this.bBuscarF.Name = "bBuscarF";
             this.bBuscarF.Size = new System.Drawing.Size(70, 29);
             this.bBuscarF.TabIndex = 74;
@@ -81,7 +83,7 @@
             this.lFechaFin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lFechaFin.AutoSize = true;
             this.lFechaFin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lFechaFin.Location = new System.Drawing.Point(702, 48);
+            this.lFechaFin.Location = new System.Drawing.Point(643, 48);
             this.lFechaFin.Name = "lFechaFin";
             this.lFechaFin.Size = new System.Drawing.Size(80, 16);
             this.lFechaFin.TabIndex = 78;
@@ -92,7 +94,7 @@
             this.lFechaInicio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lFechaInicio.AutoSize = true;
             this.lFechaInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lFechaInicio.Location = new System.Drawing.Point(335, 48);
+            this.lFechaInicio.Location = new System.Drawing.Point(276, 48);
             this.lFechaInicio.Name = "lFechaInicio";
             this.lFechaInicio.Size = new System.Drawing.Size(96, 16);
             this.lFechaInicio.TabIndex = 77;
@@ -100,14 +102,14 @@
             // 
             // dtFechaFin
             // 
-            this.dtFechaFin.Location = new System.Drawing.Point(788, 45);
+            this.dtFechaFin.Location = new System.Drawing.Point(729, 45);
             this.dtFechaFin.Name = "dtFechaFin";
             this.dtFechaFin.Size = new System.Drawing.Size(200, 20);
             this.dtFechaFin.TabIndex = 76;
             // 
             // dtFechaInicio
             // 
-            this.dtFechaInicio.Location = new System.Drawing.Point(440, 46);
+            this.dtFechaInicio.Location = new System.Drawing.Point(381, 46);
             this.dtFechaInicio.Name = "dtFechaInicio";
             this.dtFechaInicio.Size = new System.Drawing.Size(200, 20);
             this.dtFechaInicio.TabIndex = 75;
@@ -117,7 +119,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 50);
+            this.label2.Location = new System.Drawing.Point(14, 50);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label2.Size = new System.Drawing.Size(235, 16);
@@ -166,6 +168,20 @@
             this.pCerrar.TabStop = false;
             this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
             // 
+            // bModificar
+            // 
+            this.bModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.bModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.bModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bModificar.ForeColor = System.Drawing.Color.White;
+            this.bModificar.Location = new System.Drawing.Point(1016, 39);
+            this.bModificar.Name = "bModificar";
+            this.bModificar.Size = new System.Drawing.Size(184, 25);
+            this.bModificar.TabIndex = 79;
+            this.bModificar.Text = "Generar Reporte";
+            this.bModificar.UseVisualStyleBackColor = false;
+            // 
             // VistaComisionesVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -199,5 +215,6 @@
         private System.Windows.Forms.DateTimePicker dtFechaInicio;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pCerrar;
+        private System.Windows.Forms.Button bModificar;
     }
 }

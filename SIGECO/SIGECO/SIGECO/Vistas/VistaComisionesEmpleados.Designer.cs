@@ -42,6 +42,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pCerrar = new System.Windows.Forms.PictureBox();
+            this.bModificar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -54,6 +55,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.bModificar);
             this.panel1.Controls.Add(this.pCerrar);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label2);
@@ -67,7 +69,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(318, 40);
+            this.comboBox1.Location = new System.Drawing.Point(293, 47);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(206, 21);
             this.comboBox1.TabIndex = 72;
@@ -77,7 +79,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(99, 46);
+            this.label2.Location = new System.Drawing.Point(74, 53);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label2.Size = new System.Drawing.Size(199, 16);
@@ -186,6 +188,20 @@
             this.pCerrar.TabStop = false;
             this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
             // 
+            // bModificar
+            // 
+            this.bModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.bModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.bModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bModificar.ForeColor = System.Drawing.Color.White;
+            this.bModificar.Location = new System.Drawing.Point(530, 45);
+            this.bModificar.Name = "bModificar";
+            this.bModificar.Size = new System.Drawing.Size(184, 25);
+            this.bModificar.TabIndex = 17;
+            this.bModificar.Text = "Generar Reporte";
+            this.bModificar.UseVisualStyleBackColor = false;
+            // 
             // VistaComisionesEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,5 +244,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.PictureBox pCerrar;
+        private System.Windows.Forms.Button bModificar;
     }
 }
