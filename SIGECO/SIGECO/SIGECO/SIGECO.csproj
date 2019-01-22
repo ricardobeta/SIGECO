@@ -70,6 +70,12 @@
     <Compile Include="Vistas\AgregarVenta.Designer.cs">
       <DependentUpon>AgregarVenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\ConsultarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultarCliente.Designer.cs">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\AgregarVenta.resx">
       <DependentUpon>AgregarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultarCliente.resx">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
