@@ -32,6 +32,11 @@ namespace SIGECO.Vistas
             string mod = "Modificar Producto";
             RegistrarProducto vista = new RegistrarProducto(mod);
             vista.Show();
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+
         }
     }
 }

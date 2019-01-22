@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaOperaciones));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pCerrar = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -39,6 +40,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -47,9 +49,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.bModificar = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pCerrar = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -57,7 +58,6 @@
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,6 +76,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(250, 550);
             this.panel2.TabIndex = 4;
+            // 
+            // pCerrar
+            // 
+            this.pCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(239)))), ((int)(((byte)(225)))));
+            this.pCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pCerrar.Image")));
+            this.pCerrar.Location = new System.Drawing.Point(217, 0);
+            this.pCerrar.Name = "pCerrar";
+            this.pCerrar.Size = new System.Drawing.Size(30, 30);
+            this.pCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pCerrar.TabIndex = 86;
+            this.pCerrar.TabStop = false;
+            this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
             // 
             // panel3
             // 
@@ -107,7 +120,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 39);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(700, 265);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.TabIndex = 5;
             // 
             // panel6
             // 
@@ -128,7 +141,7 @@
             this.button1.Location = new System.Drawing.Point(188, -2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(325, 40);
-            this.button1.TabIndex = 24;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Eliminar Operación";
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -167,6 +180,16 @@
             this.panel7.Size = new System.Drawing.Size(700, 170);
             this.panel7.TabIndex = 1;
             // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(365, 128);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(200, 21);
+            this.textBox2.TabIndex = 3;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // comboBox1
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -174,7 +197,7 @@
             this.comboBox1.Location = new System.Drawing.Point(365, 46);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 84;
+            this.comboBox1.TabIndex = 1;
             // 
             // label3
             // 
@@ -195,7 +218,7 @@
             this.textBox1.Location = new System.Drawing.Point(365, 85);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 21);
-            this.textBox1.TabIndex = 82;
+            this.textBox1.TabIndex = 2;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
@@ -252,32 +275,9 @@
             this.bModificar.Location = new System.Drawing.Point(188, 0);
             this.bModificar.Name = "bModificar";
             this.bModificar.Size = new System.Drawing.Size(325, 40);
-            this.bModificar.TabIndex = 22;
+            this.bModificar.TabIndex = 4;
             this.bModificar.Text = "Guardar";
             this.bModificar.UseVisualStyleBackColor = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(365, 128);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 21);
-            this.textBox2.TabIndex = 85;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // pCerrar
-            // 
-            this.pCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(239)))), ((int)(((byte)(225)))));
-            this.pCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pCerrar.Image")));
-            this.pCerrar.Location = new System.Drawing.Point(217, 0);
-            this.pCerrar.Name = "pCerrar";
-            this.pCerrar.Size = new System.Drawing.Size(30, 30);
-            this.pCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pCerrar.TabIndex = 86;
-            this.pCerrar.TabStop = false;
-            this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
             // 
             // VistaOperaciones
             // 
@@ -293,6 +293,7 @@
             this.Text = "VistaOperaciones";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -302,7 +303,6 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }

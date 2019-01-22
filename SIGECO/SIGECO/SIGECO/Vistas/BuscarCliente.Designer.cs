@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BuscarCliente));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pCerrar = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -40,12 +41,11 @@
             this.bModificar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pCerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,6 +61,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1200, 80);
             this.panel1.TabIndex = 0;
+            // 
+            // pCerrar
+            // 
+            this.pCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(239)))), ((int)(((byte)(225)))));
+            this.pCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pCerrar.Image")));
+            this.pCerrar.Location = new System.Drawing.Point(1167, 3);
+            this.pCerrar.Name = "pCerrar";
+            this.pCerrar.Size = new System.Drawing.Size(30, 30);
+            this.pCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pCerrar.TabIndex = 65;
+            this.pCerrar.TabStop = false;
+            this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
             // 
             // label2
             // 
@@ -80,7 +93,7 @@
             this.textBox1.Location = new System.Drawing.Point(528, 44);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(444, 21);
-            this.textBox1.TabIndex = 63;
+            this.textBox1.TabIndex = 2;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
@@ -103,7 +116,7 @@
             this.cbTipoCliente.Location = new System.Drawing.Point(130, 43);
             this.cbTipoCliente.Name = "cbTipoCliente";
             this.cbTipoCliente.Size = new System.Drawing.Size(185, 21);
-            this.cbTipoCliente.TabIndex = 44;
+            this.cbTipoCliente.TabIndex = 1;
             // 
             // label1
             // 
@@ -136,7 +149,7 @@
             this.button2.Location = new System.Drawing.Point(600, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(325, 40);
-            this.button2.TabIndex = 17;
+            this.button2.TabIndex = 4;
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -150,7 +163,7 @@
             this.bModificar.Location = new System.Drawing.Point(275, 5);
             this.bModificar.Name = "bModificar";
             this.bModificar.Size = new System.Drawing.Size(325, 40);
-            this.bModificar.TabIndex = 16;
+            this.bModificar.TabIndex = 3;
             this.bModificar.Text = "Modificar";
             this.bModificar.UseVisualStyleBackColor = false;
             this.bModificar.Click += new System.EventHandler(this.bModificar_Click);
@@ -173,19 +186,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1200, 420);
             this.dataGridView1.TabIndex = 0;
             // 
-            // pCerrar
-            // 
-            this.pCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(239)))), ((int)(((byte)(225)))));
-            this.pCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pCerrar.Image")));
-            this.pCerrar.Location = new System.Drawing.Point(1167, 3);
-            this.pCerrar.Name = "pCerrar";
-            this.pCerrar.Size = new System.Drawing.Size(30, 30);
-            this.pCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pCerrar.TabIndex = 65;
-            this.pCerrar.TabStop = false;
-            this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
-            // 
             // BuscarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,10 +200,10 @@
             this.Text = "ConsultarCliente";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }

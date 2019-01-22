@@ -110,7 +110,7 @@
             this.richTextBox1.Location = new System.Drawing.Point(153, 233);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(350, 76);
-            this.richTextBox1.TabIndex = 62;
+            this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
             // label3
@@ -132,7 +132,7 @@
             this.textBox2.Location = new System.Drawing.Point(153, 183);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(350, 21);
-            this.textBox2.TabIndex = 42;
+            this.textBox2.TabIndex = 3;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
@@ -164,7 +164,7 @@
             this.textBox3.Location = new System.Drawing.Point(153, 138);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(350, 21);
-            this.textBox3.TabIndex = 38;
+            this.textBox3.TabIndex = 2;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
@@ -196,7 +196,7 @@
             this.textBox1.Location = new System.Drawing.Point(153, 65);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(350, 21);
-            this.textBox1.TabIndex = 35;
+            this.textBox1.TabIndex = 1;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
@@ -230,7 +230,7 @@
             this.button2.Location = new System.Drawing.Point(324, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(325, 40);
-            this.button2.TabIndex = 28;
+            this.button2.TabIndex = 6;
             this.button2.Text = "Limpiar Campos";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -244,7 +244,7 @@
             this.button1.Location = new System.Drawing.Point(-1, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(325, 40);
-            this.button1.TabIndex = 27;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
             // 

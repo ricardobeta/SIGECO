@@ -146,7 +146,7 @@
             this.comboBox1.Location = new System.Drawing.Point(141, 358);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(160, 21);
-            this.comboBox1.TabIndex = 65;
+            this.comboBox1.TabIndex = 9;
             // 
             // label16
             // 
@@ -166,7 +166,7 @@
             this.textBox12.Location = new System.Drawing.Point(141, 480);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(160, 21);
-            this.textBox12.TabIndex = 63;
+            this.textBox12.TabIndex = 13;
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label15
@@ -187,7 +187,7 @@
             this.textBox11.Location = new System.Drawing.Point(141, 440);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(160, 21);
-            this.textBox11.TabIndex = 61;
+            this.textBox11.TabIndex = 12;
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label14
@@ -208,7 +208,7 @@
             this.textBox10.Location = new System.Drawing.Point(452, 396);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(160, 21);
-            this.textBox10.TabIndex = 59;
+            this.textBox10.TabIndex = 11;
             this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label13
@@ -229,7 +229,7 @@
             this.textBox9.Location = new System.Drawing.Point(142, 398);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(160, 21);
-            this.textBox9.TabIndex = 57;
+            this.textBox9.TabIndex = 10;
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label12
@@ -283,7 +283,7 @@
             this.textBox8.Location = new System.Drawing.Point(142, 290);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(470, 21);
-            this.textBox8.TabIndex = 52;
+            this.textBox8.TabIndex = 8;
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox7
@@ -293,7 +293,7 @@
             this.textBox7.Location = new System.Drawing.Point(142, 249);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(160, 21);
-            this.textBox7.TabIndex = 51;
+            this.textBox7.TabIndex = 7;
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox6
@@ -303,7 +303,7 @@
             this.textBox6.Location = new System.Drawing.Point(141, 208);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(470, 21);
-            this.textBox6.TabIndex = 50;
+            this.textBox6.TabIndex = 6;
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox5
@@ -313,7 +313,7 @@
             this.textBox5.Location = new System.Drawing.Point(142, 54);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(470, 21);
-            this.textBox5.TabIndex = 49;
+            this.textBox5.TabIndex = 1;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox4
@@ -323,7 +323,7 @@
             this.textBox4.Location = new System.Drawing.Point(451, 168);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(160, 21);
-            this.textBox4.TabIndex = 48;
+            this.textBox4.TabIndex = 5;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox3
@@ -333,7 +333,7 @@
             this.textBox3.Location = new System.Drawing.Point(141, 168);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(160, 21);
-            this.textBox3.TabIndex = 47;
+            this.textBox3.TabIndex = 4;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
@@ -356,7 +356,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 16);
             this.label7.TabIndex = 45;
-            this.label7.Text = "*Pais";
+            this.label7.Text = "*País";
             // 
             // label6
             // 
@@ -367,7 +367,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 16);
             this.label6.TabIndex = 44;
-            this.label6.Text = "*Cedula";
+            this.label6.Text = "*Cédula";
             // 
             // label5
             // 
@@ -398,7 +398,7 @@
             this.textBox2.Location = new System.Drawing.Point(451, 123);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(160, 21);
-            this.textBox2.TabIndex = 41;
+            this.textBox2.TabIndex = 3;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox1
@@ -408,7 +408,7 @@
             this.textBox1.Location = new System.Drawing.Point(141, 123);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(160, 21);
-            this.textBox1.TabIndex = 40;
+            this.textBox1.TabIndex = 2;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
@@ -429,9 +429,9 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(13, 127);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(113, 16);
+            this.label11.Size = new System.Drawing.Size(118, 16);
             this.label11.TabIndex = 38;
-            this.label11.Text = "*Primer Nombe";
+            this.label11.Text = "*Primer Nombre";
             // 
             // label1
             // 
@@ -464,7 +464,7 @@
             this.button2.Location = new System.Drawing.Point(325, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(325, 40);
-            this.button2.TabIndex = 28;
+            this.button2.TabIndex = 15;
             this.button2.Text = "Limpiar Campos";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -478,7 +478,7 @@
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(325, 40);
-            this.button1.TabIndex = 27;
+            this.button1.TabIndex = 14;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
             // 

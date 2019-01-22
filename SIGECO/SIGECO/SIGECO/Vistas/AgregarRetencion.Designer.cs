@@ -37,6 +37,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,8 +47,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.bModificar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -107,7 +107,7 @@
             this.button1.Location = new System.Drawing.Point(165, -2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(325, 40);
-            this.button1.TabIndex = 24;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Eliminar Retención";
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -146,6 +146,26 @@
             this.panel3.Size = new System.Drawing.Size(654, 170);
             this.panel3.TabIndex = 1;
             // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(326, 136);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(200, 21);
+            this.textBox2.TabIndex = 3;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(326, 99);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 21);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -165,7 +185,7 @@
             this.textBox3.Location = new System.Drawing.Point(326, 60);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(200, 21);
-            this.textBox3.TabIndex = 80;
+            this.textBox3.TabIndex = 1;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
@@ -223,7 +243,7 @@
             this.button2.Location = new System.Drawing.Point(336, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(325, 40);
-            this.button2.TabIndex = 23;
+            this.button2.TabIndex = 5;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -238,29 +258,9 @@
             this.bModificar.Location = new System.Drawing.Point(-9, 0);
             this.bModificar.Name = "bModificar";
             this.bModificar.Size = new System.Drawing.Size(325, 40);
-            this.bModificar.TabIndex = 22;
+            this.bModificar.TabIndex = 4;
             this.bModificar.Text = "Guardar";
             this.bModificar.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(326, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 21);
-            this.textBox1.TabIndex = 82;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(326, 136);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 21);
-            this.textBox2.TabIndex = 83;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // AgregarRetencion
             // 

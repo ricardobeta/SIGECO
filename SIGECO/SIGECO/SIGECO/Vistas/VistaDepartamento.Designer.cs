@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaDepartamento));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pCerrar = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -46,8 +47,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.bModificar = new System.Windows.Forms.Button();
-            this.pCerrar = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -55,7 +56,6 @@
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,6 +74,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(250, 550);
             this.panel2.TabIndex = 1;
+            // 
+            // pCerrar
+            // 
+            this.pCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(239)))), ((int)(((byte)(225)))));
+            this.pCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pCerrar.Image")));
+            this.pCerrar.Location = new System.Drawing.Point(217, 3);
+            this.pCerrar.Name = "pCerrar";
+            this.pCerrar.Size = new System.Drawing.Size(30, 30);
+            this.pCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pCerrar.TabIndex = 67;
+            this.pCerrar.TabStop = false;
+            this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
             // 
             // panel3
             // 
@@ -105,7 +118,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 39);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(700, 265);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.TabIndex = 4;
             // 
             // panel6
             // 
@@ -126,7 +139,7 @@
             this.button1.Location = new System.Drawing.Point(188, -2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(325, 40);
-            this.button1.TabIndex = 24;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Eliminar Departamento";
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -170,7 +183,7 @@
             this.textBox1.Location = new System.Drawing.Point(369, 101);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 21);
-            this.textBox1.TabIndex = 82;
+            this.textBox1.TabIndex = 2;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox3
@@ -180,8 +193,9 @@
             this.textBox3.Location = new System.Drawing.Point(369, 62);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(200, 21);
-            this.textBox3.TabIndex = 80;
+            this.textBox3.TabIndex = 1;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label4
             // 
@@ -237,22 +251,9 @@
             this.bModificar.Location = new System.Drawing.Point(188, 0);
             this.bModificar.Name = "bModificar";
             this.bModificar.Size = new System.Drawing.Size(325, 40);
-            this.bModificar.TabIndex = 22;
+            this.bModificar.TabIndex = 3;
             this.bModificar.Text = "Guardar";
             this.bModificar.UseVisualStyleBackColor = false;
-            // 
-            // pCerrar
-            // 
-            this.pCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(239)))), ((int)(((byte)(225)))));
-            this.pCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pCerrar.Image")));
-            this.pCerrar.Location = new System.Drawing.Point(217, 3);
-            this.pCerrar.Name = "pCerrar";
-            this.pCerrar.Size = new System.Drawing.Size(30, 30);
-            this.pCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pCerrar.TabIndex = 67;
-            this.pCerrar.TabStop = false;
-            this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
             // 
             // VistaDepartamento
             // 
@@ -268,6 +269,7 @@
             this.Text = "VistaDepartamento";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -277,7 +279,6 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }

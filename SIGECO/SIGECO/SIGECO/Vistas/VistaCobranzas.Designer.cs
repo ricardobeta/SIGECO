@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaCobranzas));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pCerrar = new System.Windows.Forms.PictureBox();
             this.bBuscarF = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lFechaFin = new System.Windows.Forms.Label();
@@ -40,11 +41,10 @@
             this.bARetencion = new System.Windows.Forms.Button();
             this.bAPago = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pCerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -62,6 +62,19 @@
             this.panel1.Size = new System.Drawing.Size(1200, 80);
             this.panel1.TabIndex = 0;
             // 
+            // pCerrar
+            // 
+            this.pCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(239)))), ((int)(((byte)(225)))));
+            this.pCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pCerrar.Image")));
+            this.pCerrar.Location = new System.Drawing.Point(1170, 0);
+            this.pCerrar.Name = "pCerrar";
+            this.pCerrar.Size = new System.Drawing.Size(30, 30);
+            this.pCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pCerrar.TabIndex = 84;
+            this.pCerrar.TabStop = false;
+            this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
+            // 
             // bBuscarF
             // 
             this.bBuscarF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -72,7 +85,7 @@
             this.bBuscarF.Location = new System.Drawing.Point(829, 49);
             this.bBuscarF.Name = "bBuscarF";
             this.bBuscarF.Size = new System.Drawing.Size(70, 29);
-            this.bBuscarF.TabIndex = 74;
+            this.bBuscarF.TabIndex = 3;
             this.bBuscarF.Text = "Buscar";
             this.bBuscarF.UseVisualStyleBackColor = false;
             // 
@@ -115,7 +128,7 @@
             this.dtFechaFin.Location = new System.Drawing.Point(623, 57);
             this.dtFechaFin.Name = "dtFechaFin";
             this.dtFechaFin.Size = new System.Drawing.Size(200, 20);
-            this.dtFechaFin.TabIndex = 81;
+            this.dtFechaFin.TabIndex = 2;
             // 
             // dtFechaInicio
             // 
@@ -123,7 +136,7 @@
             this.dtFechaInicio.Location = new System.Drawing.Point(275, 58);
             this.dtFechaInicio.Name = "dtFechaInicio";
             this.dtFechaInicio.Size = new System.Drawing.Size(200, 20);
-            this.dtFechaInicio.TabIndex = 80;
+            this.dtFechaInicio.TabIndex = 1;
             // 
             // panel2
             // 
@@ -145,7 +158,7 @@
             this.bARetencion.Location = new System.Drawing.Point(385, 6);
             this.bARetencion.Name = "bARetencion";
             this.bARetencion.Size = new System.Drawing.Size(200, 40);
-            this.bARetencion.TabIndex = 26;
+            this.bARetencion.TabIndex = 5;
             this.bARetencion.Text = "Retenciones";
             this.bARetencion.UseVisualStyleBackColor = false;
             this.bARetencion.Click += new System.EventHandler(this.bARetencion_Click);
@@ -160,7 +173,7 @@
             this.bAPago.Location = new System.Drawing.Point(591, 6);
             this.bAPago.Name = "bAPago";
             this.bAPago.Size = new System.Drawing.Size(200, 40);
-            this.bAPago.TabIndex = 25;
+            this.bAPago.TabIndex = 6;
             this.bAPago.Text = "Pagos";
             this.bAPago.UseVisualStyleBackColor = false;
             this.bAPago.Click += new System.EventHandler(this.bAPago_Click);
@@ -172,20 +185,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 80);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1200, 420);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // pCerrar
-            // 
-            this.pCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(239)))), ((int)(((byte)(225)))));
-            this.pCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pCerrar.Image")));
-            this.pCerrar.Location = new System.Drawing.Point(1170, 0);
-            this.pCerrar.Name = "pCerrar";
-            this.pCerrar.Size = new System.Drawing.Size(30, 30);
-            this.pCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pCerrar.TabIndex = 84;
-            this.pCerrar.TabStop = false;
-            this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
+            this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // VistaCobranzas
             // 
@@ -201,9 +202,9 @@
             this.Text = "VistaCobranzas";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }

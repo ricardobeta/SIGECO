@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarClienteEmpresa));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pCerrar = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -59,11 +60,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pCerrar = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -82,6 +82,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(250, 550);
             this.panel2.TabIndex = 1;
+            // 
+            // pCerrar
+            // 
+            this.pCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(239)))), ((int)(((byte)(225)))));
+            this.pCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pCerrar.Image")));
+            this.pCerrar.Location = new System.Drawing.Point(217, 3);
+            this.pCerrar.Name = "pCerrar";
+            this.pCerrar.Size = new System.Drawing.Size(30, 30);
+            this.pCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pCerrar.TabIndex = 7;
+            this.pCerrar.TabStop = false;
+            this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
             // 
             // panel3
             // 
@@ -115,6 +127,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(650, 550);
             this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label14
             // 
@@ -134,7 +147,7 @@
             this.textBox10.Location = new System.Drawing.Point(261, 82);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(247, 20);
-            this.textBox10.TabIndex = 41;
+            this.textBox10.TabIndex = 1;
             // 
             // textBox9
             // 
@@ -142,7 +155,7 @@
             this.textBox9.Location = new System.Drawing.Point(261, 162);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(247, 20);
-            this.textBox9.TabIndex = 40;
+            this.textBox9.TabIndex = 2;
             // 
             // label13
             // 
@@ -184,7 +197,7 @@
             this.textBox8.Location = new System.Drawing.Point(152, 469);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(470, 21);
-            this.textBox8.TabIndex = 36;
+            this.textBox8.TabIndex = 10;
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox7
@@ -194,7 +207,7 @@
             this.textBox7.Location = new System.Drawing.Point(153, 423);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(160, 21);
-            this.textBox7.TabIndex = 35;
+            this.textBox7.TabIndex = 9;
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox6
@@ -204,7 +217,7 @@
             this.textBox6.Location = new System.Drawing.Point(152, 374);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(470, 21);
-            this.textBox6.TabIndex = 34;
+            this.textBox6.TabIndex = 8;
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox5
@@ -214,7 +227,7 @@
             this.textBox5.Location = new System.Drawing.Point(152, 322);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(470, 21);
-            this.textBox5.TabIndex = 33;
+            this.textBox5.TabIndex = 7;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox4
@@ -224,7 +237,7 @@
             this.textBox4.Location = new System.Drawing.Point(462, 271);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(160, 21);
-            this.textBox4.TabIndex = 32;
+            this.textBox4.TabIndex = 6;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox3
@@ -234,7 +247,7 @@
             this.textBox3.Location = new System.Drawing.Point(152, 271);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(160, 21);
-            this.textBox3.TabIndex = 31;
+            this.textBox3.TabIndex = 5;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
@@ -257,7 +270,8 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 16);
             this.label7.TabIndex = 29;
-            this.label7.Text = "*Pais";
+            this.label7.Text = "*País";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -268,7 +282,8 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 16);
             this.label6.TabIndex = 28;
-            this.label6.Text = "*Cedula";
+            this.label6.Text = "*Cédula";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -299,7 +314,7 @@
             this.textBox2.Location = new System.Drawing.Point(462, 226);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(160, 21);
-            this.textBox2.TabIndex = 25;
+            this.textBox2.TabIndex = 4;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox1
@@ -309,7 +324,7 @@
             this.textBox1.Location = new System.Drawing.Point(152, 226);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(160, 21);
-            this.textBox1.TabIndex = 24;
+            this.textBox1.TabIndex = 3;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
@@ -330,9 +345,10 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(24, 230);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(113, 16);
+            this.label11.Size = new System.Drawing.Size(118, 16);
             this.label11.TabIndex = 22;
-            this.label11.Text = "*Primer Nombe";
+            this.label11.Text = "*Primer Nombre";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label3
             // 
@@ -405,18 +421,6 @@
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // pCerrar
-            // 
-            this.pCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(239)))), ((int)(((byte)(225)))));
-            this.pCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pCerrar.Image")));
-            this.pCerrar.Location = new System.Drawing.Point(217, 3);
-            this.pCerrar.Name = "pCerrar";
-            this.pCerrar.Size = new System.Drawing.Size(30, 30);
-            this.pCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pCerrar.TabIndex = 7;
-            this.pCerrar.TabStop = false;
-            this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
-            // 
             // AgregarClienteEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,10 +436,10 @@
             this.Text = "AgregarClienteEmpresa";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }

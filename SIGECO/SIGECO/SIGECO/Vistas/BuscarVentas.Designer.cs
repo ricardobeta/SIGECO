@@ -69,7 +69,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1200, 80);
+            this.panel1.Size = new System.Drawing.Size(1200, 104);
             this.panel1.TabIndex = 0;
             // 
             // pCerrar
@@ -92,10 +92,10 @@
             this.bBuscarF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bBuscarF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bBuscarF.ForeColor = System.Drawing.Color.White;
-            this.bBuscarF.Location = new System.Drawing.Point(1086, 34);
+            this.bBuscarF.Location = new System.Drawing.Point(1013, 34);
             this.bBuscarF.Name = "bBuscarF";
-            this.bBuscarF.Size = new System.Drawing.Size(70, 29);
-            this.bBuscarF.TabIndex = 27;
+            this.bBuscarF.Size = new System.Drawing.Size(70, 28);
+            this.bBuscarF.TabIndex = 5;
             this.bBuscarF.Text = "Buscar";
             this.bBuscarF.UseVisualStyleBackColor = false;
             this.bBuscarF.Visible = false;
@@ -105,7 +105,7 @@
             this.lCedula.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lCedula.AutoSize = true;
             this.lCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lCedula.Location = new System.Drawing.Point(462, 47);
+            this.lCedula.Location = new System.Drawing.Point(58, 73);
             this.lCedula.Name = "lCedula";
             this.lCedula.Size = new System.Drawing.Size(61, 16);
             this.lCedula.TabIndex = 69;
@@ -132,7 +132,7 @@
             this.cbTipoFiltro.Location = new System.Drawing.Point(176, 41);
             this.cbTipoFiltro.Name = "cbTipoFiltro";
             this.cbTipoFiltro.Size = new System.Drawing.Size(185, 21);
-            this.cbTipoFiltro.TabIndex = 66;
+            this.cbTipoFiltro.TabIndex = 1;
             this.cbTipoFiltro.SelectedIndexChanged += new System.EventHandler(this.cbTipoFiltro_SelectedIndexChanged);
             // 
             // label6
@@ -151,7 +151,7 @@
             this.lFechaFin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lFechaFin.AutoSize = true;
             this.lFechaFin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lFechaFin.Location = new System.Drawing.Point(794, 45);
+            this.lFechaFin.Location = new System.Drawing.Point(703, 40);
             this.lFechaFin.Name = "lFechaFin";
             this.lFechaFin.Size = new System.Drawing.Size(80, 16);
             this.lFechaFin.TabIndex = 73;
@@ -163,7 +163,7 @@
             this.lFechaInicio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lFechaInicio.AutoSize = true;
             this.lFechaInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lFechaInicio.Location = new System.Drawing.Point(427, 45);
+            this.lFechaInicio.Location = new System.Drawing.Point(367, 42);
             this.lFechaInicio.Name = "lFechaInicio";
             this.lFechaInicio.Size = new System.Drawing.Size(96, 16);
             this.lFechaInicio.TabIndex = 72;
@@ -172,28 +172,28 @@
             // 
             // dtFechaFin
             // 
-            this.dtFechaFin.Location = new System.Drawing.Point(880, 42);
+            this.dtFechaFin.Location = new System.Drawing.Point(789, 36);
             this.dtFechaFin.Name = "dtFechaFin";
             this.dtFechaFin.Size = new System.Drawing.Size(200, 20);
-            this.dtFechaFin.TabIndex = 71;
+            this.dtFechaFin.TabIndex = 3;
             this.dtFechaFin.Visible = false;
             // 
             // dtFechaInicio
             // 
-            this.dtFechaInicio.Location = new System.Drawing.Point(532, 43);
+            this.dtFechaInicio.Location = new System.Drawing.Point(469, 38);
             this.dtFechaInicio.Name = "dtFechaInicio";
             this.dtFechaInicio.Size = new System.Drawing.Size(200, 20);
-            this.dtFechaInicio.TabIndex = 70;
+            this.dtFechaInicio.TabIndex = 2;
             this.dtFechaInicio.Visible = false;
             // 
             // txtCedulaCliente
             // 
             this.txtCedulaCliente.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCedulaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCedulaCliente.Location = new System.Drawing.Point(574, 42);
+            this.txtCedulaCliente.Location = new System.Drawing.Point(176, 70);
             this.txtCedulaCliente.Name = "txtCedulaCliente";
-            this.txtCedulaCliente.Size = new System.Drawing.Size(444, 21);
-            this.txtCedulaCliente.TabIndex = 68;
+            this.txtCedulaCliente.Size = new System.Drawing.Size(136, 21);
+            this.txtCedulaCliente.TabIndex = 4;
             this.txtCedulaCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtCedulaCliente.Visible = false;
             // 
@@ -217,7 +217,7 @@
             this.button2.Location = new System.Drawing.Point(596, 6);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 40);
-            this.button2.TabIndex = 23;
+            this.button2.TabIndex = 7;
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -231,7 +231,7 @@
             this.bModificar.Location = new System.Drawing.Point(390, 6);
             this.bModificar.Name = "bModificar";
             this.bModificar.Size = new System.Drawing.Size(200, 40);
-            this.bModificar.TabIndex = 22;
+            this.bModificar.TabIndex = 6;
             this.bModificar.Text = "Modificar";
             this.bModificar.UseVisualStyleBackColor = false;
             this.bModificar.Click += new System.EventHandler(this.bModificar_Click);
@@ -240,9 +240,9 @@
             // 
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 80);
+            this.panel3.Location = new System.Drawing.Point(0, 104);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1200, 420);
+            this.panel3.Size = new System.Drawing.Size(1200, 396);
             this.panel3.TabIndex = 2;
             // 
             // dataGridView1
@@ -251,7 +251,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1200, 420);
+            this.dataGridView1.Size = new System.Drawing.Size(1200, 396);
             this.dataGridView1.TabIndex = 0;
             // 
             // BuscarVentas

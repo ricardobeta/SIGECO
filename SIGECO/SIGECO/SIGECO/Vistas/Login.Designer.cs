@@ -104,7 +104,7 @@
             this.txtUser.Location = new System.Drawing.Point(300, 83);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(431, 22);
-            this.txtUser.TabIndex = 2;
+            this.txtUser.TabIndex = 1;
             this.txtUser.Text = "USUARIO";
             this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -117,7 +117,7 @@
             this.txtPassword.Location = new System.Drawing.Point(300, 169);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(431, 22);
-            this.txtPassword.TabIndex = 3;
+            this.txtPassword.TabIndex = 2;
             this.txtPassword.Text = "CONTRASEÑA";
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -133,7 +133,7 @@
             this.bAcceder.Location = new System.Drawing.Point(300, 223);
             this.bAcceder.Name = "bAcceder";
             this.bAcceder.Size = new System.Drawing.Size(431, 40);
-            this.bAcceder.TabIndex = 4;
+            this.bAcceder.TabIndex = 3;
             this.bAcceder.Text = "ACCEDER";
             this.bAcceder.UseVisualStyleBackColor = false;
             this.bAcceder.Click += new System.EventHandler(this.bAcceder_Click);
@@ -146,7 +146,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(445, 279);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(131, 13);
-            this.linkLabel1.TabIndex = 5;
+            this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "¿Olvidaste la Contraseña?";
             // 
