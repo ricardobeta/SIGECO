@@ -158,7 +158,7 @@
             this.comboBox2.Location = new System.Drawing.Point(209, 177);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(131, 21);
-            this.comboBox2.TabIndex = 84;
+            this.comboBox2.TabIndex = 5;
             // 
             // checkBox2
             // 

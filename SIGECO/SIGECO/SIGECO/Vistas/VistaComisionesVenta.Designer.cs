@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaComisionesVenta));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bModificar = new System.Windows.Forms.Button();
+            this.pCerrar = new System.Windows.Forms.PictureBox();
             this.bBuscarF = new System.Windows.Forms.Button();
             this.lFechaFin = new System.Windows.Forms.Label();
             this.lFechaInicio = new System.Windows.Forms.Label();
@@ -39,12 +41,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pCerrar = new System.Windows.Forms.PictureBox();
-            this.bModificar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,6 +64,33 @@
             this.panel1.Size = new System.Drawing.Size(1200, 80);
             this.panel1.TabIndex = 0;
             // 
+            // bModificar
+            // 
+            this.bModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.bModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.bModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bModificar.ForeColor = System.Drawing.Color.White;
+            this.bModificar.Location = new System.Drawing.Point(1016, 39);
+            this.bModificar.Name = "bModificar";
+            this.bModificar.Size = new System.Drawing.Size(184, 25);
+            this.bModificar.TabIndex = 4;
+            this.bModificar.Text = "Generar Reporte";
+            this.bModificar.UseVisualStyleBackColor = false;
+            // 
+            // pCerrar
+            // 
+            this.pCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(239)))), ((int)(((byte)(225)))));
+            this.pCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pCerrar.Image")));
+            this.pCerrar.Location = new System.Drawing.Point(1170, 0);
+            this.pCerrar.Name = "pCerrar";
+            this.pCerrar.Size = new System.Drawing.Size(30, 30);
+            this.pCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pCerrar.TabIndex = 67;
+            this.pCerrar.TabStop = false;
+            this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
+            // 
             // bBuscarF
             // 
             this.bBuscarF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -74,7 +101,7 @@
             this.bBuscarF.Location = new System.Drawing.Point(935, 37);
             this.bBuscarF.Name = "bBuscarF";
             this.bBuscarF.Size = new System.Drawing.Size(70, 29);
-            this.bBuscarF.TabIndex = 74;
+            this.bBuscarF.TabIndex = 3;
             this.bBuscarF.Text = "Buscar";
             this.bBuscarF.UseVisualStyleBackColor = false;
             // 
@@ -105,14 +132,14 @@
             this.dtFechaFin.Location = new System.Drawing.Point(729, 45);
             this.dtFechaFin.Name = "dtFechaFin";
             this.dtFechaFin.Size = new System.Drawing.Size(200, 20);
-            this.dtFechaFin.TabIndex = 76;
+            this.dtFechaFin.TabIndex = 2;
             // 
             // dtFechaInicio
             // 
             this.dtFechaInicio.Location = new System.Drawing.Point(381, 46);
             this.dtFechaInicio.Name = "dtFechaInicio";
             this.dtFechaInicio.Size = new System.Drawing.Size(200, 20);
-            this.dtFechaInicio.TabIndex = 75;
+            this.dtFechaInicio.TabIndex = 1;
             // 
             // label2
             // 
@@ -155,33 +182,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1200, 470);
             this.dataGridView1.TabIndex = 0;
             // 
-            // pCerrar
-            // 
-            this.pCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(239)))), ((int)(((byte)(225)))));
-            this.pCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pCerrar.Image")));
-            this.pCerrar.Location = new System.Drawing.Point(1170, 0);
-            this.pCerrar.Name = "pCerrar";
-            this.pCerrar.Size = new System.Drawing.Size(30, 30);
-            this.pCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pCerrar.TabIndex = 67;
-            this.pCerrar.TabStop = false;
-            this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
-            // 
-            // bModificar
-            // 
-            this.bModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.bModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.bModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bModificar.ForeColor = System.Drawing.Color.White;
-            this.bModificar.Location = new System.Drawing.Point(1016, 39);
-            this.bModificar.Name = "bModificar";
-            this.bModificar.Size = new System.Drawing.Size(184, 25);
-            this.bModificar.TabIndex = 79;
-            this.bModificar.Text = "Generar Reporte";
-            this.bModificar.UseVisualStyleBackColor = false;
-            // 
             // VistaComisionesVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,9 +195,9 @@
             this.Text = "VistaComisionesVenta";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }

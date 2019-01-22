@@ -89,7 +89,7 @@
             this.textBox1.Location = new System.Drawing.Point(144, 46);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(444, 21);
-            this.textBox1.TabIndex = 66;
+            this.textBox1.TabIndex = 1;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
@@ -123,7 +123,7 @@
             this.button2.Location = new System.Drawing.Point(600, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(325, 40);
-            this.button2.TabIndex = 19;
+            this.button2.TabIndex = 3;
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -137,7 +137,7 @@
             this.bModificar.Location = new System.Drawing.Point(275, 5);
             this.bModificar.Name = "bModificar";
             this.bModificar.Size = new System.Drawing.Size(325, 40);
-            this.bModificar.TabIndex = 18;
+            this.bModificar.TabIndex = 2;
             this.bModificar.Text = "Modificar";
             this.bModificar.UseVisualStyleBackColor = false;
             this.bModificar.Click += new System.EventHandler(this.bModificar_Click);
