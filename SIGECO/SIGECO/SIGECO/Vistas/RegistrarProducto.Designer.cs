@@ -31,6 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,8 +44,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -85,6 +85,27 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(650, 550);
             this.panel3.TabIndex = 2;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.richTextBox1.Location = new System.Drawing.Point(153, 233);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(350, 76);
+            this.richTextBox1.TabIndex = 62;
+            this.richTextBox1.Text = "";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label3.Location = new System.Drawing.Point(150, 103);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(149, 16);
+            this.label3.TabIndex = 61;
+            this.label3.Text = "¿Existe el Producto?";
             // 
             // textBox2
             // 
@@ -208,27 +229,6 @@
             this.button1.TabIndex = 27;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label3.Location = new System.Drawing.Point(150, 103);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 16);
-            this.label3.TabIndex = 61;
-            this.label3.Text = "¿Existe el Producto?";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.richTextBox1.Location = new System.Drawing.Point(153, 233);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(350, 76);
-            this.richTextBox1.TabIndex = 62;
-            this.richTextBox1.Text = "";
             // 
             // RegistrarProducto
             // 

@@ -92,6 +92,16 @@ namespace SIGECO.Vistas
             AbrirFormulario<BuscarCliente>();
         }
 
+        private void buscaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<BuscarEmpleado>();
+        }
+
+        private void buscarProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void pMaximizar_Click(object sender, EventArgs e)
         {
             lx = this.Location.X;

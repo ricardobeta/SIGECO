@@ -1,6 +1,6 @@
 ﻿namespace SIGECO.Vistas
 {
-    partial class BuscarEmpleados
+    partial class BuscarEmpleado
     {
         /// <summary>
         /// Required designer variable.
