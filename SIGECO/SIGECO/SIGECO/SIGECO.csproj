@@ -64,6 +64,12 @@
     <Compile Include="Vistas\AgregarPago.Designer.cs">
       <DependentUpon>AgregarPago.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\AgregarPagoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\AgregarPagoEmpleado.Designer.cs">
+      <DependentUpon>AgregarPagoEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\AgregarPersonaNatural.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\AgregarPago.resx">
       <DependentUpon>AgregarPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\AgregarPagoEmpleado.resx">
+      <DependentUpon>AgregarPagoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\AgregarPersonaNatural.resx">
       <DependentUpon>AgregarPersonaNatural.cs</DependentUpon>

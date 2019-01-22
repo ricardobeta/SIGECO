@@ -161,6 +161,16 @@ namespace SIGECO.Vistas
             
         }
 
+        private void registrarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<RegistrarEmpleado>();
+        }
+
+        private void buscarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<BuscarEmpleado>();
+        }
+
         private void pMaximizar_Click(object sender, EventArgs e)
         {
             lx = this.Location.X;

@@ -34,5 +34,12 @@ namespace SIGECO.Vistas
             vista.Show();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AgregarPagoEmpleado vista = new AgregarPagoEmpleado();
+            vista.ShowDialog();
+
+        }
     }
 }
