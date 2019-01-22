@@ -38,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -69,6 +68,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -95,6 +95,7 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.comboBox2);
             this.panel3.Controls.Add(this.checkBox2);
             this.panel3.Controls.Add(this.label20);
             this.panel3.Controls.Add(this.label19);
@@ -102,7 +103,6 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.textBox4);
             this.panel3.Controls.Add(this.label18);
-            this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.label17);
             this.panel3.Controls.Add(this.label16);
             this.panel3.Controls.Add(this.label15);
@@ -209,16 +209,6 @@
             this.label18.TabIndex = 77;
             this.label18.Text = "Comentario";
             // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(209, 177);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(234, 21);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label17
             // 
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -226,9 +216,9 @@
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(33, 182);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(46, 16);
+            this.label17.Size = new System.Drawing.Size(110, 16);
             this.label17.TabIndex = 75;
-            this.label17.Text = "*Tipo";
+            this.label17.Text = "*Tipo de venta";
             // 
             // label16
             // 
@@ -394,11 +384,11 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label8.Location = new System.Drawing.Point(460, 277);
+            this.label8.Location = new System.Drawing.Point(450, 277);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(12, 16);
+            this.label8.Size = new System.Drawing.Size(195, 16);
             this.label8.TabIndex = 64;
-            this.label8.Text = ".";
+            this.label8.Text = "¿Ya existe el # de Factura?";
             // 
             // textBox2
             // 
@@ -451,9 +441,9 @@
             this.label4.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label4.Location = new System.Drawing.Point(359, 69);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(12, 16);
+            this.label4.Size = new System.Drawing.Size(153, 16);
             this.label4.TabIndex = 60;
-            this.label4.Text = ".";
+            this.label4.Text = "¿Existe el vendedor?";
             // 
             // textBox1
             // 
@@ -537,6 +527,14 @@
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(209, 177);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(131, 21);
+            this.comboBox2.TabIndex = 84;
+            // 
             // AgregarVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -583,7 +581,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
@@ -600,5 +597,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn cDescripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn cPrecio;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

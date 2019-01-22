@@ -62,6 +62,7 @@
             this.contenedor = new System.Windows.Forms.Panel();
             this.pLogo = new System.Windows.Forms.PictureBox();
             this.pRestaurar = new System.Windows.Forms.PictureBox();
+            this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bMinimizar)).BeginInit();
@@ -151,6 +152,7 @@
             // 
             // empresaToolStripMenuItem
             // 
+            this.empresaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("empresaToolStripMenuItem.Image")));
             this.empresaToolStripMenuItem.Name = "empresaToolStripMenuItem";
             this.empresaToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
             this.empresaToolStripMenuItem.Text = "Empresa";
@@ -158,6 +160,7 @@
             // 
             // buscarClienteToolStripMenuItem
             // 
+            this.buscarClienteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("buscarClienteToolStripMenuItem.Image")));
             this.buscarClienteToolStripMenuItem.Name = "buscarClienteToolStripMenuItem";
             this.buscarClienteToolStripMenuItem.Size = new System.Drawing.Size(203, 30);
             this.buscarClienteToolStripMenuItem.Text = "Buscar Clientes";
@@ -216,6 +219,7 @@
             // 
             // nuevoEmpleadoToolStripMenuItem
             // 
+            this.nuevoEmpleadoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("nuevoEmpleadoToolStripMenuItem.Image")));
             this.nuevoEmpleadoToolStripMenuItem.Name = "nuevoEmpleadoToolStripMenuItem";
             this.nuevoEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
             this.nuevoEmpleadoToolStripMenuItem.Text = "Registrar Empleado";
@@ -223,6 +227,7 @@
             // 
             // buscaToolStripMenuItem
             // 
+            this.buscaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("buscaToolStripMenuItem.Image")));
             this.buscaToolStripMenuItem.Name = "buscaToolStripMenuItem";
             this.buscaToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
             this.buscaToolStripMenuItem.Text = "Buscar Empleado";
@@ -255,14 +260,15 @@
             // 
             this.toolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem3.Image")));
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(211, 26);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(219, 30);
             this.toolStripMenuItem3.Text = "Nuevo Producto";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // buscarProductosToolStripMenuItem
             // 
+            this.buscarProductosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("buscarProductosToolStripMenuItem.Image")));
             this.buscarProductosToolStripMenuItem.Name = "buscarProductosToolStripMenuItem";
-            this.buscarProductosToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.buscarProductosToolStripMenuItem.Size = new System.Drawing.Size(219, 30);
             this.buscarProductosToolStripMenuItem.Text = "Buscar Productos";
             // 
             // toolStripMenuItem10
@@ -287,14 +293,15 @@
             // 
             this.toolStripMenuItem11.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem11.Image")));
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(185, 26);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(193, 30);
             this.toolStripMenuItem11.Text = "Nueva Venta";
             this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
             // buscarVentasToolStripMenuItem
             // 
+            this.buscarVentasToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("buscarVentasToolStripMenuItem.Image")));
             this.buscarVentasToolStripMenuItem.Name = "buscarVentasToolStripMenuItem";
-            this.buscarVentasToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.buscarVentasToolStripMenuItem.Size = new System.Drawing.Size(193, 30);
             this.buscarVentasToolStripMenuItem.Text = "Buscar Ventas";
             // 
             // toolStripMenuItem8
@@ -391,8 +398,11 @@
             // 
             this.toolStripMenuItem4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripMenuItem4.AutoSize = false;
+            this.toolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manualDeUsuarioToolStripMenuItem});
             this.toolStripMenuItem4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(200)))), ((int)(((byte)(12)))));
+            this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
             this.toolStripMenuItem4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem4.Margin = new System.Windows.Forms.Padding(0, -2, 0, 0);
@@ -436,6 +446,12 @@
             this.pRestaurar.TabStop = false;
             this.pRestaurar.Visible = false;
             this.pRestaurar.Click += new System.EventHandler(this.pRestaurar_Click);
+            // 
+            // manualDeUsuarioToolStripMenuItem
+            // 
+            this.manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
+            this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.manualDeUsuarioToolStripMenuItem.Text = "Manual de Usuario";
             // 
             // Principal
             // 
@@ -502,5 +518,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem12;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem13;
+        private System.Windows.Forms.ToolStripMenuItem manualDeUsuarioToolStripMenuItem;
     }
 }

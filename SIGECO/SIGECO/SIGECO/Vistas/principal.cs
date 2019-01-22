@@ -89,7 +89,7 @@ namespace SIGECO.Vistas
 
         private void buscarClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<ConsultarCliente>();
+            AbrirFormulario<BuscarCliente>();
         }
 
         private void pMaximizar_Click(object sender, EventArgs e)

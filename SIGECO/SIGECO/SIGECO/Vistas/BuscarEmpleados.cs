@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SIGECO.Vistas
 {
-    public partial class ConsultarCliente : Form
+    public partial class BuscarEmpleados : Form
     {
-        public ConsultarCliente()
+        public BuscarEmpleados()
         {
             InitializeComponent();
         }

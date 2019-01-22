@@ -59,6 +59,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             this.panel4.SuspendLayout();
@@ -82,6 +83,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.pCerrar);
             this.panel3.Controls.Add(this.textBox10);
             this.panel3.Controls.Add(this.textBox9);
@@ -401,6 +403,18 @@
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label14.Location = new System.Drawing.Point(258, 125);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(12, 16);
+            this.label14.TabIndex = 62;
+            this.label14.Text = ".";
+            // 
             // AgregarClienteEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -453,5 +467,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pCerrar;
+        private System.Windows.Forms.Label label14;
     }
 }
