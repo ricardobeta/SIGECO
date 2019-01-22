@@ -428,6 +428,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AgregarClienteEmpresa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarClienteEmpresa";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

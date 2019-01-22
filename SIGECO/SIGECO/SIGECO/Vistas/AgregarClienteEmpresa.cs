@@ -17,6 +17,12 @@ namespace SIGECO.Vistas
             InitializeComponent();
         }
 
+        public AgregarClienteEmpresa(String mod)
+        {
+            InitializeComponent();
+            label1.Text = mod;
+
+        }
         private void pCerrar_Click(object sender, EventArgs e)
         {
             DialogResult resultado;

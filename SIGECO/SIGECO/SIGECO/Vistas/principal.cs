@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -143,6 +145,20 @@ namespace SIGECO.Vistas
         private void toolStripMenuItem12_Click(object sender, EventArgs e)
         {
             AbrirFormulario<VistaOperaciones>();
+        }
+
+        private void manualDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string pdfPath = Path.Combine(Application.StartupPath, "archivo.pdf");
+
+            Process.Start(pdfPath);
+        }
+
+        private void informaciónDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado;
+            resultado = MessageBox.Show("La aplicación SIGECO se encuentra en su prototipo 1", " Informacion del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
         }
 
         private void pMaximizar_Click(object sender, EventArgs e)

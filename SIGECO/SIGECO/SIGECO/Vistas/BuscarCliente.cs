@@ -20,7 +20,19 @@ namespace SIGECO.Vistas
 
         private void bModificar_Click(object sender, EventArgs e)
         {
+            if (cbTipoCliente.SelectedIndex.ToString().CompareTo("1") == 0)
+            {
+                String mod = "Modificar Cliente Persona Natural";
+                AgregarPersonaNatural vista = new AgregarPersonaNatural(mod);
+                vista.ShowDialog();
+            }
+            else if (cbTipoCliente.SelectedIndex.ToString().CompareTo("2") == 0) {
 
+                String mod = "Modificar Cliente Empresa";
+                AgregarClienteEmpresa vista = new AgregarClienteEmpresa(mod);
+                vista.ShowDialog();
+
+            }
         }
 
         private void llenarCBTipocliente()

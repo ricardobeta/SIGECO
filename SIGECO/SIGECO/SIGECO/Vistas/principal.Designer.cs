@@ -64,6 +64,7 @@
             this.pRestaurar = new System.Windows.Forms.PictureBox();
             this.empleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informaciónDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bMinimizar)).BeginInit();
@@ -403,7 +404,8 @@
             this.toolStripMenuItem4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripMenuItem4.AutoSize = false;
             this.toolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.manualDeUsuarioToolStripMenuItem});
+            this.manualDeUsuarioToolStripMenuItem,
+            this.informaciónDelSistemaToolStripMenuItem});
             this.toolStripMenuItem4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(200)))), ((int)(((byte)(12)))));
             this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
@@ -418,8 +420,9 @@
             // manualDeUsuarioToolStripMenuItem
             // 
             this.manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
-            this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
             this.manualDeUsuarioToolStripMenuItem.Text = "Manual de Usuario";
+            this.manualDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.manualDeUsuarioToolStripMenuItem_Click);
             // 
             // contenedor
             // 
@@ -470,6 +473,13 @@
             this.ventaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.ventaToolStripMenuItem.Text = "Venta";
             this.ventaToolStripMenuItem.Click += new System.EventHandler(this.ventaToolStripMenuItem_Click);
+            // 
+            // informaciónDelSistemaToolStripMenuItem
+            // 
+            this.informaciónDelSistemaToolStripMenuItem.Name = "informaciónDelSistemaToolStripMenuItem";
+            this.informaciónDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
+            this.informaciónDelSistemaToolStripMenuItem.Text = "Información del Sistema";
+            this.informaciónDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.informaciónDelSistemaToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -538,5 +548,6 @@
         private System.Windows.Forms.ToolStripMenuItem manualDeUsuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem empleadoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem informaciónDelSistemaToolStripMenuItem;
     }
 }

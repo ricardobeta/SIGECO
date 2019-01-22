@@ -19,6 +19,11 @@ namespace SIGECO.Vistas
            
         }
 
+        public AgregarVenta(String mod)
+        {
+            InitializeComponent();
+            label1.Text = mod;
+        }
         private void verificar(object sender, KeyPressEventArgs e)
         {
 

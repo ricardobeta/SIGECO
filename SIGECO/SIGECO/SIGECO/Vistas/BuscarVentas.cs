@@ -84,5 +84,12 @@ namespace SIGECO.Vistas
                 this.Close();
             }
         }
+
+        private void bModificar_Click(object sender, EventArgs e)
+        {
+            string mod = "Modificar Venta";
+            AgregarVenta vista = new AgregarVenta(mod);
+            vista.Show();
+        }
     }
 }
