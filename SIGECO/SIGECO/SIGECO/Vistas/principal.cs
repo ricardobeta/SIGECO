@@ -38,7 +38,12 @@ namespace SIGECO.Vistas
 
         private void pCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult resultado;
+            resultado = MessageBox.Show("Esta seguro en cerrar la Aplicación?"," Esta Cerrando la aplicación",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation);
+            if (resultado == System.Windows.Forms.DialogResult.Yes) {
+                Application.Exit();
+            }
+            
         }
 
         //Capturar posicion y tamaño antes de maximizar para restaurar
@@ -71,10 +76,7 @@ namespace SIGECO.Vistas
 
         private void nuevoEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<RegistrarEmpleado>();
-            
-            
-            
+            AbrirFormulario<RegistrarEmpleado>();   
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
@@ -99,7 +101,48 @@ namespace SIGECO.Vistas
 
         private void buscarProductosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            AbrirFormulario<BuscarProductos>();
+        }
 
+        private void buscarVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<BuscarVentas>();
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<VistaAdministradorUsuarios>();
+        }
+
+        private void empleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<VistaComisionesEmpleados>();
+        }
+
+        private void ventaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<VistaComisionesVenta>();
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<VistaCobranzas>();
+        }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<VistaDepartamento>();
+
+        }
+
+        private void toolStripMenuItem13_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<VistaRango>();
+        }
+
+        private void toolStripMenuItem12_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<VistaOperaciones>();
         }
 
         private void pMaximizar_Click(object sender, EventArgs e)

@@ -16,5 +16,22 @@ namespace SIGECO.Vistas
         {
             InitializeComponent();
         }
+
+        private void bAcceder_Click(object sender, EventArgs e)
+        {
+            Principal vista = new Principal();
+            vista.Show();
+            this.Hide();
+        }
+
+        private void pCerrar_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado;
+            resultado = MessageBox.Show("Esta seguro que desea cerrar la Aplicación?", " Esta Cerrando la aplicación", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+            if (resultado == System.Windows.Forms.DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

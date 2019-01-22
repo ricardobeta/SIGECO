@@ -136,6 +136,7 @@
             this.bAcceder.TabIndex = 4;
             this.bAcceder.Text = "ACCEDER";
             this.bAcceder.UseVisualStyleBackColor = false;
+            this.bAcceder.Click += new System.EventHandler(this.bAcceder_Click);
             // 
             // linkLabel1
             // 
@@ -151,6 +152,7 @@
             // 
             // pCerrar
             // 
+            this.pCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pCerrar.Image")));
             this.pCerrar.Location = new System.Drawing.Point(753, 3);
             this.pCerrar.Name = "pCerrar";
@@ -158,6 +160,7 @@
             this.pCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pCerrar.TabIndex = 6;
             this.pCerrar.TabStop = false;
+            this.pCerrar.Click += new System.EventHandler(this.pCerrar_Click);
             // 
             // Login
             // 

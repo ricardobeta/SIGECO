@@ -58,6 +58,12 @@
     <Compile Include="Vistas\AgregarClienteEmpresa.Designer.cs">
       <DependentUpon>AgregarClienteEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\AgregarPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\AgregarPago.Designer.cs">
+      <DependentUpon>AgregarPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\AgregarPersonaNatural.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,11 +94,23 @@
     <Compile Include="Vistas\BuscarProductos.Designer.cs">
       <DependentUpon>BuscarProductos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Form1.cs">
+    <Compile Include="Vistas\BuscarVentas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Vistas\BuscarVentas.Designer.cs">
+      <DependentUpon>BuscarVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaCobranzas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaCobranzas.Designer.cs">
+      <DependentUpon>VistaCobranzas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaComisionesEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaComisionesEmpleados.Designer.cs">
+      <DependentUpon>VistaComisionesEmpleados.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Login.cs">
       <SubType>Form</SubType>
@@ -118,11 +136,41 @@
     <Compile Include="Vistas\RegistrarProducto.Designer.cs">
       <DependentUpon>RegistrarProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\AgregarRetencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\AgregarRetencion.Designer.cs">
+      <DependentUpon>AgregarRetencion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\VistaAdministradorUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\VistaAdministradorUsuarios.Designer.cs">
       <DependentUpon>VistaAdministradorUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaComisionesVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaComisionesVenta.Designer.cs">
+      <DependentUpon>VistaComisionesVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaDepartamento.Designer.cs">
+      <DependentUpon>VistaDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaOperaciones.Designer.cs">
+      <DependentUpon>VistaOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\VistaRango.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\VistaRango.Designer.cs">
+      <DependentUpon>VistaRango.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -136,8 +184,14 @@
     <EmbeddedResource Include="Vistas\AgregarClienteEmpresa.resx">
       <DependentUpon>AgregarClienteEmpresa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\AgregarPago.resx">
+      <DependentUpon>AgregarPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\AgregarPersonaNatural.resx">
       <DependentUpon>AgregarPersonaNatural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\AgregarRetencion.resx">
+      <DependentUpon>AgregarRetencion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\AgregarVenta.resx">
       <DependentUpon>AgregarVenta.cs</DependentUpon>
@@ -151,8 +205,14 @@
     <EmbeddedResource Include="Vistas\BuscarProductos.resx">
       <DependentUpon>BuscarProductos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\BuscarVentas.resx">
+      <DependentUpon>BuscarVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaCobranzas.resx">
+      <DependentUpon>VistaCobranzas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaComisionesEmpleados.resx">
+      <DependentUpon>VistaComisionesEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -168,6 +228,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\VistaAdministradorUsuarios.resx">
       <DependentUpon>VistaAdministradorUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaComisionesVenta.resx">
+      <DependentUpon>VistaComisionesVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaDepartamento.resx">
+      <DependentUpon>VistaDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaOperaciones.resx">
+      <DependentUpon>VistaOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\VistaRango.resx">
+      <DependentUpon>VistaRango.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
