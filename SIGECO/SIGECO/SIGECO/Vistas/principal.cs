@@ -157,7 +157,7 @@ namespace SIGECO.Vistas
         private void informaciónDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult resultado;
-            resultado = MessageBox.Show("La aplicación SIGECO se encuentra en su prototipo 1", " Informacion del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            resultado = MessageBox.Show("La aplicación SIGECO se encuentra en su prototipo 1", " Información del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
         }
 
