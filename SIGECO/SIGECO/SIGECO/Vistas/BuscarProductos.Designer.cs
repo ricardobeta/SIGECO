@@ -100,9 +100,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(463, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 31);
+            this.label1.Size = new System.Drawing.Size(280, 31);
             this.label1.TabIndex = 68;
-            this.label1.Text = "Buscar Productos";
+            this.label1.Text = "Consultar Productos";
             // 
             // panel2
             // 

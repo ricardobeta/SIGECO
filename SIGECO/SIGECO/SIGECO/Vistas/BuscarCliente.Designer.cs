@@ -125,9 +125,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(480, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 31);
+            this.label1.Size = new System.Drawing.Size(255, 31);
             this.label1.TabIndex = 43;
-            this.label1.Text = "Buscar Clientes";
+            this.label1.Text = "Consultar Clientes";
             // 
             // panel2
             // 

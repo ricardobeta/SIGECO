@@ -19,7 +19,9 @@ namespace SIGECO.Vistas
 
         private void bAcceder_Click(object sender, EventArgs e)
         {
+            String user = txtUser.Text;
             Principal vista = new Principal();
+            MessageBox.Show("Bienvenido "+user, " Ingreso satisfactorio", MessageBoxButtons.OK, MessageBoxIcon.Information);
             vista.Show();
             this.Hide();
         }
