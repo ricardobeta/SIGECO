@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace SIGECO.Vistas
 {
-    public partial class AgregarPersonaNatural : Form
+    public partial class RegistroDeClienteNatural : Form
     {
-        public AgregarPersonaNatural()
+        public RegistroDeClienteNatural()
         {
             InitializeComponent();
         }
-        public AgregarPersonaNatural(String mod)
+        public RegistroDeClienteNatural(String mod)
         {
             InitializeComponent();
             lTitulo.Text = mod;
@@ -43,6 +43,16 @@ namespace SIGECO.Vistas
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AgregarPersonaNatural_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

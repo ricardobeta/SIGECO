@@ -67,7 +67,7 @@ namespace SIGECO.Vistas
 
         private void personaNaturalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<AgregarPersonaNatural>();
+            AbrirFormulario<RegistroDeClienteNatural>();
         }
 
         private void empresaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -169,6 +169,16 @@ namespace SIGECO.Vistas
         private void buscarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirFormulario<BuscarEmpleado>();
+        }
+
+        private void nuevoClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<RegistroDeClienteNatural>();
         }
 
         private void pMaximizar_Click(object sender, EventArgs e)

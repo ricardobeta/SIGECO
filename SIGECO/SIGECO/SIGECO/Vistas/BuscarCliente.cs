@@ -23,7 +23,7 @@ namespace SIGECO.Vistas
             if (cbTipoCliente.SelectedIndex.ToString().CompareTo("1") == 0)
             {
                 String mod = "Modificar Cliente Persona Natural";
-                AgregarPersonaNatural vista = new AgregarPersonaNatural(mod);
+                RegistroDeClienteNatural vista = new RegistroDeClienteNatural(mod);
                 vista.ShowDialog();
             }
             else if (cbTipoCliente.SelectedIndex.ToString().CompareTo("2") == 0) {
