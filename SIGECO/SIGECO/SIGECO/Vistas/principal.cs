@@ -67,13 +67,7 @@ namespace SIGECO.Vistas
 
         private void personaNaturalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<RegistroDeClienteNatural>();
-        }
-
-        private void empresaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<AgregarClienteEmpresa>();
-
+            AbrirFormulario<RegistroClienteNatural>();
         }
 
         private void nuevoEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -89,11 +83,6 @@ namespace SIGECO.Vistas
         private void toolStripMenuItem11_Click(object sender, EventArgs e)
         {
             AbrirFormulario<AgregarVenta>();
-        }
-
-        private void buscarClienteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<BuscarCliente>();
         }
 
         private void buscaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -178,7 +167,47 @@ namespace SIGECO.Vistas
 
         private void registrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<RegistroDeClienteNatural>();
+            AbrirFormulario<RegistroClienteNatural>();
+        }
+
+        private void registrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<RegistroDeEmpresa>();
+        }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ConsultaClienteNatural>();
+        }
+
+        private void consultarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ConsultaClienteNatural>();
+        }
+
+        private void modificarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ModificacionClienteNatural>();
+        }
+
+        private void eliminarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<EliminacionClienteNatural>();
+        }
+
+        private void bClientes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ModificacionClienteNatural>();
+        }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<EliminacionClienteNatural>();
         }
 
         private void pMaximizar_Click(object sender, EventArgs e)

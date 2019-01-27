@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace SIGECO.Vistas
 {
-    public partial class RegistroDeClienteNatural : Form
+    public partial class RegistroDeEmpresa : Form
     {
-        public RegistroDeClienteNatural()
+        public RegistroDeEmpresa()
         {
             InitializeComponent();
         }
-        public RegistroDeClienteNatural(String mod)
+        public RegistroDeEmpresa(String mod)
         {
             InitializeComponent();
             lTitulo.Text = mod;
-            
+
         }
         private void pCerrar_Click(object sender, EventArgs e)
         {
@@ -58,6 +58,16 @@ namespace SIGECO.Vistas
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
         {
 
         }

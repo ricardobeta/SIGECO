@@ -10,18 +10,17 @@ using System.Windows.Forms;
 
 namespace SIGECO.Vistas
 {
-    public partial class AgregarClienteEmpresa : Form
+    public partial class RegistroClienteNatural : Form
     {
-        public AgregarClienteEmpresa()
+        public RegistroClienteNatural()
         {
             InitializeComponent();
         }
-
-        public AgregarClienteEmpresa(String mod)
+        public RegistroClienteNatural(String mod)
         {
             InitializeComponent();
-            label1.Text = mod;
-
+            lTitulo.Text = mod;
+            
         }
         private void pCerrar_Click(object sender, EventArgs e)
         {
@@ -33,22 +32,27 @@ namespace SIGECO.Vistas
             }
         }
 
-        private void label11_Click(object sender, EventArgs e)
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void AgregarPersonaNatural_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
