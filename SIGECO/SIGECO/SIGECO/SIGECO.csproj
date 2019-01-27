@@ -52,12 +52,6 @@
     <Compile Include="Modelo\Producto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vistas\AgregarClienteEmpresa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\AgregarClienteEmpresa.Designer.cs">
-      <DependentUpon>AgregarClienteEmpresa.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\AgregarPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,23 +64,35 @@
     <Compile Include="Vistas\AgregarPagoEmpleado.Designer.cs">
       <DependentUpon>AgregarPagoEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\RegistroDeClienteNatural.cs">
+    <Compile Include="Vistas\ConsultaClienteNatural.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\RegistroDeClienteNatural.Designer.cs">
-      <DependentUpon>RegistroDeClienteNatural.cs</DependentUpon>
+    <Compile Include="Vistas\ConsultaClienteNatural.Designer.cs">
+      <DependentUpon>ConsultaClienteNatural.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EliminacionClienteNatural.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminacionClienteNatural.Designer.cs">
+      <DependentUpon>EliminacionClienteNatural.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ModificacionClienteNatural.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionClienteNatural.Designer.cs">
+      <DependentUpon>ModificacionClienteNatural.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\RegistroClienteNatural.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\RegistroClienteNatural.Designer.cs">
+      <DependentUpon>RegistroClienteNatural.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\AgregarVenta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\AgregarVenta.Designer.cs">
       <DependentUpon>AgregarVenta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\BuscarCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\BuscarCliente.Designer.cs">
-      <DependentUpon>BuscarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\BuscarEmpleado.cs">
       <SubType>Form</SubType>
@@ -105,6 +111,12 @@
     </Compile>
     <Compile Include="Vistas\BuscarVentas.Designer.cs">
       <DependentUpon>BuscarVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\RegistroDeEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\RegistroDeEmpresa.Designer.cs">
+      <DependentUpon>RegistroDeEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\VistaCobranzas.cs">
       <SubType>Form</SubType>
@@ -187,26 +199,29 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vistas\AgregarClienteEmpresa.resx">
-      <DependentUpon>AgregarClienteEmpresa.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\AgregarPago.resx">
       <DependentUpon>AgregarPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\AgregarPagoEmpleado.resx">
       <DependentUpon>AgregarPagoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\RegistroDeClienteNatural.resx">
-      <DependentUpon>RegistroDeClienteNatural.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\ConsultaClienteNatural.resx">
+      <DependentUpon>ConsultaClienteNatural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionClienteNatural.resx">
+      <DependentUpon>EliminacionClienteNatural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionClienteNatural.resx">
+      <DependentUpon>ModificacionClienteNatural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\RegistroClienteNatural.resx">
+      <DependentUpon>RegistroClienteNatural.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\AgregarRetencion.resx">
       <DependentUpon>AgregarRetencion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\AgregarVenta.resx">
       <DependentUpon>AgregarVenta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\BuscarCliente.resx">
-      <DependentUpon>BuscarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\BuscarEmpleado.resx">
       <DependentUpon>BuscarEmpleado.cs</DependentUpon>
@@ -216,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\BuscarVentas.resx">
       <DependentUpon>BuscarVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\RegistroDeEmpresa.resx">
+      <DependentUpon>RegistroDeEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\VistaCobranzas.resx">
       <DependentUpon>VistaCobranzas.cs</DependentUpon>

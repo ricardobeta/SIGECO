@@ -50,12 +50,9 @@ C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\bin\Debug\SIGECO.pdb
 C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.csprojAssemblyReference.cache
 C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Properties.Resources.resources
-C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.AgregarClienteEmpresa.resources
 C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.AgregarPago.resources
-C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.AgregarPersonaNatural.resources
 C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.AgregarRetencion.resources
 C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.AgregarVenta.resources
-C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.BuscarCliente.resources
 C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.BuscarEmpleado.resources
 C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.BuscarProductos.resources
 C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.BuscarVentas.resources
@@ -76,3 +73,9 @@ C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.cspr
 C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.exe
 C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.pdb
 C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.AgregarPagoEmpleado.resources
+C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.AgregarPagoEmpleado.resources
+C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.ConsultaClienteNatural.resources
+C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.EliminacionClienteNatural.resources
+C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.ModificacionClienteNatural.resources
+C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.RegistroClienteNatural.resources
+C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.RegistroDeEmpresa.resources
