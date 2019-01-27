@@ -35,5 +35,40 @@ namespace SIGECO.Vistas
                 Application.Exit();
             }
         }
+
+        private void txtUser_Click(object sender, EventArgs e)
+        {
+            if(txtUser.Text.Equals("USUARIO"))
+            {
+                txtUser.Text = "";
+            }
+            
+        }
+
+        private void txtPassword_Click(object sender, EventArgs e)
+        {
+            if(txtPassword.Text.Equals("CONTRASEÑA"))
+            {
+                txtPassword.Text = "";
+                txtPassword.PasswordChar = '*';
+            }
+        }
+
+        private void txtUser_Leave(object sender, EventArgs e)
+        {
+            if (txtPassword.Text.Equals("CONTRASEÑA"))
+            {
+                txtPassword.Text = "";
+                txtPassword.PasswordChar = '*';
+            }
+        }
+
+        private void txtUser_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txtPassword.Text.Equals("CONTRASEÑA") && txtUser.Text.Equals("USUARIO"))
+            {
+                txtUser.Text = "";
+            }
+        }
     }
 }

@@ -107,6 +107,9 @@
             this.txtUser.TabIndex = 1;
             this.txtUser.Text = "USUARIO";
             this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUser.Click += new System.EventHandler(this.txtUser_Click);
+            this.txtUser.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtUser_KeyUp);
+            this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
             // txtPassword
             // 
@@ -120,6 +123,7 @@
             this.txtPassword.TabIndex = 2;
             this.txtPassword.Text = "CONTRASEÑA";
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             // 
             // bAcceder
             // 

@@ -121,7 +121,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOwAAABXCAYAAAAH3qmiAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAAJvFJREFUeF7t3YW7HNX5B/D+AcSVCAnuHtwhuLu7uwQJBA+QQHAIDgECBGihUKUt
+        cgAAEnIBXmVb4wAAJvFJREFUeF7t3YW7HNX5B/D+AcSVCAnuHtwhuLu7uwQJBA+QQHAIDgECBGihUKUt
         0EJboGih1L3U3b09v/M56eQ3LDO7c/fuJncvO88zz967O3PmzDnv97z+ng8stdRSoXt2x6BLA51BAx/o
         TlRnTFR3nrrzhAa6gO1KGF0Jq4NooAvYDpqsLpftctkuYLuA7XLYDqKBLmA7aLK6HLbLYbuA7QK2y2E7
         iAa6gO2gyepy2C6HXeSAXXOdCWHrXceF/U9YPJxw6cgw7bZh4cpHh4SbPjk43Pn8wPDA6wPCw19ZLDzy
@@ -290,6 +290,24 @@
         oMnqFC7Q7Wf7JIEuYLuA7XLYDqKB/wMfv3DCIMD9UQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="lineShape2.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>300, 193, 430, 0</value>
+  </metadata>
+  <metadata name="lineShape2.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>300, 193</value>
+  </metadata>
+  <metadata name="lineShape2.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>430, 0</value>
+  </metadata>
+  <metadata name="lineShape1.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>300, 107, 430, 0</value>
+  </metadata>
+  <metadata name="lineShape1.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>300, 107</value>
+  </metadata>
+  <metadata name="lineShape1.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>430, 0</value>
+  </metadata>
   <metadata name="lineShape2.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>300, 193, 430, 0</value>
   </metadata>
