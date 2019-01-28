@@ -49,6 +49,15 @@ namespace SIGECO.Vistas
 
         private void AgregarPersonaNatural_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'sIGECODataSet.Pais' table. You can move, or remove it, as needed.
+            try
+            {
+                //this.paisTableAdapter.Fill(this.sIGECODataSet.Pais);
+            }
+            catch (Exception)
+            {
+
+            }
 
         }
 
@@ -184,6 +193,11 @@ namespace SIGECO.Vistas
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

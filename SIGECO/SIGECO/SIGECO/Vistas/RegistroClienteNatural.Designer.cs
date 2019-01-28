@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
@@ -61,10 +62,15 @@
             this.textBox8Correo = new System.Windows.Forms.TextBox();
             this.textBox6RUC = new System.Windows.Forms.TextBox();
             this.lTitulo = new System.Windows.Forms.Label();
+            this.sIGECODataSet = new SIGECO.SIGECODataSet();
+            this.paisBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.paisTableAdapter = new SIGECO.SIGECODataSetTableAdapters.PaisTableAdapter();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sIGECODataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paisBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -398,12 +404,16 @@
             // comboBox1
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.comboBox1.DataSource = this.paisBindingSource;
+            this.comboBox1.DisplayMember = "Nombre";
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(406, 70);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(199, 26);
             this.comboBox1.TabIndex = 9;
+            this.comboBox1.ValueMember = "Nombre";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // labelPais
             // 
@@ -461,6 +471,20 @@
             this.lTitulo.Text = "REGISTRO DE CLIENTE NATURAL";
             this.lTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // sIGECODataSet
+            // 
+            this.sIGECODataSet.DataSetName = "SIGECODataSet";
+            this.sIGECODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // paisBindingSource
+            // 
+            this.paisBindingSource.DataMember = "Pais";
+            this.paisBindingSource.DataSource = this.sIGECODataSet;
+            // 
+            // paisTableAdapter
+            // 
+            this.paisTableAdapter.ClearBeforeFill = true;
+            // 
             // RegistroClienteNatural
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -481,6 +505,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sIGECODataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paisBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -519,5 +545,8 @@
         private System.Windows.Forms.Label validarCedula;
         private System.Windows.Forms.Label validarCorreo;
         private System.Windows.Forms.Label validarRUC;
+        private SIGECODataSet sIGECODataSet;
+        private System.Windows.Forms.BindingSource paisBindingSource;
+        private SIGECODataSetTableAdapters.PaisTableAdapter paisTableAdapter;
     }
 }
