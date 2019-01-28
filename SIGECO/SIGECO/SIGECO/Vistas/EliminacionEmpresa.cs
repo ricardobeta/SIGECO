@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SIGECO.Vistas
 {
-    public partial class ConsultaClienteNatural : Form
+    public partial class EliminacionEmpresa : Form
     {
-        public ConsultaClienteNatural()
+        public EliminacionEmpresa()
         {
             InitializeComponent();
             llenarCBTipocliente();
@@ -50,11 +50,6 @@ namespace SIGECO.Vistas
         }
 
         private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

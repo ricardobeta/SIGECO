@@ -1,6 +1,6 @@
 ﻿namespace SIGECO.Vistas
 {
-    partial class ConsultaClienteNatural
+    partial class EliminacionEmpresa
     {
         /// <summary>
         /// Required designer variable.
@@ -117,7 +117,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1176, 268);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel3
             // 
@@ -155,7 +154,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(157, 33);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Consultar";
+            this.button1.Text = "Eliminar";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -177,11 +176,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(186, 59);
+            this.label4.Location = new System.Drawing.Point(262, 59);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 25);
+            this.label4.Size = new System.Drawing.Size(57, 25);
             this.label4.TabIndex = 69;
-            this.label4.Text = "Cédula/RUC";
+            this.label4.Text = "RUC";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
@@ -193,7 +192,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(493, 31);
             this.label3.TabIndex = 68;
-            this.label3.Text = "CONSULTA DE CLIENTE NATURAL";
+            this.label3.Text = "ELIMINACIÓN DE EMPRESA";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
@@ -221,7 +220,7 @@
             this.label1.Size = new System.Drawing.Size(100, 23);
             this.label1.TabIndex = 67;
             // 
-            // ConsultaClienteNatural
+            // EliminacionEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -229,7 +228,7 @@
             this.ClientSize = new System.Drawing.Size(1200, 550);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ConsultaClienteNatural";
+            this.Name = "EliminacionEmpresa";
             this.Text = "ConsultarCliente";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
