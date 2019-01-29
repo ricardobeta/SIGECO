@@ -125,11 +125,6 @@
     <Compile Include="Modelo\Retencion.cs">
       <DependentUpon>ClasesEntidad.tt</DependentUpon>
     </Compile>
-    <Compile Include="Modelo\SIGECO.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SIGECO.Context.tt</DependentUpon>
-    </Compile>
     <Compile Include="Modelo\SIGECO.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -442,11 +437,6 @@
     <Content Include="Modelo\ClasesEntidad.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ClasesEntidad.cs</LastGenOutput>
-      <DependentUpon>SIGECO.edmx</DependentUpon>
-    </Content>
-    <Content Include="Modelo\SIGECO.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>SIGECO.Context.cs</LastGenOutput>
       <DependentUpon>SIGECO.edmx</DependentUpon>
     </Content>
     <Content Include="Modelo\SIGECO.edmx.sql" />
