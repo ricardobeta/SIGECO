@@ -12,20 +12,28 @@ namespace SIGECO.Modelo
     using System;
     using System.Collections.Generic;
     
-    public partial class Producto
+    public partial class Factura
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Producto()
+        public Factura()
         {
+            this.DetalleFacs = new HashSet<DetalleFac>();
             this.DetalleProes = new HashSet<DetallePro>();
         }
     
         public int Id { get; set; }
-        public string codigo { get; set; }
-        public string nombre { get; set; }
-        public decimal precio { get; set; }
+        public System.DateTime fecha { get; set; }
+        public string numero { get; set; }
+        public decimal subtotal { get; set; }
+        public decimal total { get; set; }
+        public double iva { get; set; }
+        public int ClienteId { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DetalleFac> DetalleFacs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DetallePro> DetalleProes { get; set; }
+        public virtual Venta Venta { get; set; }
+        public virtual Cliente Cliente { get; set; }
     }
 }

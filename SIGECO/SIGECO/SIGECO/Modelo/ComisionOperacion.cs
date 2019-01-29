@@ -12,20 +12,21 @@ namespace SIGECO.Modelo
     using System;
     using System.Collections.Generic;
     
-    public partial class Producto
+    public partial class ComisionOperacion
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Producto()
+        public ComisionOperacion()
         {
-            this.DetalleProes = new HashSet<DetallePro>();
+            this.ComisionEmpleadoes = new HashSet<ComisionEmpleado>();
         }
     
         public int Id { get; set; }
-        public string codigo { get; set; }
-        public string nombre { get; set; }
-        public decimal precio { get; set; }
+        public int ComisionVentaId { get; set; }
+        public decimal monto { get; set; }
     
+        public virtual ComisionVenta ComisionVenta { get; set; }
+        public virtual Operacion Operacion { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DetallePro> DetalleProes { get; set; }
+        public virtual ICollection<ComisionEmpleado> ComisionEmpleadoes { get; set; }
     }
 }
