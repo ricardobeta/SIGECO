@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Entidades" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="EntidadesContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Personas" EntityType="Entidades.Persona" />
+    <EntitySet Name="Empresas" EntityType="Entidades.Empresa" />
+    <AssociationSet Name="EmpresaRepresentante" Association="Entidades.EmpresaRepresentante">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Representante" EntitySet="Personas" />
+    </AssociationSet>
+    <AssociationSet Name="EmpleadoEmpleado" Association="Entidades.EmpleadoEmpleado">
+      <End Role="Empleado" EntitySet="Personas" />
+      <End Role="Empleado1" EntitySet="Personas" />
+    </AssociationSet>
+    <EntitySet Name="Departamentoes" EntityType="Entidades.Departamento" />
+    <EntitySet Name="Operacions" EntityType="Entidades.Operacion" />
+    <AssociationSet Name="DepartamentoOperacion" Association="Entidades.DepartamentoOperacion">
+      <End Role="Departamento" EntitySet="Departamentoes" />
+      <End Role="Operacion" EntitySet="Operacions" />
+    </AssociationSet>
+    <EntitySet Name="Ventas" EntityType="Entidades.Venta" />
+    <EntitySet Name="ComisionVentas" EntityType="Entidades.ComisionVenta" />
+    <AssociationSet Name="VentaComisionVenta" Association="Entidades.VentaComisionVenta">
+      <End Role="Venta" EntitySet="Ventas" />
+      <End Role="ComisionVenta" EntitySet="ComisionVentas" />
+    </AssociationSet>
+    <AssociationSet Name="DepartamentoComisionVenta" Association="Entidades.DepartamentoComisionVenta">
+      <End Role="Departamento" EntitySet="Departamentoes" />
+      <End Role="ComisionVenta" EntitySet="ComisionVentas" />
+    </AssociationSet>
+    <EntitySet Name="Rangoes" EntityType="Entidades.Rango" />
+    <AssociationSet Name="DepartamentoRango" Association="Entidades.DepartamentoRango">
+      <End Role="Departamento" EntitySet="Departamentoes" />
+      <End Role="Rango" EntitySet="Rangoes" />
+    </AssociationSet>
+    <EntitySet Name="ComisionOperacions" EntityType="Entidades.ComisionOperacion" />
+    <AssociationSet Name="ComisionVentaComisionOperacion" Association="Entidades.ComisionVentaComisionOperacion">
+      <End Role="ComisionVenta" EntitySet="ComisionVentas" />
+      <End Role="ComisionOperacion" EntitySet="ComisionOperacions" />
+    </AssociationSet>
+    <AssociationSet Name="ComisionOperacionOperacion" Association="Entidades.ComisionOperacionOperacion">
+      <End Role="ComisionOperacion" EntitySet="ComisionOperacions" />
+      <End Role="Operacion" EntitySet="Operacions" />
+    </AssociationSet>
+    <EntitySet Name="ComisionEmpleadoes" EntityType="Entidades.ComisionEmpleado" />
+    <AssociationSet Name="ComisionOperacionComisionEmpleado" Association="Entidades.ComisionOperacionComisionEmpleado">
+      <End Role="ComisionOperacion" EntitySet="ComisionOperacions" />
+      <End Role="ComisionEmpleado" EntitySet="ComisionEmpleadoes" />
+    </AssociationSet>
+    <AssociationSet Name="EmpleadoComisionEmpleado" Association="Entidades.EmpleadoComisionEmpleado">
+      <End Role="Empleado" EntitySet="Personas" />
+      <End Role="ComisionEmpleado" EntitySet="ComisionEmpleadoes" />
+    </AssociationSet>
+    <EntitySet Name="Cobroes" EntityType="Entidades.Cobro" />
+    <EntitySet Name="Pagoes" EntityType="Entidades.Pago" />
+    <AssociationSet Name="VentaCobro" Association="Entidades.VentaCobro">
+      <End Role="Venta" EntitySet="Ventas" />
+      <End Role="Cobro" EntitySet="Cobroes" />
+    </AssociationSet>
+    <AssociationSet Name="CobroPago" Association="Entidades.CobroPago">
+      <End Role="Cobro" EntitySet="Cobroes" />
+      <End Role="Pago" EntitySet="Pagoes" />
+    </AssociationSet>
+    <EntitySet Name="Facturas" EntityType="Entidades.Factura" />
+    <EntitySet Name="DetalleFacs" EntityType="Entidades.DetalleFac" />
+    <AssociationSet Name="FacturaDetalleFac" Association="Entidades.FacturaDetalleFac">
+      <End Role="Factura" EntitySet="Facturas" />
+      <End Role="DetalleFac" EntitySet="DetalleFacs" />
+    </AssociationSet>
+    <EntitySet Name="Retencions" EntityType="Entidades.Retencion" />
+    <AssociationSet Name="RetencionDetalleFac" Association="Entidades.RetencionDetalleFac">
+      <End Role="Retencion" EntitySet="Retencions" />
+      <End Role="DetalleFac" EntitySet="DetalleFacs" />
+    </AssociationSet>
+    <EntitySet Name="Productoes" EntityType="Entidades.Producto" />
+    <EntitySet Name="DetalleProes" EntityType="Entidades.DetallePro" />
+    <AssociationSet Name="ProductoDetallePro" Association="Entidades.ProductoDetallePro">
+      <End Role="Producto" EntitySet="Productoes" />
+      <End Role="DetallePro" EntitySet="DetalleProes" />
+    </AssociationSet>
+    <AssociationSet Name="FacturaDetallePro" Association="Entidades.FacturaDetallePro">
+      <End Role="Factura" EntitySet="Facturas" />
+      <End Role="DetallePro" EntitySet="DetalleProes" />
+    </AssociationSet>
+    <EntitySet Name="Usuarios" EntityType="Entidades.Usuario" />
+    <AssociationSet Name="VentaFactura" Association="Entidades.VentaFactura">
+      <End Role="Venta" EntitySet="Ventas" />
+      <End Role="Factura" EntitySet="Facturas" />
+    </AssociationSet>
+    <AssociationSet Name="ClienteFactura" Association="Entidades.ClienteFactura">
+      <End Role="Cliente" EntitySet="Personas" />
+      <End Role="Factura" EntitySet="Facturas" />
+    </AssociationSet>
+    <AssociationSet Name="VentaEmpleado" Association="Entidades.VentaEmpleado">
+      <End Role="Venta" EntitySet="Ventas" />
+      <End Role="Empleado" EntitySet="Personas" />
+    </AssociationSet>
+    <EntitySet Name="PagoEmpleadoes" EntityType="Entidades.PagoEmpleado" />
+    <AssociationSet Name="EmpleadoPagoEmpleado" Association="Entidades.EmpleadoPagoEmpleado">
+      <End Role="Empleado" EntitySet="Personas" />
+      <End Role="PagoEmpleado" EntitySet="PagoEmpleadoes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre1" Type="String" Nullable="false" MaxLength="20" />
+    <Property Name="nombre2" Type="String" Nullable="false" MaxLength="20" />
+    <Property Name="apellido1" Type="String" Nullable="false" MaxLength="20" />
+    <Property Name="apellido2" Type="String" Nullable="false" MaxLength="20" />
+    <Property Name="cedula" Type="String" Nullable="false" MaxLength="10" />
+    <Property Name="pais" Type="String" Nullable="false" MaxLength="20" />
+    <Property Name="correo" Type="String" Nullable="false" MaxLength="255" />
+    <Property Name="telefono" Type="String" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Representante" BaseType="Entidades.Persona">
+    <NavigationProperty Name="Empresa" Relationship="Entidades.EmpresaRepresentante" FromRole="Representante" ToRole="Empresa" />
+  </EntityType>
+  <EntityType Name="Empresa">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="32" />
+    <Property Name="ruc" Type="String" Nullable="false" MaxLength="13" />
+    <NavigationProperty Name="Representante" Relationship="Entidades.EmpresaRepresentante" FromRole="Empresa" ToRole="Representante" />
+  </EntityType>
+  <Association Name="EmpresaRepresentante">
+    <End Type="Entidades.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="Entidades.Representante" Role="Representante" Multiplicity="1" />
+  </Association>
+  <EntityType Name="Cliente" BaseType="Entidades.Persona">
+    <Property Name="ruc" Type="String" Nullable="false" MaxLength="13" />
+    <NavigationProperty Name="Facturas" Relationship="Entidades.ClienteFactura" FromRole="Cliente" ToRole="Factura" />
+  </EntityType>
+  <EntityType Name="Empleado" BaseType="Entidades.Persona">
+    <Property Name="porcentajeComision" Type="Double" Nullable="false" />
+    <Property Name="cargo" Type="String" Nullable="false" MaxLength="32" />
+    <Property Name="salarioActual" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+    <NavigationProperty Name="Empleadoes" Relationship="Entidades.EmpleadoEmpleado" FromRole="Empleado" ToRole="Empleado1" />
+    <NavigationProperty Name="Empleado1" Relationship="Entidades.EmpleadoEmpleado" FromRole="Empleado1" ToRole="Empleado" />
+    <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ComisionEmpleadoes" Relationship="Entidades.EmpleadoComisionEmpleado" FromRole="Empleado" ToRole="ComisionEmpleado" />
+    <NavigationProperty Name="Venta" Relationship="Entidades.VentaEmpleado" FromRole="Empleado" ToRole="Venta" />
+    <NavigationProperty Name="PagoEmpleadoes" Relationship="Entidades.EmpleadoPagoEmpleado" FromRole="Empleado" ToRole="PagoEmpleado" />
+  </EntityType>
+  <Association Name="EmpleadoEmpleado">
+    <End Type="Entidades.Empleado" Role="Empleado" Multiplicity="1" />
+    <End Type="Entidades.Empleado" Role="Empleado1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Empleado1">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Departamento">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="32" />
+    <NavigationProperty Name="Operacions" Relationship="Entidades.DepartamentoOperacion" FromRole="Departamento" ToRole="Operacion" />
+    <NavigationProperty Name="ComisionVentas" Relationship="Entidades.DepartamentoComisionVenta" FromRole="Departamento" ToRole="ComisionVenta" />
+    <NavigationProperty Name="Rangoes" Relationship="Entidades.DepartamentoRango" FromRole="Departamento" ToRole="Rango" />
+  </EntityType>
+  <EntityType Name="Operacion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Departamento" Relationship="Entidades.DepartamentoOperacion" FromRole="Operacion" ToRole="Departamento" />
+    <Property Name="DepartamentoId" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="32" />
+    <Property Name="porcentajeComision" Type="Double" Nullable="false" />
+    <NavigationProperty Name="ComisionOperacion" Relationship="Entidades.ComisionOperacionOperacion" FromRole="Operacion" ToRole="ComisionOperacion" />
+  </EntityType>
+  <Association Name="DepartamentoOperacion">
+    <End Type="Entidades.Departamento" Role="Departamento" Multiplicity="1" />
+    <End Type="Entidades.Operacion" Role="Operacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamento">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Operacion">
+        <PropertyRef Name="DepartamentoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Venta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tipo" Type="String" Nullable="false" MaxLength="8" />
+    <NavigationProperty Name="ComisionVenta" Relationship="Entidades.VentaComisionVenta" FromRole="Venta" ToRole="ComisionVenta" />
+    <NavigationProperty Name="Cobro" Relationship="Entidades.VentaCobro" FromRole="Venta" ToRole="Cobro" />
+    <NavigationProperty Name="Factura" Relationship="Entidades.VentaFactura" FromRole="Venta" ToRole="Factura" />
+    <NavigationProperty Name="Empleado" Relationship="Entidades.VentaEmpleado" FromRole="Venta" ToRole="Empleado" />
+  </EntityType>
+  <EntityType Name="ComisionVenta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Venta" Relationship="Entidades.VentaComisionVenta" FromRole="ComisionVenta" ToRole="Venta" />
+    <NavigationProperty Name="Departamento" Relationship="Entidades.DepartamentoComisionVenta" FromRole="ComisionVenta" ToRole="Departamento" />
+    <Property Name="DepartamentoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ComisionOperacions" Relationship="Entidades.ComisionVentaComisionOperacion" FromRole="ComisionVenta" ToRole="ComisionOperacion" />
+    <Property Name="monto" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+  </EntityType>
+  <Association Name="VentaComisionVenta">
+    <End Type="Entidades.Venta" Role="Venta" Multiplicity="1" />
+    <End Type="Entidades.ComisionVenta" Role="ComisionVenta" Multiplicity="1" />
+  </Association>
+  <Association Name="DepartamentoComisionVenta">
+    <End Type="Entidades.Departamento" Role="Departamento" Multiplicity="1" />
+    <End Type="Entidades.ComisionVenta" Role="ComisionVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamento">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ComisionVenta">
+        <PropertyRef Name="DepartamentoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Rango">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Departamento" Relationship="Entidades.DepartamentoRango" FromRole="Rango" ToRole="Departamento" />
+    <Property Name="DepartamentoId" Type="Int32" Nullable="false" />
+    <Property Name="inicio" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="fin" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="porcentajeComision" Type="Double" Nullable="false" />
+  </EntityType>
+  <Association Name="DepartamentoRango">
+    <End Type="Entidades.Departamento" Role="Departamento" Multiplicity="1" />
+    <End Type="Entidades.Rango" Role="Rango" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamento">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rango">
+        <PropertyRef Name="DepartamentoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ComisionOperacion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="ComisionVenta" Relationship="Entidades.ComisionVentaComisionOperacion" FromRole="ComisionOperacion" ToRole="ComisionVenta" />
+    <Property Name="ComisionVentaId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Operacion" Relationship="Entidades.ComisionOperacionOperacion" FromRole="ComisionOperacion" ToRole="Operacion" />
+    <NavigationProperty Name="ComisionEmpleadoes" Relationship="Entidades.ComisionOperacionComisionEmpleado" FromRole="ComisionOperacion" ToRole="ComisionEmpleado" />
+    <Property Name="monto" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+  </EntityType>
+  <Association Name="ComisionVentaComisionOperacion">
+    <End Type="Entidades.ComisionVenta" Role="ComisionVenta" Multiplicity="1" />
+    <End Type="Entidades.ComisionOperacion" Role="ComisionOperacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ComisionVenta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ComisionOperacion">
+        <PropertyRef Name="ComisionVentaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ComisionOperacionOperacion">
+    <End Type="Entidades.ComisionOperacion" Role="ComisionOperacion" Multiplicity="1" />
+    <End Type="Entidades.Operacion" Role="Operacion" Multiplicity="1" />
+  </Association>
+  <EntityType Name="ComisionEmpleado">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="monto" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+    <NavigationProperty Name="ComisionOperacion" Relationship="Entidades.ComisionOperacionComisionEmpleado" FromRole="ComisionEmpleado" ToRole="ComisionOperacion" />
+    <Property Name="ComisionOperacionId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Empleado" Relationship="Entidades.EmpleadoComisionEmpleado" FromRole="ComisionEmpleado" ToRole="Empleado" />
+    <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="ComisionOperacionComisionEmpleado">
+    <End Type="Entidades.ComisionOperacion" Role="ComisionOperacion" Multiplicity="1" />
+    <End Type="Entidades.ComisionEmpleado" Role="ComisionEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ComisionOperacion">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ComisionEmpleado">
+        <PropertyRef Name="ComisionOperacionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpleadoComisionEmpleado">
+    <End Type="Entidades.Empleado" Role="Empleado" Multiplicity="1" />
+    <End Type="Entidades.ComisionEmpleado" Role="ComisionEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ComisionEmpleado">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Cobro">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" />
+    <Property Name="fechaEst" Type="DateTime" Nullable="false" />
+    <Property Name="montoEst" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="saldo" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+    <NavigationProperty Name="Venta" Relationship="Entidades.VentaCobro" FromRole="Cobro" ToRole="Venta" />
+    <NavigationProperty Name="Pagoes" Relationship="Entidades.CobroPago" FromRole="Cobro" ToRole="Pago" />
+  </EntityType>
+  <EntityType Name="Pago">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" />
+    <Property Name="monto" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="metodo" Type="String" Nullable="false" MaxLength="32" />
+    <NavigationProperty Name="Cobro" Relationship="Entidades.CobroPago" FromRole="Pago" ToRole="Cobro" />
+    <Property Name="CobroId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="VentaCobro">
+    <End Type="Entidades.Venta" Role="Venta" Multiplicity="1" />
+    <End Type="Entidades.Cobro" Role="Cobro" Multiplicity="1" />
+  </Association>
+  <Association Name="CobroPago">
+    <End Type="Entidades.Cobro" Role="Cobro" Multiplicity="1" />
+    <End Type="Entidades.Pago" Role="Pago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cobro">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Pago">
+        <PropertyRef Name="CobroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Factura">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" />
+    <Property Name="numero" Type="String" Nullable="false" MaxLength="12" />
+    <Property Name="subtotal" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="total" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="iva" Type="Double" Nullable="false" />
+    <NavigationProperty Name="DetalleFacs" Relationship="Entidades.FacturaDetalleFac" FromRole="Factura" ToRole="DetalleFac" />
+    <NavigationProperty Name="DetalleProes" Relationship="Entidades.FacturaDetallePro" FromRole="Factura" ToRole="DetallePro" />
+    <NavigationProperty Name="Venta" Relationship="Entidades.VentaFactura" FromRole="Factura" ToRole="Venta" />
+    <NavigationProperty Name="Cliente" Relationship="Entidades.ClienteFactura" FromRole="Factura" ToRole="Cliente" />
+    <Property Name="ClienteId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DetalleFac">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="monto" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+    <NavigationProperty Name="Factura" Relationship="Entidades.FacturaDetalleFac" FromRole="DetalleFac" ToRole="Factura" />
+    <Property Name="FacturaId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Retencion" Relationship="Entidades.RetencionDetalleFac" FromRole="DetalleFac" ToRole="Retencion" />
+    <Property Name="RetencionId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="FacturaDetalleFac">
+    <End Type="Entidades.Factura" Role="Factura" Multiplicity="1" />
+    <End Type="Entidades.DetalleFac" Role="DetalleFac" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetalleFac">
+        <PropertyRef Name="FacturaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Retencion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="numRetencion" Type="String" Nullable="false" MaxLength="8" />
+    <Property Name="porcentaje" Type="Double" Nullable="false" />
+    <Property Name="valor" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+    <NavigationProperty Name="DetalleFacs" Relationship="Entidades.RetencionDetalleFac" FromRole="Retencion" ToRole="DetalleFac" />
+  </EntityType>
+  <Association Name="RetencionDetalleFac">
+    <End Type="Entidades.Retencion" Role="Retencion" Multiplicity="1" />
+    <End Type="Entidades.DetalleFac" Role="DetalleFac" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Retencion">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetalleFac">
+        <PropertyRef Name="RetencionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigo" Type="String" Nullable="false" MaxLength="32" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="32" />
+    <Property Name="precio" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+    <NavigationProperty Name="DetalleProes" Relationship="Entidades.ProductoDetallePro" FromRole="Producto" ToRole="DetallePro" />
+  </EntityType>
+  <EntityType Name="DetallePro">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cantidad" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Producto" Relationship="Entidades.ProductoDetallePro" FromRole="DetallePro" ToRole="Producto" />
+    <Property Name="ProductoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Factura" Relationship="Entidades.FacturaDetallePro" FromRole="DetallePro" ToRole="Factura" />
+    <Property Name="FacturaId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="ProductoDetallePro">
+    <End Type="Entidades.Producto" Role="Producto" Multiplicity="1" />
+    <End Type="Entidades.DetallePro" Role="DetallePro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetallePro">
+        <PropertyRef Name="ProductoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FacturaDetallePro">
+    <End Type="Entidades.Factura" Role="Factura" Multiplicity="1" />
+    <End Type="Entidades.DetallePro" Role="DetallePro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetallePro">
+        <PropertyRef Name="FacturaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="correo" Type="String" Nullable="false" MaxLength="255" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="16" />
+    <Property Name="permisos" Type="String" Nullable="false" MaxLength="8" />
+  </EntityType>
+  <Association Name="VentaFactura">
+    <End Type="Entidades.Venta" Role="Venta" Multiplicity="1" />
+    <End Type="Entidades.Factura" Role="Factura" Multiplicity="1" />
+  </Association>
+  <Association Name="ClienteFactura">
+    <End Type="Entidades.Cliente" Role="Cliente" Multiplicity="1" />
+    <End Type="Entidades.Factura" Role="Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="ClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="VentaEmpleado">
+    <End Type="Entidades.Venta" Role="Venta" Multiplicity="1" />
+    <End Type="Entidades.Empleado" Role="Empleado" Multiplicity="1" />
+  </Association>
+  <EntityType Name="PagoEmpleado">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" />
+    <Property Name="monto" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+    <NavigationProperty Name="Empleado" Relationship="Entidades.EmpleadoPagoEmpleado" FromRole="PagoEmpleado" ToRole="Empleado" />
+    <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="EmpleadoPagoEmpleado">
+    <End Type="Entidades.Empleado" Role="Empleado" Multiplicity="1" />
+    <End Type="Entidades.PagoEmpleado" Role="PagoEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PagoEmpleado">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -17,8 +17,8 @@ namespace SIGECO.Modelo
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Factura()
         {
-            this.DetalleFacs = new HashSet<DetalleFac>();
-            this.DetalleProes = new HashSet<DetallePro>();
+            this.DetalleRetencions = new HashSet<DetalleRetencion>();
+            this.DetalleFacturas = new HashSet<DetalleFactura>();
         }
     
         public int Id { get; set; }
@@ -29,11 +29,11 @@ namespace SIGECO.Modelo
         public double iva { get; set; }
         public int ClienteId { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DetalleFac> DetalleFacs { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DetallePro> DetalleProes { get; set; }
-        public virtual Venta Venta { get; set; }
         public virtual Cliente Cliente { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DetalleRetencion> DetalleRetencions { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DetalleFactura> DetalleFacturas { get; set; }
+        public virtual Venta Venta { get; set; }
     }
 }

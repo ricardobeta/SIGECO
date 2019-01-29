@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3f96b75be28d466981707a77b126e750" Name="Diagram1" ZoomLevel="64" >
+        <EntityTypeShape EntityType="SIGECO.Persona" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="SIGECO.Cliente" Width="1.5" PointX="0.5" PointY="3.75" />
+        <EntityTypeShape EntityType="SIGECO.Factura" Width="1.5" PointX="0.5" PointY="5.625" />
+        <EntityTypeShape EntityType="SIGECO.DetalleRetencion" Width="1.5" PointX="0.5" PointY="9.25" />
+        <EntityTypeShape EntityType="SIGECO.Retencion" Width="1.5" PointX="0.5" PointY="12" />
+        <EntityTypeShape EntityType="SIGECO.DetalleFactura" Width="1.5" PointX="2.375" PointY="8.375" />
+        <EntityTypeShape EntityType="SIGECO.Producto" Width="1.5" PointX="2.375" PointY="11.125" />
+        <InheritanceConnector EntityType="SIGECO.Cliente" />
+        <AssociationConnector Association="SIGECO.ClienteFactura" />
+        <AssociationConnector Association="SIGECO.FacturaDetalleRetencion" />
+        <AssociationConnector Association="SIGECO.RetencionDetalleRetencion" />
+        <AssociationConnector Association="SIGECO.FacturaDetalleFactura" />
+        <AssociationConnector Association="SIGECO.ProductoDetalleFactura" />
+        <EntityTypeShape EntityType="SIGECO.Representante" Width="1.5" PointX="2.5" PointY="0.5" />
+        <InheritanceConnector EntityType="SIGECO.Representante" />
+        <EntityTypeShape EntityType="SIGECO.Empresa" Width="1.5" PointX="4.875" PointY="0.5" />
+        <AssociationConnector Association="SIGECO.EmpresaRepresentante" />
+        <EntityTypeShape EntityType="SIGECO.Empleado" Width="1.5" PointX="2.5" PointY="2.375" />
+        <InheritanceConnector EntityType="SIGECO.Empleado" />
+        <AssociationConnector Association="SIGECO.EmpleadoEmpleado" />
+        <EntityTypeShape EntityType="SIGECO.Venta" Width="1.5" PointX="2.5" PointY="5.875" />
+        <AssociationConnector Association="SIGECO.EmpleadoVenta" />
+        <AssociationConnector Association="SIGECO.FacturaVenta" />
+        <EntityTypeShape EntityType="SIGECO.ComisionEmpleado" Width="1.5" PointX="4.5" PointY="4.125" />
+        <AssociationConnector Association="SIGECO.EmpleadoComisionEmpleado" />
+        <EntityTypeShape EntityType="SIGECO.Cobro" Width="1.5" PointX="4.5" PointY="7.25" />
+        <EntityTypeShape EntityType="SIGECO.Pago" Width="1.5" PointX="4.5" PointY="10.25" />
+        <AssociationConnector Association="SIGECO.CobroPago" />
+        <AssociationConnector Association="SIGECO.CobroVenta" />
+        <EntityTypeShape EntityType="SIGECO.ComisionVenta" Width="1.5" PointX="6.75" PointY="6.125" />
+        <AssociationConnector Association="SIGECO.ComisionVentaVenta" />
+        <EntityTypeShape EntityType="SIGECO.Usuario" Width="1.5" PointX="8.375" PointY="10.375" />
+        <EntityTypeShape EntityType="SIGECO.ComisionOperacion" Width="1.5" PointX="9.75" PointY="4" />
+        <AssociationConnector Association="SIGECO.ComisionVentaComisionOperacion" />
+        <AssociationConnector Association="SIGECO.ComisionOperacionComisionEmpleado" />
+        <EntityTypeShape EntityType="SIGECO.Operacion" Width="1.5" PointX="9.75" PointY="1.125" />
+        <AssociationConnector Association="SIGECO.OperacionComisionOperacion" />
+        <EntityTypeShape EntityType="SIGECO.Departamento" Width="1.5" PointX="12.5" PointY="1.125" />
+        <EntityTypeShape EntityType="SIGECO.Rango" Width="1.5" PointX="7" PointY="0.5" />
+        <AssociationConnector Association="SIGECO.DepartamentoRango" />
+        <AssociationConnector Association="SIGECO.DepartamentoOperacion" />
+        <AssociationConnector Association="SIGECO.DepartamentoComisionVenta" ></AssociationConnector>
+        <EntityTypeShape EntityType="SIGECO.PagoEmpleado" Width="1.5" PointX="7.125" PointY="3.125" />
+        <AssociationConnector Association="SIGECO.EmpleadoPagoEmpleado" />
+        <AssociationConnector Association="SIGECO.OperacionEmpleado" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

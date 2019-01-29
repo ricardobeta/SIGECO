@@ -21,12 +21,12 @@ namespace SIGECO.Modelo
         }
     
         public int Id { get; set; }
-        public int ComisionVentaId { get; set; }
         public decimal monto { get; set; }
+        public int ComisionVentaId { get; set; }
     
         public virtual ComisionVenta ComisionVenta { get; set; }
-        public virtual Operacion Operacion { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ComisionEmpleado> ComisionEmpleadoes { get; set; }
+        public virtual Operacion Operacion { get; set; }
     }
 }

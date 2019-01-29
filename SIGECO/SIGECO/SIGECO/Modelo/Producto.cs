@@ -17,7 +17,7 @@ namespace SIGECO.Modelo
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Producto()
         {
-            this.DetalleProes = new HashSet<DetallePro>();
+            this.DetalleFacturas = new HashSet<DetalleFactura>();
         }
     
         public int Id { get; set; }
@@ -26,6 +26,6 @@ namespace SIGECO.Modelo
         public decimal precio { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DetallePro> DetalleProes { get; set; }
+        public virtual ICollection<DetalleFactura> DetalleFacturas { get; set; }
     }
 }

@@ -21,12 +21,12 @@ namespace SIGECO.Modelo
         }
     
         public int Id { get; set; }
-        public int DepartamentoId { get; set; }
         public decimal monto { get; set; }
+        public int DepartamentoId { get; set; }
     
         public virtual Venta Venta { get; set; }
-        public virtual Departamento Departamento { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ComisionOperacion> ComisionOperacions { get; set; }
+        public virtual Departamento Departamento { get; set; }
     }
 }

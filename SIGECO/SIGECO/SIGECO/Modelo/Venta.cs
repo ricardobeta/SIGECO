@@ -17,9 +17,9 @@ namespace SIGECO.Modelo
         public int Id { get; set; }
         public string tipo { get; set; }
     
-        public virtual ComisionVenta ComisionVenta { get; set; }
-        public virtual Cobro Cobro { get; set; }
-        public virtual Factura Factura { get; set; }
         public virtual Empleado Empleado { get; set; }
+        public virtual Factura Factura { get; set; }
+        public virtual Cobro Cobro { get; set; }
+        public virtual ComisionVenta ComisionVenta { get; set; }
     }
 }

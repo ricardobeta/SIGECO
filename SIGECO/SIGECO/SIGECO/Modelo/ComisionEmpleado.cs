@@ -16,10 +16,10 @@ namespace SIGECO.Modelo
     {
         public int Id { get; set; }
         public decimal monto { get; set; }
-        public int ComisionOperacionId { get; set; }
         public int EmpleadoId { get; set; }
+        public int ComisionOperacionId { get; set; }
     
-        public virtual ComisionOperacion ComisionOperacion { get; set; }
         public virtual Empleado Empleado { get; set; }
+        public virtual ComisionOperacion ComisionOperacion { get; set; }
     }
 }

@@ -17,7 +17,7 @@ namespace SIGECO.Modelo
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Retencion()
         {
-            this.DetalleFacs = new HashSet<DetalleFac>();
+            this.DetalleRetencions = new HashSet<DetalleRetencion>();
         }
     
         public int Id { get; set; }
@@ -26,6 +26,6 @@ namespace SIGECO.Modelo
         public decimal valor { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DetalleFac> DetalleFacs { get; set; }
+        public virtual ICollection<DetalleRetencion> DetalleRetencions { get; set; }
     }
 }

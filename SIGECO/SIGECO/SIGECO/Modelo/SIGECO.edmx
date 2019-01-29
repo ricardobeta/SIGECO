@@ -1,0 +1,1452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SIGECO.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="SIGECOStoreContainer">
+    <EntitySet Name="Personas" EntityType="SIGECO.Store.Personas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Facturas" EntityType="SIGECO.Store.Facturas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DetalleRetencions" EntityType="SIGECO.Store.DetalleRetencions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Retencions" EntityType="SIGECO.Store.Retencions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DetalleFacturas" EntityType="SIGECO.Store.DetalleFacturas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Productoes" EntityType="SIGECO.Store.Productoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Empresas" EntityType="SIGECO.Store.Empresas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ventas" EntityType="SIGECO.Store.Ventas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ComisionEmpleadoes" EntityType="SIGECO.Store.ComisionEmpleadoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cobroes" EntityType="SIGECO.Store.Cobroes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Pagoes" EntityType="SIGECO.Store.Pagoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ComisionVentas" EntityType="SIGECO.Store.ComisionVentas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Usuarios" EntityType="SIGECO.Store.Usuarios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ComisionOperacions" EntityType="SIGECO.Store.ComisionOperacions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Operacions" EntityType="SIGECO.Store.Operacions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Departamentoes" EntityType="SIGECO.Store.Departamentoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rangoes" EntityType="SIGECO.Store.Rangoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PagoEmpleadoes" EntityType="SIGECO.Store.PagoEmpleadoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Personas_Cliente" EntityType="SIGECO.Store.Personas_Cliente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Personas_Representante" EntityType="SIGECO.Store.Personas_Representante" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Personas_Empleado" EntityType="SIGECO.Store.Personas_Empleado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OperacionEmpleado" EntityType="SIGECO.Store.OperacionEmpleado" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ClienteFactura" Association="SIGECO.Store.ClienteFactura">
+      <End Role="Cliente" EntitySet="Personas_Cliente" />
+      <End Role="Factura" EntitySet="Facturas" />
+    </AssociationSet>
+    <AssociationSet Name="FacturaDetalleRetencion" Association="SIGECO.Store.FacturaDetalleRetencion">
+      <End Role="Factura" EntitySet="Facturas" />
+      <End Role="DetalleRetencion" EntitySet="DetalleRetencions" />
+    </AssociationSet>
+    <AssociationSet Name="RetencionDetalleRetencion" Association="SIGECO.Store.RetencionDetalleRetencion">
+      <End Role="Retencion" EntitySet="Retencions" />
+      <End Role="DetalleRetencion" EntitySet="DetalleRetencions" />
+    </AssociationSet>
+    <AssociationSet Name="FacturaDetalleFactura" Association="SIGECO.Store.FacturaDetalleFactura">
+      <End Role="Factura" EntitySet="Facturas" />
+      <End Role="DetalleFactura" EntitySet="DetalleFacturas" />
+    </AssociationSet>
+    <AssociationSet Name="ProductoDetalleFactura" Association="SIGECO.Store.ProductoDetalleFactura">
+      <End Role="Producto" EntitySet="Productoes" />
+      <End Role="DetalleFactura" EntitySet="DetalleFacturas" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaRepresentante" Association="SIGECO.Store.EmpresaRepresentante">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Representante" EntitySet="Personas_Representante" />
+    </AssociationSet>
+    <AssociationSet Name="EmpleadoEmpleado" Association="SIGECO.Store.EmpleadoEmpleado">
+      <End Role="Empleado" EntitySet="Personas_Empleado" />
+      <End Role="Empleado1" EntitySet="Personas_Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="EmpleadoVenta" Association="SIGECO.Store.EmpleadoVenta">
+      <End Role="Empleado" EntitySet="Personas_Empleado" />
+      <End Role="Venta" EntitySet="Ventas" />
+    </AssociationSet>
+    <AssociationSet Name="FacturaVenta" Association="SIGECO.Store.FacturaVenta">
+      <End Role="Factura" EntitySet="Facturas" />
+      <End Role="Venta" EntitySet="Ventas" />
+    </AssociationSet>
+    <AssociationSet Name="EmpleadoComisionEmpleado" Association="SIGECO.Store.EmpleadoComisionEmpleado">
+      <End Role="Empleado" EntitySet="Personas_Empleado" />
+      <End Role="ComisionEmpleado" EntitySet="ComisionEmpleadoes" />
+    </AssociationSet>
+    <AssociationSet Name="CobroPago" Association="SIGECO.Store.CobroPago">
+      <End Role="Cobro" EntitySet="Cobroes" />
+      <End Role="Pago" EntitySet="Pagoes" />
+    </AssociationSet>
+    <AssociationSet Name="CobroVenta" Association="SIGECO.Store.CobroVenta">
+      <End Role="Cobro" EntitySet="Cobroes" />
+      <End Role="Venta" EntitySet="Ventas" />
+    </AssociationSet>
+    <AssociationSet Name="ComisionVentaVenta" Association="SIGECO.Store.ComisionVentaVenta">
+      <End Role="ComisionVenta" EntitySet="ComisionVentas" />
+      <End Role="Venta" EntitySet="Ventas" />
+    </AssociationSet>
+    <AssociationSet Name="ComisionVentaComisionOperacion" Association="SIGECO.Store.ComisionVentaComisionOperacion">
+      <End Role="ComisionVenta" EntitySet="ComisionVentas" />
+      <End Role="ComisionOperacion" EntitySet="ComisionOperacions" />
+    </AssociationSet>
+    <AssociationSet Name="ComisionOperacionComisionEmpleado" Association="SIGECO.Store.ComisionOperacionComisionEmpleado">
+      <End Role="ComisionOperacion" EntitySet="ComisionOperacions" />
+      <End Role="ComisionEmpleado" EntitySet="ComisionEmpleadoes" />
+    </AssociationSet>
+    <AssociationSet Name="OperacionComisionOperacion" Association="SIGECO.Store.OperacionComisionOperacion">
+      <End Role="Operacion" EntitySet="Operacions" />
+      <End Role="ComisionOperacion" EntitySet="ComisionOperacions" />
+    </AssociationSet>
+    <AssociationSet Name="DepartamentoRango" Association="SIGECO.Store.DepartamentoRango">
+      <End Role="Departamento" EntitySet="Departamentoes" />
+      <End Role="Rango" EntitySet="Rangoes" />
+    </AssociationSet>
+    <AssociationSet Name="DepartamentoOperacion" Association="SIGECO.Store.DepartamentoOperacion">
+      <End Role="Departamento" EntitySet="Departamentoes" />
+      <End Role="Operacion" EntitySet="Operacions" />
+    </AssociationSet>
+    <AssociationSet Name="DepartamentoComisionVenta" Association="SIGECO.Store.DepartamentoComisionVenta">
+      <End Role="Departamento" EntitySet="Departamentoes" />
+      <End Role="ComisionVenta" EntitySet="ComisionVentas" />
+    </AssociationSet>
+    <AssociationSet Name="EmpleadoPagoEmpleado" Association="SIGECO.Store.EmpleadoPagoEmpleado">
+      <End Role="Empleado" EntitySet="Personas_Empleado" />
+      <End Role="PagoEmpleado" EntitySet="PagoEmpleadoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OperacionEmpleado_Operacion" Association="SIGECO.Store.FK_OperacionEmpleado_Operacion">
+      <End Role="Operacion" EntitySet="Operacions" />
+      <End Role="OperacionEmpleado" EntitySet="OperacionEmpleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OperacionEmpleado_Empleado" Association="SIGECO.Store.FK_OperacionEmpleado_Empleado">
+      <End Role="Empleado" EntitySet="Personas_Empleado" />
+      <End Role="OperacionEmpleado" EntitySet="OperacionEmpleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cliente_inherits_Persona" Association="SIGECO.Store.FK_Cliente_inherits_Persona">
+      <End Role="Persona" EntitySet="Personas" />
+      <End Role="Cliente" EntitySet="Personas_Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Representante_inherits_Persona" Association="SIGECO.Store.FK_Representante_inherits_Persona">
+      <End Role="Persona" EntitySet="Personas" />
+      <End Role="Representante" EntitySet="Personas_Representante" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empleado_inherits_Persona" Association="SIGECO.Store.FK_Empleado_inherits_Persona">
+      <End Role="Persona" EntitySet="Personas" />
+      <End Role="Empleado" EntitySet="Personas_Empleado" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Personas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre1" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="nombre2" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="apellido1" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="apellido2" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="cedula" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="pais" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="correo" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="telefono" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Facturas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="numero" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="subtotal" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="total" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="iva" Type="float" Nullable="false" />
+    <Property Name="ClienteId" Type="int" Nullable="false" />
+    <Property Name="Venta_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DetalleRetencions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="monto" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="FacturaId" Type="int" Nullable="false" />
+    <Property Name="RetencionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Retencions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="numRetencion" Type="nvarchar" Nullable="false" MaxLength="8" />
+    <Property Name="porcentaje" Type="float" Nullable="false" />
+    <Property Name="valor" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+  </EntityType>
+  <EntityType Name="DetalleFacturas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cantidad" Type="int" Nullable="false" />
+    <Property Name="FacturaId" Type="int" Nullable="false" />
+    <Property Name="ProductoId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Productoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codigo" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="precio" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+  </EntityType>
+  <EntityType Name="Empresas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="ruc" Type="nvarchar" Nullable="false" MaxLength="13" />
+    <Property Name="Representante_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ventas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tipo" Type="nvarchar" Nullable="false" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="ComisionEmpleadoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="monto" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="EmpleadoId" Type="int" Nullable="false" />
+    <Property Name="ComisionOperacionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cobroes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="fechaEst" Type="datetime" Nullable="false" />
+    <Property Name="montoEst" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="saldo" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="Venta_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pagoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="monto" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="metodo" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="CobroId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ComisionVentas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="monto" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="DepartamentoId" Type="int" Nullable="false" />
+    <Property Name="Venta_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="email" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="password" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="permisos" Type="nvarchar" Nullable="false" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="ComisionOperacions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="monto" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="ComisionVentaId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Operacions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="porcentajeComision" Type="float" Nullable="false" />
+    <Property Name="DepartamentoId" Type="int" Nullable="false" />
+    <Property Name="ComisionOperacion_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Departamentoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Rangoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="inicio" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="fin" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="porcentajeComision" Type="float" Nullable="false" />
+    <Property Name="DepartamentoId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PagoEmpleadoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="monto" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="EmpleadoId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Personas_Cliente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="ruc" Type="nvarchar" Nullable="false" MaxLength="13" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Personas_Representante">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Personas_Empleado">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="porcentajeComision" Type="float" Nullable="false" />
+    <Property Name="cargo" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="salarioActual" Type="decimal" Nullable="false" Precision="14" Scale="4" />
+    <Property Name="EmpleadoId" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Venta_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OperacionEmpleado">
+    <Key>
+      <PropertyRef Name="Operacions_Id" />
+      <PropertyRef Name="Empleadoes_Id" />
+    </Key>
+    <Property Name="Operacions_Id" Type="int" Nullable="false" />
+    <Property Name="Empleadoes_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ClienteFactura">
+    <End Role="Cliente" Type="SIGECO.Store.Personas_Cliente" Multiplicity="1" />
+    <End Role="Factura" Type="SIGECO.Store.Facturas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="ClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FacturaDetalleRetencion">
+    <End Role="Factura" Type="SIGECO.Store.Facturas" Multiplicity="1" />
+    <End Role="DetalleRetencion" Type="SIGECO.Store.DetalleRetencions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetalleRetencion">
+        <PropertyRef Name="FacturaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RetencionDetalleRetencion">
+    <End Role="Retencion" Type="SIGECO.Store.Retencions" Multiplicity="1" />
+    <End Role="DetalleRetencion" Type="SIGECO.Store.DetalleRetencions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Retencion">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetalleRetencion">
+        <PropertyRef Name="RetencionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FacturaDetalleFactura">
+    <End Role="Factura" Type="SIGECO.Store.Facturas" Multiplicity="1" />
+    <End Role="DetalleFactura" Type="SIGECO.Store.DetalleFacturas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetalleFactura">
+        <PropertyRef Name="FacturaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductoDetalleFactura">
+    <End Role="Producto" Type="SIGECO.Store.Productoes" Multiplicity="1" />
+    <End Role="DetalleFactura" Type="SIGECO.Store.DetalleFacturas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetalleFactura">
+        <PropertyRef Name="ProductoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaRepresentante">
+    <End Role="Empresa" Type="SIGECO.Store.Empresas" Multiplicity="*" />
+    <End Role="Representante" Type="SIGECO.Store.Personas_Representante" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Representante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Empresa">
+        <PropertyRef Name="Representante_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpleadoEmpleado">
+    <End Role="Empleado" Type="SIGECO.Store.Personas_Empleado" Multiplicity="1" />
+    <End Role="Empleado1" Type="SIGECO.Store.Personas_Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Empleado1">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpleadoVenta">
+    <End Role="Empleado" Type="SIGECO.Store.Personas_Empleado" Multiplicity="*" />
+    <End Role="Venta" Type="SIGECO.Store.Ventas" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Venta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="Venta_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FacturaVenta">
+    <End Role="Factura" Type="SIGECO.Store.Facturas" Multiplicity="*" />
+    <End Role="Venta" Type="SIGECO.Store.Ventas" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Venta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="Venta_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpleadoComisionEmpleado">
+    <End Role="Empleado" Type="SIGECO.Store.Personas_Empleado" Multiplicity="1" />
+    <End Role="ComisionEmpleado" Type="SIGECO.Store.ComisionEmpleadoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ComisionEmpleado">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CobroPago">
+    <End Role="Cobro" Type="SIGECO.Store.Cobroes" Multiplicity="1" />
+    <End Role="Pago" Type="SIGECO.Store.Pagoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cobro">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Pago">
+        <PropertyRef Name="CobroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CobroVenta">
+    <End Role="Cobro" Type="SIGECO.Store.Cobroes" Multiplicity="*" />
+    <End Role="Venta" Type="SIGECO.Store.Ventas" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Venta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cobro">
+        <PropertyRef Name="Venta_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ComisionVentaVenta">
+    <End Role="ComisionVenta" Type="SIGECO.Store.ComisionVentas" Multiplicity="*" />
+    <End Role="Venta" Type="SIGECO.Store.Ventas" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Venta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ComisionVenta">
+        <PropertyRef Name="Venta_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ComisionVentaComisionOperacion">
+    <End Role="ComisionVenta" Type="SIGECO.Store.ComisionVentas" Multiplicity="1" />
+    <End Role="ComisionOperacion" Type="SIGECO.Store.ComisionOperacions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ComisionVenta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ComisionOperacion">
+        <PropertyRef Name="ComisionVentaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ComisionOperacionComisionEmpleado">
+    <End Role="ComisionOperacion" Type="SIGECO.Store.ComisionOperacions" Multiplicity="1" />
+    <End Role="ComisionEmpleado" Type="SIGECO.Store.ComisionEmpleadoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ComisionOperacion">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ComisionEmpleado">
+        <PropertyRef Name="ComisionOperacionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OperacionComisionOperacion">
+    <End Role="Operacion" Type="SIGECO.Store.Operacions" Multiplicity="*" />
+    <End Role="ComisionOperacion" Type="SIGECO.Store.ComisionOperacions" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="ComisionOperacion">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Operacion">
+        <PropertyRef Name="ComisionOperacion_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DepartamentoRango">
+    <End Role="Departamento" Type="SIGECO.Store.Departamentoes" Multiplicity="1" />
+    <End Role="Rango" Type="SIGECO.Store.Rangoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamento">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rango">
+        <PropertyRef Name="DepartamentoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DepartamentoOperacion">
+    <End Role="Departamento" Type="SIGECO.Store.Departamentoes" Multiplicity="1" />
+    <End Role="Operacion" Type="SIGECO.Store.Operacions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamento">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Operacion">
+        <PropertyRef Name="DepartamentoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DepartamentoComisionVenta">
+    <End Role="Departamento" Type="SIGECO.Store.Departamentoes" Multiplicity="1" />
+    <End Role="ComisionVenta" Type="SIGECO.Store.ComisionVentas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamento">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ComisionVenta">
+        <PropertyRef Name="DepartamentoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpleadoPagoEmpleado">
+    <End Role="Empleado" Type="SIGECO.Store.Personas_Empleado" Multiplicity="1" />
+    <End Role="PagoEmpleado" Type="SIGECO.Store.PagoEmpleadoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PagoEmpleado">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OperacionEmpleado_Operacion">
+    <End Role="Operacion" Type="SIGECO.Store.Operacions" Multiplicity="1" />
+    <End Role="OperacionEmpleado" Type="SIGECO.Store.OperacionEmpleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operacion">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OperacionEmpleado">
+        <PropertyRef Name="Operacions_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OperacionEmpleado_Empleado">
+    <End Role="OperacionEmpleado" Type="SIGECO.Store.OperacionEmpleado" Multiplicity="*" />
+    <End Role="Empleado" Type="SIGECO.Store.Personas_Empleado" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OperacionEmpleado">
+        <PropertyRef Name="Empleadoes_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cliente_inherits_Persona">
+    <End Role="Persona" Type="SIGECO.Store.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Cliente" Type="SIGECO.Store.Personas_Cliente" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Representante_inherits_Persona">
+    <End Role="Persona" Type="SIGECO.Store.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Representante" Type="SIGECO.Store.Personas_Representante" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Representante">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empleado_inherits_Persona">
+    <End Role="Persona" Type="SIGECO.Store.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Empleado" Type="SIGECO.Store.Personas_Empleado" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="SIGECO" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="SIGECOContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Personas" EntityType="SIGECO.Persona" />
+          <EntitySet Name="Facturas" EntityType="SIGECO.Factura" />
+          <EntitySet Name="DetalleRetencions" EntityType="SIGECO.DetalleRetencion" />
+          <EntitySet Name="Retencions" EntityType="SIGECO.Retencion" />
+          <EntitySet Name="DetalleFacturas" EntityType="SIGECO.DetalleFactura" />
+          <EntitySet Name="Productoes" EntityType="SIGECO.Producto" />
+          <AssociationSet Name="ClienteFactura" Association="SIGECO.ClienteFactura">
+            <End Role="Cliente" EntitySet="Personas" />
+            <End Role="Factura" EntitySet="Facturas" />
+          </AssociationSet>
+          <AssociationSet Name="FacturaDetalleRetencion" Association="SIGECO.FacturaDetalleRetencion">
+            <End Role="Factura" EntitySet="Facturas" />
+            <End Role="DetalleRetencion" EntitySet="DetalleRetencions" />
+          </AssociationSet>
+          <AssociationSet Name="RetencionDetalleRetencion" Association="SIGECO.RetencionDetalleRetencion">
+            <End Role="Retencion" EntitySet="Retencions" />
+            <End Role="DetalleRetencion" EntitySet="DetalleRetencions" />
+          </AssociationSet>
+          <AssociationSet Name="FacturaDetalleFactura" Association="SIGECO.FacturaDetalleFactura">
+            <End Role="Factura" EntitySet="Facturas" />
+            <End Role="DetalleFactura" EntitySet="DetalleFacturas" />
+          </AssociationSet>
+          <AssociationSet Name="ProductoDetalleFactura" Association="SIGECO.ProductoDetalleFactura">
+            <End Role="Producto" EntitySet="Productoes" />
+            <End Role="DetalleFactura" EntitySet="DetalleFacturas" />
+          </AssociationSet>
+          <EntitySet Name="Empresas" EntityType="SIGECO.Empresa" />
+          <AssociationSet Name="EmpresaRepresentante" Association="SIGECO.EmpresaRepresentante">
+            <End Role="Empresa" EntitySet="Empresas" />
+            <End Role="Representante" EntitySet="Personas" />
+          </AssociationSet>
+          <AssociationSet Name="EmpleadoEmpleado" Association="SIGECO.EmpleadoEmpleado">
+            <End Role="Empleado" EntitySet="Personas" />
+            <End Role="Empleado1" EntitySet="Personas" />
+          </AssociationSet>
+          <EntitySet Name="Ventas" EntityType="SIGECO.Venta" />
+          <AssociationSet Name="EmpleadoVenta" Association="SIGECO.EmpleadoVenta">
+            <End Role="Empleado" EntitySet="Personas" />
+            <End Role="Venta" EntitySet="Ventas" />
+          </AssociationSet>
+          <AssociationSet Name="FacturaVenta" Association="SIGECO.FacturaVenta">
+            <End Role="Factura" EntitySet="Facturas" />
+            <End Role="Venta" EntitySet="Ventas" />
+          </AssociationSet>
+          <EntitySet Name="ComisionEmpleadoes" EntityType="SIGECO.ComisionEmpleado" />
+          <AssociationSet Name="EmpleadoComisionEmpleado" Association="SIGECO.EmpleadoComisionEmpleado">
+            <End Role="Empleado" EntitySet="Personas" />
+            <End Role="ComisionEmpleado" EntitySet="ComisionEmpleadoes" />
+          </AssociationSet>
+          <EntitySet Name="Cobroes" EntityType="SIGECO.Cobro" />
+          <EntitySet Name="Pagoes" EntityType="SIGECO.Pago" />
+          <AssociationSet Name="CobroPago" Association="SIGECO.CobroPago">
+            <End Role="Cobro" EntitySet="Cobroes" />
+            <End Role="Pago" EntitySet="Pagoes" />
+          </AssociationSet>
+          <AssociationSet Name="CobroVenta" Association="SIGECO.CobroVenta">
+            <End Role="Cobro" EntitySet="Cobroes" />
+            <End Role="Venta" EntitySet="Ventas" />
+          </AssociationSet>
+          <EntitySet Name="ComisionVentas" EntityType="SIGECO.ComisionVenta" />
+          <AssociationSet Name="ComisionVentaVenta" Association="SIGECO.ComisionVentaVenta">
+            <End Role="ComisionVenta" EntitySet="ComisionVentas" />
+            <End Role="Venta" EntitySet="Ventas" />
+          </AssociationSet>
+          <EntitySet Name="Usuarios" EntityType="SIGECO.Usuario" />
+          <EntitySet Name="ComisionOperacions" EntityType="SIGECO.ComisionOperacion" />
+          <AssociationSet Name="ComisionVentaComisionOperacion" Association="SIGECO.ComisionVentaComisionOperacion">
+            <End Role="ComisionVenta" EntitySet="ComisionVentas" />
+            <End Role="ComisionOperacion" EntitySet="ComisionOperacions" />
+          </AssociationSet>
+          <AssociationSet Name="ComisionOperacionComisionEmpleado" Association="SIGECO.ComisionOperacionComisionEmpleado">
+            <End Role="ComisionOperacion" EntitySet="ComisionOperacions" />
+            <End Role="ComisionEmpleado" EntitySet="ComisionEmpleadoes" />
+          </AssociationSet>
+          <EntitySet Name="Operacions" EntityType="SIGECO.Operacion" />
+          <AssociationSet Name="OperacionComisionOperacion" Association="SIGECO.OperacionComisionOperacion">
+            <End Role="Operacion" EntitySet="Operacions" />
+            <End Role="ComisionOperacion" EntitySet="ComisionOperacions" />
+          </AssociationSet>
+          <EntitySet Name="Departamentoes" EntityType="SIGECO.Departamento" />
+          <EntitySet Name="Rangoes" EntityType="SIGECO.Rango" />
+          <AssociationSet Name="DepartamentoRango" Association="SIGECO.DepartamentoRango">
+            <End Role="Departamento" EntitySet="Departamentoes" />
+            <End Role="Rango" EntitySet="Rangoes" />
+          </AssociationSet>
+          <AssociationSet Name="DepartamentoOperacion" Association="SIGECO.DepartamentoOperacion">
+            <End Role="Departamento" EntitySet="Departamentoes" />
+            <End Role="Operacion" EntitySet="Operacions" />
+          </AssociationSet>
+          <AssociationSet Name="DepartamentoComisionVenta" Association="SIGECO.DepartamentoComisionVenta">
+            <End Role="Departamento" EntitySet="Departamentoes" />
+            <End Role="ComisionVenta" EntitySet="ComisionVentas" />
+          </AssociationSet>
+          <EntitySet Name="PagoEmpleadoes" EntityType="SIGECO.PagoEmpleado" />
+          <AssociationSet Name="EmpleadoPagoEmpleado" Association="SIGECO.EmpleadoPagoEmpleado">
+            <End Role="Empleado" EntitySet="Personas" />
+            <End Role="PagoEmpleado" EntitySet="PagoEmpleadoes" />
+          </AssociationSet>
+          <AssociationSet Name="OperacionEmpleado" Association="SIGECO.OperacionEmpleado">
+            <End Role="Operacion" EntitySet="Operacions" />
+            <End Role="Empleado" EntitySet="Personas" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Persona">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre1" Type="String" Nullable="false" MaxLength="20" />
+          <Property Name="nombre2" Type="String" Nullable="false" MaxLength="20" />
+          <Property Name="apellido1" Type="String" Nullable="false" MaxLength="20" />
+          <Property Name="apellido2" Type="String" Nullable="false" MaxLength="20" />
+          <Property Name="cedula" Type="String" Nullable="false" MaxLength="10" />
+          <Property Name="pais" Type="String" Nullable="false" MaxLength="20" />
+          <Property Name="correo" Type="String" Nullable="false" MaxLength="255" />
+          <Property Name="telefono" Type="String" Nullable="false" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Cliente" BaseType="SIGECO.Persona">
+          <Property Name="ruc" Type="String" Nullable="false" MaxLength="13" />
+          <NavigationProperty Name="Facturas" Relationship="SIGECO.ClienteFactura" FromRole="Cliente" ToRole="Factura" />
+        </EntityType>
+        <EntityType Name="Factura">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fecha" Type="DateTime" Nullable="false" />
+          <Property Name="numero" Type="String" Nullable="false" MaxLength="12" />
+          <Property Name="subtotal" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <Property Name="total" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <Property Name="iva" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Cliente" Relationship="SIGECO.ClienteFactura" FromRole="Factura" ToRole="Cliente" />
+          <Property Name="ClienteId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DetalleRetencions" Relationship="SIGECO.FacturaDetalleRetencion" FromRole="Factura" ToRole="DetalleRetencion" />
+          <NavigationProperty Name="DetalleFacturas" Relationship="SIGECO.FacturaDetalleFactura" FromRole="Factura" ToRole="DetalleFactura" />
+          <NavigationProperty Name="Venta" Relationship="SIGECO.FacturaVenta" FromRole="Factura" ToRole="Venta" />
+        </EntityType>
+        <EntityType Name="DetalleRetencion">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="monto" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <NavigationProperty Name="Factura" Relationship="SIGECO.FacturaDetalleRetencion" FromRole="DetalleRetencion" ToRole="Factura" />
+          <Property Name="FacturaId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Retencion" Relationship="SIGECO.RetencionDetalleRetencion" FromRole="DetalleRetencion" ToRole="Retencion" />
+          <Property Name="RetencionId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Retencion">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="numRetencion" Type="String" Nullable="false" MaxLength="8" />
+          <Property Name="porcentaje" Type="Double" Nullable="false" />
+          <Property Name="valor" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <NavigationProperty Name="DetalleRetencions" Relationship="SIGECO.RetencionDetalleRetencion" FromRole="Retencion" ToRole="DetalleRetencion" />
+        </EntityType>
+        <EntityType Name="DetalleFactura">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cantidad" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Factura" Relationship="SIGECO.FacturaDetalleFactura" FromRole="DetalleFactura" ToRole="Factura" />
+          <Property Name="FacturaId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Producto" Relationship="SIGECO.ProductoDetalleFactura" FromRole="DetalleFactura" ToRole="Producto" />
+          <Property Name="ProductoId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Producto">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="codigo" Type="String" Nullable="false" MaxLength="20" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="32" />
+          <Property Name="precio" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <NavigationProperty Name="DetalleFacturas" Relationship="SIGECO.ProductoDetalleFactura" FromRole="Producto" ToRole="DetalleFactura" />
+        </EntityType>
+        <Association Name="ClienteFactura">
+          <End Type="SIGECO.Cliente" Role="Cliente" Multiplicity="1" />
+          <End Type="SIGECO.Factura" Role="Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FacturaDetalleRetencion">
+          <End Type="SIGECO.Factura" Role="Factura" Multiplicity="1" />
+          <End Type="SIGECO.DetalleRetencion" Role="DetalleRetencion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Factura">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DetalleRetencion">
+              <PropertyRef Name="FacturaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RetencionDetalleRetencion">
+          <End Type="SIGECO.Retencion" Role="Retencion" Multiplicity="1" />
+          <End Type="SIGECO.DetalleRetencion" Role="DetalleRetencion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Retencion">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DetalleRetencion">
+              <PropertyRef Name="RetencionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FacturaDetalleFactura">
+          <End Type="SIGECO.Factura" Role="Factura" Multiplicity="1" />
+          <End Type="SIGECO.DetalleFactura" Role="DetalleFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Factura">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DetalleFactura">
+              <PropertyRef Name="FacturaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ProductoDetalleFactura">
+          <End Type="SIGECO.Producto" Role="Producto" Multiplicity="1" />
+          <End Type="SIGECO.DetalleFactura" Role="DetalleFactura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Producto">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DetalleFactura">
+              <PropertyRef Name="ProductoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Representante" BaseType="SIGECO.Persona" >
+          <NavigationProperty Name="Empresa" Relationship="SIGECO.EmpresaRepresentante" FromRole="Representante" ToRole="Empresa" />
+        </EntityType>
+        <EntityType Name="Empresa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="20" />
+          <Property Name="ruc" Type="String" Nullable="false" MaxLength="13" />
+          <NavigationProperty Name="Representante" Relationship="SIGECO.EmpresaRepresentante" FromRole="Empresa" ToRole="Representante" />
+        </EntityType>
+        <Association Name="EmpresaRepresentante">
+          <End Type="SIGECO.Empresa" Role="Empresa" Multiplicity="1" />
+          <End Type="SIGECO.Representante" Role="Representante" Multiplicity="1" />
+        </Association>
+        <EntityType Name="Empleado" BaseType="SIGECO.Persona" >
+          <Property Name="porcentajeComision" Type="Double" Nullable="false" />
+          <Property Name="cargo" Type="String" Nullable="false" MaxLength="20" />
+          <Property Name="salarioActual" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <NavigationProperty Name="Empleadoes" Relationship="SIGECO.EmpleadoEmpleado" FromRole="Empleado" ToRole="Empleado1" />
+          <NavigationProperty Name="Empleado1" Relationship="SIGECO.EmpleadoEmpleado" FromRole="Empleado1" ToRole="Empleado" />
+          <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Venta" Relationship="SIGECO.EmpleadoVenta" FromRole="Empleado" ToRole="Venta" />
+          <NavigationProperty Name="ComisionEmpleadoes" Relationship="SIGECO.EmpleadoComisionEmpleado" FromRole="Empleado" ToRole="ComisionEmpleado" />
+          <NavigationProperty Name="PagoEmpleadoes" Relationship="SIGECO.EmpleadoPagoEmpleado" FromRole="Empleado" ToRole="PagoEmpleado" />
+          <NavigationProperty Name="Operacions" Relationship="SIGECO.OperacionEmpleado" FromRole="Empleado" ToRole="Operacion" />
+        </EntityType>
+        <Association Name="EmpleadoEmpleado">
+          <End Type="SIGECO.Empleado" Role="Empleado" Multiplicity="1" />
+          <End Type="SIGECO.Empleado" Role="Empleado1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Empleado1">
+              <PropertyRef Name="EmpleadoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Venta">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tipo" Type="String" Nullable="false" MaxLength="8" />
+          <NavigationProperty Name="Empleado" Relationship="SIGECO.EmpleadoVenta" FromRole="Venta" ToRole="Empleado" />
+          <NavigationProperty Name="Factura" Relationship="SIGECO.FacturaVenta" FromRole="Venta" ToRole="Factura" />
+          <NavigationProperty Name="Cobro" Relationship="SIGECO.CobroVenta" FromRole="Venta" ToRole="Cobro" />
+          <NavigationProperty Name="ComisionVenta" Relationship="SIGECO.ComisionVentaVenta" FromRole="Venta" ToRole="ComisionVenta" />
+        </EntityType>
+        <Association Name="EmpleadoVenta">
+          <End Type="SIGECO.Empleado" Role="Empleado" Multiplicity="1" />
+          <End Type="SIGECO.Venta" Role="Venta" Multiplicity="1" />
+        </Association>
+        <Association Name="FacturaVenta">
+          <End Type="SIGECO.Factura" Role="Factura" Multiplicity="1" />
+          <End Type="SIGECO.Venta" Role="Venta" Multiplicity="1" />
+        </Association>
+        <EntityType Name="ComisionEmpleado">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="monto" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <NavigationProperty Name="Empleado" Relationship="SIGECO.EmpleadoComisionEmpleado" FromRole="ComisionEmpleado" ToRole="Empleado" />
+          <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ComisionOperacion" Relationship="SIGECO.ComisionOperacionComisionEmpleado" FromRole="ComisionEmpleado" ToRole="ComisionOperacion" />
+          <Property Name="ComisionOperacionId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="EmpleadoComisionEmpleado">
+          <End Type="SIGECO.Empleado" Role="Empleado" Multiplicity="1" />
+          <End Type="SIGECO.ComisionEmpleado" Role="ComisionEmpleado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ComisionEmpleado">
+              <PropertyRef Name="EmpleadoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Cobro">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fecha" Type="DateTime" Nullable="false" />
+          <Property Name="fechaEst" Type="DateTime" Nullable="false" />
+          <Property Name="montoEst" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <Property Name="saldo" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <NavigationProperty Name="Pagoes" Relationship="SIGECO.CobroPago" FromRole="Cobro" ToRole="Pago" />
+          <NavigationProperty Name="Venta" Relationship="SIGECO.CobroVenta" FromRole="Cobro" ToRole="Venta" />
+        </EntityType>
+        <EntityType Name="Pago">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fecha" Type="DateTime" Nullable="false" />
+          <Property Name="monto" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <Property Name="metodo" Type="String" Nullable="false" MaxLength="32" />
+          <NavigationProperty Name="Cobro" Relationship="SIGECO.CobroPago" FromRole="Pago" ToRole="Cobro" />
+          <Property Name="CobroId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="CobroPago">
+          <End Type="SIGECO.Cobro" Role="Cobro" Multiplicity="1" />
+          <End Type="SIGECO.Pago" Role="Pago" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cobro">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Pago">
+              <PropertyRef Name="CobroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CobroVenta">
+          <End Type="SIGECO.Cobro" Role="Cobro" Multiplicity="1" />
+          <End Type="SIGECO.Venta" Role="Venta" Multiplicity="1" />
+        </Association>
+        <EntityType Name="ComisionVenta">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="monto" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <NavigationProperty Name="Venta" Relationship="SIGECO.ComisionVentaVenta" FromRole="ComisionVenta" ToRole="Venta" />
+          <NavigationProperty Name="ComisionOperacions" Relationship="SIGECO.ComisionVentaComisionOperacion" FromRole="ComisionVenta" ToRole="ComisionOperacion" />
+          <NavigationProperty Name="Departamento" Relationship="SIGECO.DepartamentoComisionVenta" FromRole="ComisionVenta" ToRole="Departamento" />
+          <Property Name="DepartamentoId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="ComisionVentaVenta">
+          <End Type="SIGECO.ComisionVenta" Role="ComisionVenta" Multiplicity="1" />
+          <End Type="SIGECO.Venta" Role="Venta" Multiplicity="1" />
+        </Association>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="email" Type="String" Nullable="false" MaxLength="255" />
+          <Property Name="password" Type="String" Nullable="false" MaxLength="16" />
+          <Property Name="permisos" Type="String" Nullable="false" MaxLength="8" />
+        </EntityType>
+        <EntityType Name="ComisionOperacion">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="monto" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <NavigationProperty Name="ComisionVenta" Relationship="SIGECO.ComisionVentaComisionOperacion" FromRole="ComisionOperacion" ToRole="ComisionVenta" />
+          <Property Name="ComisionVentaId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ComisionEmpleadoes" Relationship="SIGECO.ComisionOperacionComisionEmpleado" FromRole="ComisionOperacion" ToRole="ComisionEmpleado" />
+          <NavigationProperty Name="Operacion" Relationship="SIGECO.OperacionComisionOperacion" FromRole="ComisionOperacion" ToRole="Operacion" />
+        </EntityType>
+        <Association Name="ComisionVentaComisionOperacion">
+          <End Type="SIGECO.ComisionVenta" Role="ComisionVenta" Multiplicity="1" />
+          <End Type="SIGECO.ComisionOperacion" Role="ComisionOperacion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ComisionVenta">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ComisionOperacion">
+              <PropertyRef Name="ComisionVentaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ComisionOperacionComisionEmpleado">
+          <End Type="SIGECO.ComisionOperacion" Role="ComisionOperacion" Multiplicity="1" />
+          <End Type="SIGECO.ComisionEmpleado" Role="ComisionEmpleado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ComisionOperacion">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ComisionEmpleado">
+              <PropertyRef Name="ComisionOperacionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Operacion">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="20" />
+          <Property Name="porcentajeComision" Type="Double" Nullable="false" />
+          <NavigationProperty Name="ComisionOperacion" Relationship="SIGECO.OperacionComisionOperacion" FromRole="Operacion" ToRole="ComisionOperacion" />
+          <NavigationProperty Name="Departamento" Relationship="SIGECO.DepartamentoOperacion" FromRole="Operacion" ToRole="Departamento" />
+          <Property Name="DepartamentoId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Empleadoes" Relationship="SIGECO.OperacionEmpleado" FromRole="Operacion" ToRole="Empleado" />
+        </EntityType>
+        <Association Name="OperacionComisionOperacion">
+          <End Type="SIGECO.Operacion" Role="Operacion" Multiplicity="1" />
+          <End Type="SIGECO.ComisionOperacion" Role="ComisionOperacion" Multiplicity="1" />
+        </Association>
+        <EntityType Name="Departamento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="20" />
+          <NavigationProperty Name="Rangoes" Relationship="SIGECO.DepartamentoRango" FromRole="Departamento" ToRole="Rango" />
+          <NavigationProperty Name="Operacions" Relationship="SIGECO.DepartamentoOperacion" FromRole="Departamento" ToRole="Operacion" />
+          <NavigationProperty Name="ComisionVentas" Relationship="SIGECO.DepartamentoComisionVenta" FromRole="Departamento" ToRole="ComisionVenta" />
+        </EntityType>
+        <EntityType Name="Rango">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="inicio" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <Property Name="fin" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <Property Name="porcentajeComision" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Departamento" Relationship="SIGECO.DepartamentoRango" FromRole="Rango" ToRole="Departamento" />
+          <Property Name="DepartamentoId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="DepartamentoRango">
+          <End Type="SIGECO.Departamento" Role="Departamento" Multiplicity="1" />
+          <End Type="SIGECO.Rango" Role="Rango" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departamento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Rango">
+              <PropertyRef Name="DepartamentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DepartamentoOperacion">
+          <End Type="SIGECO.Departamento" Role="Departamento" Multiplicity="1" />
+          <End Type="SIGECO.Operacion" Role="Operacion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departamento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Operacion">
+              <PropertyRef Name="DepartamentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DepartamentoComisionVenta">
+          <End Type="SIGECO.Departamento" Role="Departamento" Multiplicity="1" />
+          <End Type="SIGECO.ComisionVenta" Role="ComisionVenta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departamento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ComisionVenta">
+              <PropertyRef Name="DepartamentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="PagoEmpleado">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fecha" Type="DateTime" Nullable="false" />
+          <Property Name="monto" Type="Decimal" Nullable="false" Precision="14" Scale="4" />
+          <NavigationProperty Name="Empleado" Relationship="SIGECO.EmpleadoPagoEmpleado" FromRole="PagoEmpleado" ToRole="Empleado" />
+          <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="EmpleadoPagoEmpleado">
+          <End Type="SIGECO.Empleado" Role="Empleado" Multiplicity="1" />
+          <End Type="SIGECO.PagoEmpleado" Role="PagoEmpleado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PagoEmpleado">
+              <PropertyRef Name="EmpleadoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OperacionEmpleado">
+          <End Type="SIGECO.Operacion" Role="Operacion" Multiplicity="*" />
+          <End Type="SIGECO.Empleado" Role="Empleado" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SIGECOStoreContainer" CdmEntityContainer="SIGECOContainer">
+    <EntitySetMapping Name="Personas">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Persona)">
+        <MappingFragment StoreEntitySet="Personas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nombre1" ColumnName="nombre1" />
+          <ScalarProperty Name="nombre2" ColumnName="nombre2" />
+          <ScalarProperty Name="apellido1" ColumnName="apellido1" />
+          <ScalarProperty Name="apellido2" ColumnName="apellido2" />
+          <ScalarProperty Name="cedula" ColumnName="cedula" />
+          <ScalarProperty Name="pais" ColumnName="pais" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Cliente)">
+        <MappingFragment StoreEntitySet="Personas_Cliente">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ruc" ColumnName="ruc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Representante)">
+        <MappingFragment StoreEntitySet="Personas_Representante">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Empleado)">
+        <MappingFragment StoreEntitySet="Personas_Empleado">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="porcentajeComision" ColumnName="porcentajeComision" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="salarioActual" ColumnName="salarioActual" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Facturas">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Factura)">
+        <MappingFragment StoreEntitySet="Facturas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="subtotal" ColumnName="subtotal" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="iva" ColumnName="iva" />
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleRetencions">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.DetalleRetencion)">
+        <MappingFragment StoreEntitySet="DetalleRetencions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="FacturaId" ColumnName="FacturaId" />
+          <ScalarProperty Name="RetencionId" ColumnName="RetencionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Retencions">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Retencion)">
+        <MappingFragment StoreEntitySet="Retencions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="numRetencion" ColumnName="numRetencion" />
+          <ScalarProperty Name="porcentaje" ColumnName="porcentaje" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleFacturas">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.DetalleFactura)">
+        <MappingFragment StoreEntitySet="DetalleFacturas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="FacturaId" ColumnName="FacturaId" />
+          <ScalarProperty Name="ProductoId" ColumnName="ProductoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Productoes">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Producto)">
+        <MappingFragment StoreEntitySet="Productoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empresas">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Empresa)">
+        <MappingFragment StoreEntitySet="Empresas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="ruc" ColumnName="ruc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ventas">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Venta)">
+        <MappingFragment StoreEntitySet="Ventas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComisionEmpleadoes">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.ComisionEmpleado)">
+        <MappingFragment StoreEntitySet="ComisionEmpleadoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+          <ScalarProperty Name="ComisionOperacionId" ColumnName="ComisionOperacionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cobroes">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Cobro)">
+        <MappingFragment StoreEntitySet="Cobroes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="fechaEst" ColumnName="fechaEst" />
+          <ScalarProperty Name="montoEst" ColumnName="montoEst" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pagoes">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Pago)">
+        <MappingFragment StoreEntitySet="Pagoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="metodo" ColumnName="metodo" />
+          <ScalarProperty Name="CobroId" ColumnName="CobroId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComisionVentas">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.ComisionVenta)">
+        <MappingFragment StoreEntitySet="ComisionVentas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="DepartamentoId" ColumnName="DepartamentoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Usuario)">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="permisos" ColumnName="permisos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComisionOperacions">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.ComisionOperacion)">
+        <MappingFragment StoreEntitySet="ComisionOperacions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="ComisionVentaId" ColumnName="ComisionVentaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Operacions">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Operacion)">
+        <MappingFragment StoreEntitySet="Operacions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="porcentajeComision" ColumnName="porcentajeComision" />
+          <ScalarProperty Name="DepartamentoId" ColumnName="DepartamentoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departamentoes">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Departamento)">
+        <MappingFragment StoreEntitySet="Departamentoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rangoes">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.Rango)">
+        <MappingFragment StoreEntitySet="Rangoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="inicio" ColumnName="inicio" />
+          <ScalarProperty Name="fin" ColumnName="fin" />
+          <ScalarProperty Name="porcentajeComision" ColumnName="porcentajeComision" />
+          <ScalarProperty Name="DepartamentoId" ColumnName="DepartamentoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PagoEmpleadoes">
+      <EntityTypeMapping TypeName="IsTypeOf(SIGECO.PagoEmpleado)">
+        <MappingFragment StoreEntitySet="PagoEmpleadoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="EmpresaRepresentante" TypeName="SIGECO.EmpresaRepresentante" StoreEntitySet="Empresas">
+      <EndProperty Name="Representante">
+        <ScalarProperty Name="Id" ColumnName="Representante_Id" />
+      </EndProperty>
+      <EndProperty Name="Empresa">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="EmpleadoVenta" TypeName="SIGECO.EmpleadoVenta" StoreEntitySet="Personas_Empleado">
+      <EndProperty Name="Venta">
+        <ScalarProperty Name="Id" ColumnName="Venta_Id" />
+      </EndProperty>
+      <EndProperty Name="Empleado">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FacturaVenta" TypeName="SIGECO.FacturaVenta" StoreEntitySet="Facturas">
+      <EndProperty Name="Venta">
+        <ScalarProperty Name="Id" ColumnName="Venta_Id" />
+      </EndProperty>
+      <EndProperty Name="Factura">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="CobroVenta" TypeName="SIGECO.CobroVenta" StoreEntitySet="Cobroes">
+      <EndProperty Name="Venta">
+        <ScalarProperty Name="Id" ColumnName="Venta_Id" />
+      </EndProperty>
+      <EndProperty Name="Cobro">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ComisionVentaVenta" TypeName="SIGECO.ComisionVentaVenta" StoreEntitySet="ComisionVentas">
+      <EndProperty Name="Venta">
+        <ScalarProperty Name="Id" ColumnName="Venta_Id" />
+      </EndProperty>
+      <EndProperty Name="ComisionVenta">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="OperacionComisionOperacion" TypeName="SIGECO.OperacionComisionOperacion" StoreEntitySet="Operacions">
+      <EndProperty Name="ComisionOperacion">
+        <ScalarProperty Name="Id" ColumnName="ComisionOperacion_Id" />
+      </EndProperty>
+      <EndProperty Name="Operacion">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="OperacionEmpleado" TypeName="SIGECO.OperacionEmpleado" StoreEntitySet="OperacionEmpleado">
+      <EndProperty Name="Operacion">
+        <ScalarProperty Name="Id" ColumnName="Operacions_Id" />
+      </EndProperty>
+      <EndProperty Name="Empleado">
+        <ScalarProperty Name="Id" ColumnName="Empleadoes_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

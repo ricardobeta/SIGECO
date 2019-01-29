@@ -26,8 +26,8 @@ namespace SIGECO.Modelo
         public decimal montoEst { get; set; }
         public decimal saldo { get; set; }
     
-        public virtual Venta Venta { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Pago> Pagoes { get; set; }
+        public virtual Venta Venta { get; set; }
     }
 }

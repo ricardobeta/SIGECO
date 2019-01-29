@@ -12,7 +12,7 @@ namespace SIGECO.Modelo
     using System;
     using System.Collections.Generic;
     
-    public partial class DetalleFac
+    public partial class DetalleRetencion
     {
         public int Id { get; set; }
         public decimal monto { get; set; }

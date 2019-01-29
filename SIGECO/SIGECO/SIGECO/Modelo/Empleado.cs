@@ -20,22 +20,23 @@ namespace SIGECO.Modelo
             this.Empleadoes = new HashSet<Empleado>();
             this.ComisionEmpleadoes = new HashSet<ComisionEmpleado>();
             this.PagoEmpleadoes = new HashSet<PagoEmpleado>();
+            this.Operacions = new HashSet<Operacion>();
         }
     
         public double porcentajeComision { get; set; }
         public string cargo { get; set; }
         public decimal salarioActual { get; set; }
         public int EmpleadoId { get; set; }
-        public int OperacionId { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Empleado> Empleadoes { get; set; }
         public virtual Empleado Empleado1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ComisionEmpleado> ComisionEmpleadoes { get; set; }
-        public virtual Operacion Operacion { get; set; }
         public virtual Venta Venta { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ComisionEmpleado> ComisionEmpleadoes { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PagoEmpleado> PagoEmpleadoes { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Operacion> Operacions { get; set; }
     }
 }

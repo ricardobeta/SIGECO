@@ -15,10 +15,10 @@ namespace SIGECO.Modelo
     public partial class Rango
     {
         public int Id { get; set; }
-        public int DepartamentoId { get; set; }
         public decimal inicio { get; set; }
         public decimal fin { get; set; }
         public double porcentajeComision { get; set; }
+        public int DepartamentoId { get; set; }
     
         public virtual Departamento Departamento { get; set; }
     }

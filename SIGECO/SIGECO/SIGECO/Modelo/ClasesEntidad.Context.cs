@@ -13,10 +13,10 @@ namespace SIGECO.Modelo
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class EntidadesContainer : DbContext
+    public partial class SIGECOContainer : DbContext
     {
-        public EntidadesContainer()
-            : base("name=EntidadesContainer")
+        public SIGECOContainer()
+            : base("name=SIGECOContainer")
         {
         }
     
@@ -26,22 +26,22 @@ namespace SIGECO.Modelo
         }
     
         public virtual DbSet<Persona> Personas { get; set; }
+        public virtual DbSet<Factura> Facturas { get; set; }
+        public virtual DbSet<DetalleRetencion> DetalleRetencions { get; set; }
+        public virtual DbSet<Retencion> Retencions { get; set; }
+        public virtual DbSet<DetalleFactura> DetalleFacturas { get; set; }
+        public virtual DbSet<Producto> Productoes { get; set; }
         public virtual DbSet<Empresa> Empresas { get; set; }
-        public virtual DbSet<Departamento> Departamentoes { get; set; }
-        public virtual DbSet<Operacion> Operacions { get; set; }
         public virtual DbSet<Venta> Ventas { get; set; }
-        public virtual DbSet<ComisionVenta> ComisionVentas { get; set; }
-        public virtual DbSet<Rango> Rangoes { get; set; }
-        public virtual DbSet<ComisionOperacion> ComisionOperacions { get; set; }
         public virtual DbSet<ComisionEmpleado> ComisionEmpleadoes { get; set; }
         public virtual DbSet<Cobro> Cobroes { get; set; }
         public virtual DbSet<Pago> Pagoes { get; set; }
-        public virtual DbSet<Factura> Facturas { get; set; }
-        public virtual DbSet<DetalleFac> DetalleFacs { get; set; }
-        public virtual DbSet<Retencion> Retencions { get; set; }
-        public virtual DbSet<Producto> Productoes { get; set; }
-        public virtual DbSet<DetallePro> DetalleProes { get; set; }
+        public virtual DbSet<ComisionVenta> ComisionVentas { get; set; }
         public virtual DbSet<Usuario> Usuarios { get; set; }
+        public virtual DbSet<ComisionOperacion> ComisionOperacions { get; set; }
+        public virtual DbSet<Operacion> Operacions { get; set; }
+        public virtual DbSet<Departamento> Departamentoes { get; set; }
+        public virtual DbSet<Rango> Rangoes { get; set; }
         public virtual DbSet<PagoEmpleado> PagoEmpleadoes { get; set; }
     }
 }

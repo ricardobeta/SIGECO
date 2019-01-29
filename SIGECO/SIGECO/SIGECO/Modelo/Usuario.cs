@@ -15,7 +15,7 @@ namespace SIGECO.Modelo
     public partial class Usuario
     {
         public int Id { get; set; }
-        public string correo { get; set; }
+        public string email { get; set; }
         public string password { get; set; }
         public string permisos { get; set; }
     }

@@ -83,3 +83,8 @@ C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\bin\Debug\EntityFrame
 C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\bin\Debug\EntityFramework.xml
 C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.ConsultaEmpresa.resources
+C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.EliminacionEmpresa.resources
+C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Form1.resources
+C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.ModificacionEmpresa.resources
+C:\Users\Trrr\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.RegistroEmpresa.resources
