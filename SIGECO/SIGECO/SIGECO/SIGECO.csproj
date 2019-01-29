@@ -58,7 +58,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modelo\Class1.cs" />
+    <Compile Include="Modelo\ClasesEntidad.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClasesEntidad.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ClasesEntidad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Cliente.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Cobro.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ComisionEmpleado.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ComisionOperacion.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ComisionVenta.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Departamento.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\DetalleFactura.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\DetalleRetencion.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Empleado.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Empresa.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Factura.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Operacion.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Pago.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\PagoEmpleado.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Persona.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Producto.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Rango.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Representante.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Retencion.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\SIGECO.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SIGECO.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\SIGECO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SIGECO.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Usuario.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Venta.cs">
+      <DependentUpon>ClasesEntidad.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vistas\AgregarPago.cs">
@@ -322,6 +404,13 @@
     <EmbeddedResource Include="Vistas\VistaRango.resx">
       <DependentUpon>VistaRango.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="Modelo\SIGECO.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SIGECO.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Modelo\SIGECO.edmx.diagram">
+      <DependentUpon>SIGECO.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -345,7 +434,22 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Modelo\BaseSIGECO.edmx.sql" />
+    <Content Include="Modelo\ClasesEntidad.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ClasesEntidad.Context.cs</LastGenOutput>
+      <DependentUpon>SIGECO.edmx</DependentUpon>
+    </Content>
+    <Content Include="Modelo\ClasesEntidad.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ClasesEntidad.cs</LastGenOutput>
+      <DependentUpon>SIGECO.edmx</DependentUpon>
+    </Content>
+    <Content Include="Modelo\SIGECO.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SIGECO.Context.cs</LastGenOutput>
+      <DependentUpon>SIGECO.edmx</DependentUpon>
+    </Content>
+    <Content Include="Modelo\SIGECO.edmx.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
