@@ -1,5 +1,6 @@
 ﻿using SIGECO.Controlador;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -100,10 +101,15 @@ namespace SIGECO.Vistas
                     numero += cedulaInt[i];
                 //Verificar si el modulo 10 da 0
                 if (!(numero % 10 == 0))
+                {
                     validarCedula.Text = "Número de cédula inválida";
+                    btnRegistrar.Enabled = false;
+                }
+
                 else
                 {
                     validarCedula.Text = "";
+                    btnRegistrar.Enabled = true;
                 }
             }
                
@@ -182,22 +188,67 @@ namespace SIGECO.Vistas
         private void button1_Click(object sender, EventArgs e)
         {
             controlCLiente = new ControlCliente();
+            
+
             String nombre1 = textBoxNombre.Text, nombre2 = textBoxNombre2.Text, apellido1 = textBoxApellido.Text,
                 apellido2 = textBoxApellido2.Text, cedula = textBoxCedula.Text, correo = textBoxCorreo.Text, telefono = textBoxTelefono.Text
-                , ruc = textBoxRUC.Text, pais = "Ecuador";//cbPais.SelectedValue.ToString();
-            controlCLiente.agregarCliente(nombre1, nombre2, apellido1, apellido2, cedula, pais, correo, telefono, ruc);
-
+                , ruc = textBoxRUC.Text;
+            if (vVacios(listatb()) && cbP()) {
+                String pais = cbPais.SelectedItem.ToString();
+                controlCLiente.agregarCliente(nombre1, nombre2, apellido1, apellido2, cedula, pais, correo, telefono, ruc);
+                MessageBox.Show("Cliente Registrado Exitosamente");
+            }
+            else { 
+                   MessageBox.Show("Error al Ingresar los datos"); }
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
+            
+            textBoxCedula.Text = "";
+            textBoxNombre.Text = "";
+            textBoxNombre2.Text = "";
+            textBoxApellido.Text = "";
+            textBoxApellido2.Text = "";
+            textBoxTelefono.Text = "";
+            textBoxRUC.Text = "";
+            textBoxCorreo.Text = "";
+            cbPais.SelectedItem = "";
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private bool cbP() {
+            bool aux = true;
+                if (cbPais.SelectedItem == null)
+                aux = false;
+            return aux;
+        }
+        private List<TextBox> listatb() {
+            List<TextBox> ltb = new List<TextBox>();
+            ltb.Add(textBoxNombre);
+            ltb.Add(textBoxNombre2);
+            ltb.Add(textBoxApellido);
+            ltb.Add(textBoxApellido2);
+            ltb.Add(textBoxCedula);
+            ltb.Add(textBoxTelefono);
+            ltb.Add(textBoxRUC);
+            ltb.Add(textBoxCorreo);
+            return ltb;
+        }
+        private bool vVacios(List<TextBox> ltb) {
+            bool aux = true;
+            for (int i =0; i<ltb.Count;i++) {
+                if (Comparer.Equals(ltb[i].Text,"")) {
+                    ltb[i].BackColor = Color.Red;
+                    aux = false;
+                }
+            }
+            return aux;
         }
     }
 }

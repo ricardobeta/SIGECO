@@ -68,11 +68,51 @@ namespace SIGECO.DAO
         }
 
 
-        public DataTable consultaClientes(DataTable dt) {
-            String consultaCs = "Select * from  Personas_Cliente  c , Personas p where p.Id = c.Id";
-            SqlDataAdapter da = new SqlDataAdapter(consultaCs,conexion.Iniciarconexion());
-            da.Fill(dt);
-            return dt;
+        public DataTable consultaClientes(DataTable dt, String cedula,bool bandera) {
+            if (bandera == false)
+            {
+                String consultaCs = "Select * from  Personas_Cliente  c , Personas p where p.Id = c.Id";
+                SqlDataAdapter da = new SqlDataAdapter(consultaCs, conexion.Iniciarconexion());
+                da.Fill(dt);
+                return dt;
+            }
+            else {
+                String consultaCs = "Select * from Personas, Personas_Cliente where " +
+                "personas.id = Personas_Cliente.id and personas.cedula ='" + cedula + "'";
+                SqlDataAdapter da = new SqlDataAdapter(consultaCs, conexion.Iniciarconexion());
+                da.Fill(dt);
+                return dt;
+
+            }
+
+        }
+
+
+        public void modificarCliente(Cliente cliente) {
+
+            String modificarP = "UPDATE PERSONAS SET nombre1 = '" + cliente.nombre1 + "', nombre2 = '" + cliente.nombre2 + "', apellido1 = '" + cliente.apellido1 +
+                "', apellido2 = '" + cliente.apellido2 + "', cedula = '" + cliente.cedula + "', pais = '" + cliente.pais + "', correo = '" + cliente.correo + "', telefono = '" + cliente.telefono +
+                "' WHERE id = '" + cliente.Id + "'";
+            SqlCommand myCommand = new SqlCommand();
+            myCommand.Connection = conexion.Iniciarconexion();
+            myCommand.CommandText = modificarP;
+            myCommand.ExecuteNonQuery();
+            conexion.CerrarConexion();
+            String modificarC = "UPDATE Personas_Cliente SET ruc = '" + cliente.ruc + "' WHERE Id = '" + cliente.Id + "'";
+
+            myCommand.Connection = conexion.Iniciarconexion();
+            myCommand.CommandText = modificarC;
+            myCommand.ExecuteNonQuery();
+            conexion.CerrarConexion();
+        }
+
+        public void eliminarCliente(String cedula) {
+            String eliminarP = "Delete Personas where cedula  ='"+cedula+"'";
+            SqlCommand myCommand = new SqlCommand();
+            myCommand.Connection = conexion.Iniciarconexion();
+            myCommand.CommandText = eliminarP;
+            myCommand.ExecuteNonQuery();
+            conexion.CerrarConexion();
         }
 
 

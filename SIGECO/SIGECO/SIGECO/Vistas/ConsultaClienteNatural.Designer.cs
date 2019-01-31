@@ -74,15 +74,14 @@
             // 
             // tabla
             // 
+            this.tabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tabla.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabla.Location = new System.Drawing.Point(0, 0);
-            this.tabla.MultiSelect = false;
             this.tabla.Name = "tabla";
-            this.tabla.ReadOnly = true;
+            this.tabla.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.tabla.Size = new System.Drawing.Size(1176, 268);
-            this.tabla.TabIndex = 0;
-            this.tabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.tabla.TabIndex = 12;
             // 
             // panel3
             // 
@@ -145,9 +144,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(285, 98);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 25);
+            this.label4.Size = new System.Drawing.Size(81, 25);
             this.label4.TabIndex = 69;
-            this.label4.Text = "Cédula/RUC";
+            this.label4.Text = "Cédula";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3

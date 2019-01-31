@@ -61,8 +61,10 @@ namespace SIGECO.Vistas
 
         private void button1_Click(object sender, EventArgs e)
         {
+            String cedula = textBoxConsulta.Text;
+
             controlCliente = new ControlCliente();
-            tabla.DataSource =  controlCliente.consultaCliente("");
+            tabla.DataSource =  controlCliente.consultaCliente(cedula);
 
         }
     }
