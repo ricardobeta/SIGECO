@@ -69,6 +69,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.validarConsulta = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -77,6 +78,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.validarConsulta);
             this.panel1.Controls.Add(this.textBoxConsulta);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.lTitulo);
@@ -257,6 +259,7 @@
             this.textBoxCedula.Name = "textBoxCedula";
             this.textBoxCedula.Size = new System.Drawing.Size(199, 23);
             this.textBoxCedula.TabIndex = 1;
+            this.textBoxCedula.Leave += new System.EventHandler(this.textBoxCedula_Leave);
             // 
             // labelCedula
             // 
@@ -271,6 +274,7 @@
             // 
             // labelApellido2Op
             // 
+            this.labelApellido2Op.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelApellido2Op.AutoSize = true;
             this.labelApellido2Op.Location = new System.Drawing.Point(611, 136);
             this.labelApellido2Op.Name = "labelApellido2Op";
@@ -280,6 +284,7 @@
             // 
             // labelNombre2Op
             // 
+            this.labelNombre2Op.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelNombre2Op.AutoSize = true;
             this.labelNombre2Op.Location = new System.Drawing.Point(611, 78);
             this.labelNombre2Op.Name = "labelNombre2Op";
@@ -526,12 +531,13 @@
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.Color.White;
-            this.btnVolver.Location = new System.Drawing.Point(172, 3);
+            this.btnVolver.Location = new System.Drawing.Point(332, 3);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(157, 33);
             this.btnVolver.TabIndex = 12;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnModificar
             // 
@@ -546,6 +552,7 @@
             this.btnModificar.TabIndex = 10;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnCancelar
             // 
@@ -554,7 +561,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(335, 3);
+            this.btnCancelar.Location = new System.Drawing.Point(172, 3);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(157, 33);
             this.btnCancelar.TabIndex = 11;
@@ -575,6 +582,16 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 23);
             this.label1.TabIndex = 67;
+            // 
+            // validarConsulta
+            // 
+            this.validarConsulta.AutoSize = true;
+            this.validarConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.validarConsulta.ForeColor = System.Drawing.Color.Red;
+            this.validarConsulta.Location = new System.Drawing.Point(899, 80);
+            this.validarConsulta.Name = "validarConsulta";
+            this.validarConsulta.Size = new System.Drawing.Size(0, 17);
+            this.validarConsulta.TabIndex = 71;
             // 
             // ModificacionClienteNatural
             // 
@@ -640,5 +657,6 @@
         private System.Windows.Forms.Label lTitulo;
         private System.Windows.Forms.TextBox textBoxConsulta;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label validarConsulta;
     }
 }
