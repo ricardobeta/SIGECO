@@ -102,7 +102,7 @@ namespace SIGECO.Vistas
 
         private void toolStripMenuItem7_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<VistaAdministradorUsuarios>();
+
         }
 
         private void empleadoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -122,18 +122,17 @@ namespace SIGECO.Vistas
 
         private void toolStripMenuItem9_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<VistaDepartamento>();
 
         }
 
         private void toolStripMenuItem13_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<VistaRango>();
+
         }
 
         private void toolStripMenuItem12_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<VistaOperaciones>();
+
         }
 
         private void manualDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
@@ -148,11 +147,6 @@ namespace SIGECO.Vistas
             DialogResult resultado;
             resultado = MessageBox.Show("La aplicación SIGECO se encuentra en su prototipo 1", " Información del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
-        }
-
-        private void registrarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<RegistrarEmpleado>();
         }
 
         private void buscarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -208,6 +202,56 @@ namespace SIGECO.Vistas
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirFormulario<EliminacionClienteNatural>();
+        }
+
+        private void registroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<RegistroEmpleado>();
+        }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ConsultaEmpleado>();
+        }
+
+        private void registrarToolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<RegistroUsuario>();
+        }
+
+        private void modificarToolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ListaDepartamento>();
+        }
+
+        private void registrarToolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<RegistroDepartamento>();
+        }
+
+        private void registrarToolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<RegistroOperacion>();
+        }
+
+        private void consultarToolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ConsultaOperacion>();
+        }
+
+        private void registrarToolStripMenuItem12_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<RegistroRango>();
+        }
+
+        private void registrarToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<RegistroCobro>();
         }
 
         private void pMaximizar_Click(object sender, EventArgs e)

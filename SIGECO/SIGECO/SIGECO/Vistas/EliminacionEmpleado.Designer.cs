@@ -1,6 +1,6 @@
 ﻿namespace SIGECO.Vistas
 {
-    partial class EliminacionClienteNatural
+    partial class EliminacionEmpleado
     {
         /// <summary>
         /// Required designer variable.
@@ -155,7 +155,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(546, 31);
             this.label3.TabIndex = 68;
-            this.label3.Text = "ELIMINACIÓN DE CLIENTE NATURAL";
+            this.label3.Text = "ELIMINACIÓN DE EMPLEADO";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
@@ -183,7 +183,7 @@
             this.label1.Size = new System.Drawing.Size(100, 23);
             this.label1.TabIndex = 67;
             // 
-            // EliminacionClienteNatural
+            // EliminacionEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -191,7 +191,7 @@
             this.ClientSize = new System.Drawing.Size(1200, 550);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "EliminacionClienteNatural";
+            this.Name = "EliminacionEmpleado";
             this.Text = "ConsultarCliente";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
