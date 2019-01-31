@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SIGECO.Controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,16 +13,13 @@ namespace SIGECO.Vistas
 {
     public partial class RegistroClienteNatural : Form
     {
+        ControlCliente controlCLiente;
+
         public RegistroClienteNatural()
         {
             InitializeComponent();
         }
-        public RegistroClienteNatural(String mod)
-        {
-            InitializeComponent();
-            lTitulo.Text = mod;
-
-        }
+       
         private void pCerrar_Click(object sender, EventArgs e)
         {
             DialogResult resultado;
@@ -161,11 +159,11 @@ namespace SIGECO.Vistas
 
         private void textBox8_Leave(object sender, EventArgs e)
         {
-            if (!textBox8Correo.Text.Equals(""))
+            if (!textBoxCorreo.Text.Equals(""))
             {
                 try
                 {
-                    var eMailValidator = new System.Net.Mail.MailAddress(textBox8Correo.Text);
+                    var eMailValidator = new System.Net.Mail.MailAddress(textBoxCorreo.Text);
                     validarCorreo.Text = "";
                 }
                 catch (FormatException)
@@ -178,21 +176,23 @@ namespace SIGECO.Vistas
 
         private void textBox6RUC_Enter(object sender, EventArgs e)
         {
-            textBox6RUC.Text = textBoxCedula.Text;
+            textBoxRUC.Text = textBoxCedula.Text;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (validarCedula.Text.Equals("") && validarCorreo.Text.Equals(""))
-            {
-                /*
-                 */ 
-            }
+            controlCLiente = new ControlCliente();
+            String nombre1 = textBoxNombre.Text, nombre2 = textBoxNombre2.Text, apellido1 = textBoxApellido.Text,
+                apellido2 = textBoxApellido2.Text, cedula = textBoxCedula.Text, correo = textBoxCorreo.Text, telefono = textBoxTelefono.Text
+                , ruc = textBoxRUC.Text, pais = "Ecuador";//cbPais.SelectedValue.ToString();
+            controlCLiente.agregarCliente(nombre1, nombre2, apellido1, apellido2, cedula, pais, correo, telefono, ruc);
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+           
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SIGECO.Controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,13 @@ namespace SIGECO.Vistas
 {
     public partial class ConsultaClienteNatural : Form
     {
+        ControlCliente controlCliente;
         public ConsultaClienteNatural()
         {
             InitializeComponent();
-            llenarCBTipocliente();
+            
+            controlCliente = new ControlCliente();
+            tabla.DataSource = controlCliente.consultaCliente("");
         }
 
         private void bModificar_Click(object sender, EventArgs e)
@@ -23,11 +27,7 @@ namespace SIGECO.Vistas
 
         }
 
-        private void llenarCBTipocliente()
-        {
-
-
-        }
+        
 
         private void pCerrar_Click(object sender, EventArgs e)
         {
@@ -56,6 +56,13 @@ namespace SIGECO.Vistas
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            controlCliente = new ControlCliente();
+            tabla.DataSource =  controlCliente.consultaCliente("");
 
         }
     }

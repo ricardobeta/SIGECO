@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SIGECO.Controlador;
+using SIGECO.Modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +14,12 @@ namespace SIGECO.Vistas
 {
     public partial class ModificacionClienteNatural : Form
     {
+        ControlCliente controlCliente;
+
         public ModificacionClienteNatural()
         {
             InitializeComponent();
-            llenarCBTipocliente();
+            
         }
 
         private void bModificar_Click(object sender, EventArgs e)
@@ -23,34 +27,33 @@ namespace SIGECO.Vistas
 
         }
 
-        private void llenarCBTipocliente()
-        {
-
-
-        }
 
         private void pCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+
+        
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void btnConsultar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
+            controlCliente = new ControlCliente();
+            String cedula = textBoxConsulta.Text;
+            Cliente cliente = controlCliente.consultarClienteCedula(cedula);
+            textBoxCedula.Text = cliente.cedula;
+            textBoxNombre.Text = cliente.nombre1;
+            textBoxNombre2.Text = cliente.nombre2;
+            textBoxApellido.Text = cliente.apellido1;
+            textBoxApellido2.Text = cliente.apellido2;
+            textBoxTelefono.Text = cliente.telefono;
+            textBoxRUC.Text = cliente.ruc;
+            textBoxCorreo.Text = cliente.correo;
 
         }
     }

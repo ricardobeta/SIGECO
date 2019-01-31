@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBoxTelefono = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.validarNombre2 = new System.Windows.Forms.Label();
             this.validarApellido = new System.Windows.Forms.Label();
             this.validarApellido2 = new System.Windows.Forms.Label();
@@ -56,11 +57,11 @@
             this.validarCorreo = new System.Windows.Forms.Label();
             this.validarRUC = new System.Windows.Forms.Label();
             this.labelRUC = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbPais = new System.Windows.Forms.ComboBox();
             this.labelPais = new System.Windows.Forms.Label();
             this.labelCorreo = new System.Windows.Forms.Label();
-            this.textBox8Correo = new System.Windows.Forms.TextBox();
-            this.textBox6RUC = new System.Windows.Forms.TextBox();
+            this.textBoxCorreo = new System.Windows.Forms.TextBox();
+            this.textBoxRUC = new System.Windows.Forms.TextBox();
             this.lTitulo = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -98,7 +99,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(172, 3);
+            this.button3.Location = new System.Drawing.Point(332, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(157, 33);
             this.button3.TabIndex = 11;
@@ -127,7 +128,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(335, 3);
+            this.button2.Location = new System.Drawing.Point(172, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(157, 33);
             this.button2.TabIndex = 12;
@@ -139,6 +140,8 @@
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.textBoxTelefono);
+            this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.validarNombre2);
             this.groupBox2.Controls.Add(this.validarApellido);
             this.groupBox2.Controls.Add(this.validarApellido2);
@@ -164,6 +167,26 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos principales";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // textBoxTelefono
+            // 
+            this.textBoxTelefono.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBoxTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTelefono.Location = new System.Drawing.Point(406, 198);
+            this.textBoxTelefono.Name = "textBoxTelefono";
+            this.textBoxTelefono.Size = new System.Drawing.Size(199, 20);
+            this.textBoxTelefono.TabIndex = 30;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(303, 193);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 25);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Teléfono";
             // 
             // validarNombre2
             // 
@@ -352,11 +375,11 @@
             this.groupBox1.Controls.Add(this.validarCorreo);
             this.groupBox1.Controls.Add(this.validarRUC);
             this.groupBox1.Controls.Add(this.labelRUC);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cbPais);
             this.groupBox1.Controls.Add(this.labelPais);
             this.groupBox1.Controls.Add(this.labelCorreo);
-            this.groupBox1.Controls.Add(this.textBox8Correo);
-            this.groupBox1.Controls.Add(this.textBox6RUC);
+            this.groupBox1.Controls.Add(this.textBoxCorreo);
+            this.groupBox1.Controls.Add(this.textBoxRUC);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(95, 313);
             this.groupBox1.Name = "groupBox1";
@@ -396,18 +419,51 @@
             this.labelRUC.TabIndex = 21;
             this.labelRUC.Text = "RUC";
             // 
-            // comboBox1
+            // cbPais
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox1.DisplayMember = "Nombre";
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(406, 70);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(199, 26);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.ValueMember = "Nombre";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbPais.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cbPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPais.FormattingEnabled = true;
+            this.cbPais.Items.AddRange(new object[] {
+            "Antigua y Barbuda ",
+            "Argentina ",
+            "Bahamas ",
+            "Barbados ",
+            "Belice ",
+            "Bolivia",
+            "Brasil",
+            "Canadá ",
+            "Chile ",
+            "Colombia ",
+            "Costa Rica ",
+            "Cuba ",
+            "Dominica",
+            "Ecuador ",
+            "El Salvador ",
+            "Estados Unidos ",
+            "Granada ",
+            "Guatemala ",
+            "Guyana ",
+            "Haití ",
+            "Honduras ",
+            "Jamaica",
+            "México ",
+            "Nicaragua ",
+            "Panamá ",
+            "Paraguay",
+            "Perú ",
+            "República Dominicana ",
+            "San Cristóbal y Nieves ",
+            "San Vicente y las Granadinas ",
+            "Surinam ",
+            "Trinidad y Tobago ",
+            "Uruguay ",
+            "Venezuela "});
+            this.cbPais.Location = new System.Drawing.Point(406, 70);
+            this.cbPais.Name = "cbPais";
+            this.cbPais.Size = new System.Drawing.Size(199, 26);
+            this.cbPais.TabIndex = 9;
+            this.cbPais.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // labelPais
             // 
@@ -431,27 +487,27 @@
             this.labelCorreo.TabIndex = 14;
             this.labelCorreo.Text = "Correo";
             // 
-            // textBox8Correo
+            // textBoxCorreo
             // 
-            this.textBox8Correo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox8Correo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8Correo.Location = new System.Drawing.Point(406, 44);
-            this.textBox8Correo.Name = "textBox8Correo";
-            this.textBox8Correo.Size = new System.Drawing.Size(199, 20);
-            this.textBox8Correo.TabIndex = 8;
-            this.textBox8Correo.Leave += new System.EventHandler(this.textBox8_Leave);
+            this.textBoxCorreo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBoxCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCorreo.Location = new System.Drawing.Point(406, 44);
+            this.textBoxCorreo.Name = "textBoxCorreo";
+            this.textBoxCorreo.Size = new System.Drawing.Size(199, 20);
+            this.textBoxCorreo.TabIndex = 8;
+            this.textBoxCorreo.Leave += new System.EventHandler(this.textBox8_Leave);
             // 
-            // textBox6RUC
+            // textBoxRUC
             // 
-            this.textBox6RUC.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox6RUC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6RUC.Location = new System.Drawing.Point(406, 16);
-            this.textBox6RUC.MaxLength = 13;
-            this.textBox6RUC.Name = "textBox6RUC";
-            this.textBox6RUC.Size = new System.Drawing.Size(199, 20);
-            this.textBox6RUC.TabIndex = 40;
-            this.textBox6RUC.TabStop = false;
-            this.textBox6RUC.Enter += new System.EventHandler(this.textBox6RUC_Enter);
+            this.textBoxRUC.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBoxRUC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxRUC.Location = new System.Drawing.Point(406, 16);
+            this.textBoxRUC.MaxLength = 13;
+            this.textBoxRUC.Name = "textBoxRUC";
+            this.textBoxRUC.Size = new System.Drawing.Size(199, 20);
+            this.textBoxRUC.TabIndex = 40;
+            this.textBoxRUC.TabStop = false;
+            this.textBoxRUC.Enter += new System.EventHandler(this.textBox6RUC_Enter);
             // 
             // lTitulo
             // 
@@ -505,11 +561,11 @@
         private System.Windows.Forms.Label labelNombre;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label labelRUC;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbPais;
         private System.Windows.Forms.Label labelPais;
         private System.Windows.Forms.Label labelCorreo;
-        private System.Windows.Forms.TextBox textBox8Correo;
-        private System.Windows.Forms.TextBox textBox6RUC;
+        private System.Windows.Forms.TextBox textBoxCorreo;
+        private System.Windows.Forms.TextBox textBoxRUC;
         private System.Windows.Forms.Label labelNombre2Op;
         private System.Windows.Forms.Label labelApellido2Op;
         private System.Windows.Forms.Panel panel1;
@@ -523,5 +579,7 @@
         private System.Windows.Forms.Label validarCedula;
         private System.Windows.Forms.Label validarCorreo;
         private System.Windows.Forms.Label validarRUC;
+        private System.Windows.Forms.TextBox textBoxTelefono;
+        private System.Windows.Forms.Label label1;
     }
 }

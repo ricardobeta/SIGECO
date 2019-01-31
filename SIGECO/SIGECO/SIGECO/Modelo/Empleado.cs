@@ -15,14 +15,22 @@ namespace SIGECO.Modelo
     public partial class Empleado : Persona
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+
+
+
         public Empleado()
         {
             this.Empleadoes = new HashSet<Empleado>();
             this.ComisionEmpleadoes = new HashSet<ComisionEmpleado>();
             this.PagoEmpleadoes = new HashSet<PagoEmpleado>();
             this.Operacions = new HashSet<Operacion>();
+
+
+
         }
-    
+
+        
+
         public double porcentajeComision { get; set; }
         public string cargo { get; set; }
         public decimal salarioActual { get; set; }
