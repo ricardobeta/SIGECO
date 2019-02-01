@@ -128,6 +128,11 @@
             this.contenedor = new System.Windows.Forms.Panel();
             this.pLogo = new System.Windows.Forms.PictureBox();
             this.pRestaurar = new System.Windows.Forms.PictureBox();
+            this.representanteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarToolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarToolStripMenuItem16 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem16 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bMinimizar)).BeginInit();
@@ -185,7 +190,8 @@
             this.bClientes.AutoSize = false;
             this.bClientes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevoClienteToolStripMenuItem,
-            this.empresaToolStripMenuItem});
+            this.empresaToolStripMenuItem,
+            this.representanteToolStripMenuItem1});
             this.bClientes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(200)))), ((int)(((byte)(12)))));
             this.bClientes.Image = ((System.Drawing.Image)(resources.GetObject("bClientes.Image")));
@@ -1004,6 +1010,41 @@
             this.pRestaurar.Visible = false;
             this.pRestaurar.Click += new System.EventHandler(this.pRestaurar_Click);
             // 
+            // representanteToolStripMenuItem1
+            // 
+            this.representanteToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarToolStripMenuItem13,
+            this.consultarToolStripMenuItem12,
+            this.modificarToolStripMenuItem16,
+            this.eliminarToolStripMenuItem16});
+            this.representanteToolStripMenuItem1.Name = "representanteToolStripMenuItem1";
+            this.representanteToolStripMenuItem1.Size = new System.Drawing.Size(204, 30);
+            this.representanteToolStripMenuItem1.Text = "Representante";
+            // 
+            // registrarToolStripMenuItem13
+            // 
+            this.registrarToolStripMenuItem13.Name = "registrarToolStripMenuItem13";
+            this.registrarToolStripMenuItem13.Size = new System.Drawing.Size(180, 26);
+            this.registrarToolStripMenuItem13.Text = "Registrar";
+            // 
+            // consultarToolStripMenuItem12
+            // 
+            this.consultarToolStripMenuItem12.Name = "consultarToolStripMenuItem12";
+            this.consultarToolStripMenuItem12.Size = new System.Drawing.Size(180, 26);
+            this.consultarToolStripMenuItem12.Text = "Consultar";
+            // 
+            // modificarToolStripMenuItem16
+            // 
+            this.modificarToolStripMenuItem16.Name = "modificarToolStripMenuItem16";
+            this.modificarToolStripMenuItem16.Size = new System.Drawing.Size(180, 26);
+            this.modificarToolStripMenuItem16.Text = "Modificar";
+            // 
+            // eliminarToolStripMenuItem16
+            // 
+            this.eliminarToolStripMenuItem16.Name = "eliminarToolStripMenuItem16";
+            this.eliminarToolStripMenuItem16.Size = new System.Drawing.Size(180, 26);
+            this.eliminarToolStripMenuItem16.Text = "Eliminar";
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1135,5 +1176,10 @@
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem11;
         private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem15;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem15;
+        private System.Windows.Forms.ToolStripMenuItem representanteToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem registrarToolStripMenuItem13;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem12;
+        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem16;
+        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem16;
     }
 }

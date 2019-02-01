@@ -30,36 +30,33 @@
         {
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cbPais = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBoxCorreo = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBoxNombreE = new System.Windows.Forms.TextBox();
+            this.textBoxCedula = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxRucE = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxCedula = new System.Windows.Forms.TextBox();
-            this.textBoxApellido2 = new System.Windows.Forms.TextBox();
-            this.textBoxApellido = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBoxNombre = new System.Windows.Forms.TextBox();
-            this.textBoxNombre2 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lTitulo = new System.Windows.Forms.Label();
-            this.textBoxTelefono = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.validarCedula = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -83,10 +80,10 @@
             // groupBox3
             // 
             this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox3.Controls.Add(this.cbPais);
+            this.groupBox3.Controls.Add(this.comboBox1);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.textBoxCorreo);
+            this.groupBox3.Controls.Add(this.textBox8);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(258, 425);
             this.groupBox3.Name = "groupBox3";
@@ -96,50 +93,15 @@
             this.groupBox3.Text = "Información adicional";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // cbPais
+            // comboBox1
             // 
-            this.cbPais.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cbPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbPais.FormattingEnabled = true;
-            this.cbPais.Items.AddRange(new object[] {
-            "Antigua y Barbuda ",
-            "Argentina ",
-            "Bahamas ",
-            "Barbados ",
-            "Belice ",
-            "Bolivia",
-            "Brasil",
-            "Canadá ",
-            "Chile ",
-            "Colombia ",
-            "Costa Rica ",
-            "Cuba ",
-            "Dominica",
-            "Ecuador ",
-            "El Salvador ",
-            "Estados Unidos ",
-            "Granada ",
-            "Guatemala ",
-            "Guyana ",
-            "Haití ",
-            "Honduras ",
-            "Jamaica",
-            "México ",
-            "Nicaragua ",
-            "Panamá ",
-            "Paraguay",
-            "Perú ",
-            "República Dominicana ",
-            "San Cristóbal y Nieves ",
-            "San Vicente y las Granadinas ",
-            "Surinam ",
-            "Trinidad y Tobago ",
-            "Uruguay ",
-            "Venezuela "});
-            this.cbPais.Location = new System.Drawing.Point(265, 49);
-            this.cbPais.Name = "cbPais";
-            this.cbPais.Size = new System.Drawing.Size(199, 26);
-            this.cbPais.TabIndex = 9;
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(265, 49);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(199, 26);
+            this.comboBox1.TabIndex = 9;
             // 
             // label11
             // 
@@ -163,20 +125,20 @@
             this.label12.TabIndex = 14;
             this.label12.Text = "Correo";
             // 
-            // textBoxCorreo
+            // textBox8
             // 
-            this.textBoxCorreo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCorreo.Location = new System.Drawing.Point(265, 23);
-            this.textBoxCorreo.Name = "textBoxCorreo";
-            this.textBoxCorreo.Size = new System.Drawing.Size(199, 20);
-            this.textBoxCorreo.TabIndex = 8;
+            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(265, 23);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(199, 20);
+            this.textBox8.TabIndex = 8;
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.btnRegistrar);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Location = new System.Drawing.Point(535, 523);
             this.panel1.Name = "panel1";
@@ -190,7 +152,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(332, 3);
+            this.button3.Location = new System.Drawing.Point(172, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(157, 33);
             this.button3.TabIndex = 12;
@@ -198,20 +160,19 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // btnRegistrar
+            // button1
             // 
-            this.btnRegistrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Location = new System.Drawing.Point(9, 3);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(157, 33);
-            this.btnRegistrar.TabIndex = 10;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = false;
-            this.btnRegistrar.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(9, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(157, 33);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Registrar";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -220,7 +181,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(169, 3);
+            this.button2.Location = new System.Drawing.Point(335, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(157, 33);
             this.button2.TabIndex = 11;
@@ -231,9 +192,9 @@
             // groupBox2
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox2.Controls.Add(this.textBoxNombreE);
+            this.groupBox2.Controls.Add(this.textBoxCedula);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBoxRucE);
+            this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(258, 63);
@@ -244,18 +205,18 @@
             this.groupBox2.Text = "Datos de la Empresa";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // textBoxNombreE
+            // textBoxCedula
             // 
-            this.textBoxNombreE.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxNombreE.AutoCompleteCustomSource.AddRange(new string[] {
+            this.textBoxCedula.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBoxCedula.AutoCompleteCustomSource.AddRange(new string[] {
             "1718029042"});
-            this.textBoxNombreE.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBoxNombreE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBoxNombreE.Location = new System.Drawing.Point(265, 33);
-            this.textBoxNombreE.MaxLength = 10;
-            this.textBoxNombreE.Name = "textBoxNombreE";
-            this.textBoxNombreE.Size = new System.Drawing.Size(199, 23);
-            this.textBoxNombreE.TabIndex = 1;
+            this.textBoxCedula.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBoxCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBoxCedula.Location = new System.Drawing.Point(265, 33);
+            this.textBoxCedula.MaxLength = 10;
+            this.textBoxCedula.Name = "textBoxCedula";
+            this.textBoxCedula.Size = new System.Drawing.Size(199, 23);
+            this.textBoxCedula.TabIndex = 1;
             // 
             // label6
             // 
@@ -268,14 +229,14 @@
             this.label6.TabIndex = 22;
             this.label6.Text = "Nombre";
             // 
-            // textBoxRucE
+            // textBox2
             // 
-            this.textBoxRucE.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxRucE.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxRucE.Location = new System.Drawing.Point(265, 62);
-            this.textBoxRucE.Name = "textBoxRucE";
-            this.textBoxRucE.Size = new System.Drawing.Size(199, 20);
-            this.textBoxRucE.TabIndex = 2;
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(265, 62);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(199, 20);
+            this.textBox2.TabIndex = 2;
             // 
             // label2
             // 
@@ -291,19 +252,16 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox1.Controls.Add(this.validarCedula);
-            this.groupBox1.Controls.Add(this.textBoxTelefono);
-            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBoxCedula);
-            this.groupBox1.Controls.Add(this.textBoxApellido2);
-            this.groupBox1.Controls.Add(this.textBoxApellido);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBoxNombre);
-            this.groupBox1.Controls.Add(this.textBoxNombre2);
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.textBox6);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -332,37 +290,36 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "(Opcional)";
             // 
-            // textBoxCedula
+            // textBox1
             // 
-            this.textBoxCedula.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxCedula.AutoCompleteCustomSource.AddRange(new string[] {
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox1.AutoCompleteCustomSource.AddRange(new string[] {
             "1718029042"});
-            this.textBoxCedula.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBoxCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBoxCedula.Location = new System.Drawing.Point(255, 33);
-            this.textBoxCedula.MaxLength = 10;
-            this.textBoxCedula.Name = "textBoxCedula";
-            this.textBoxCedula.Size = new System.Drawing.Size(199, 23);
-            this.textBoxCedula.TabIndex = 25;
-            this.textBoxCedula.Leave += new System.EventHandler(this.textBoxCedula_Leave);
+            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox1.Location = new System.Drawing.Point(255, 33);
+            this.textBox1.MaxLength = 10;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(199, 23);
+            this.textBox1.TabIndex = 25;
             // 
-            // textBoxApellido2
+            // textBox4
             // 
-            this.textBoxApellido2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxApellido2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxApellido2.Location = new System.Drawing.Point(255, 147);
-            this.textBoxApellido2.Name = "textBoxApellido2";
-            this.textBoxApellido2.Size = new System.Drawing.Size(199, 20);
-            this.textBoxApellido2.TabIndex = 29;
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(255, 147);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(199, 20);
+            this.textBox4.TabIndex = 29;
             // 
-            // textBoxApellido
+            // textBox3
             // 
-            this.textBoxApellido.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxApellido.Location = new System.Drawing.Point(255, 118);
-            this.textBoxApellido.Name = "textBoxApellido";
-            this.textBoxApellido.Size = new System.Drawing.Size(199, 20);
-            this.textBoxApellido.TabIndex = 28;
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(255, 118);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(199, 20);
+            this.textBox3.TabIndex = 28;
             // 
             // label3
             // 
@@ -397,23 +354,23 @@
             this.label4.TabIndex = 32;
             this.label4.Text = "Apellido";
             // 
-            // textBoxNombre
+            // textBox5
             // 
-            this.textBoxNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNombre.Location = new System.Drawing.Point(255, 62);
-            this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(199, 20);
-            this.textBoxNombre.TabIndex = 26;
+            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(255, 62);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(199, 20);
+            this.textBox5.TabIndex = 26;
             // 
-            // textBoxNombre2
+            // textBox6
             // 
-            this.textBoxNombre2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxNombre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNombre2.Location = new System.Drawing.Point(255, 89);
-            this.textBoxNombre2.Name = "textBoxNombre2";
-            this.textBoxNombre2.Size = new System.Drawing.Size(199, 20);
-            this.textBoxNombre2.TabIndex = 27;
+            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(255, 89);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(199, 20);
+            this.textBox6.TabIndex = 27;
             // 
             // label7
             // 
@@ -449,37 +406,7 @@
             this.lTitulo.Text = "REGISTRO DE EMPRESA";
             this.lTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBoxTelefono
-            // 
-            this.textBoxTelefono.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTelefono.Location = new System.Drawing.Point(255, 177);
-            this.textBoxTelefono.Name = "textBoxTelefono";
-            this.textBoxTelefono.Size = new System.Drawing.Size(199, 20);
-            this.textBoxTelefono.TabIndex = 37;
-            // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(152, 172);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 25);
-            this.label9.TabIndex = 38;
-            this.label9.Text = "Teléfono";
-            // 
-            // validarCedula
-            // 
-            this.validarCedula.AutoSize = true;
-            this.validarCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.validarCedula.ForeColor = System.Drawing.Color.Red;
-            this.validarCedula.Location = new System.Drawing.Point(478, 39);
-            this.validarCedula.Name = "validarCedula";
-            this.validarCedula.Size = new System.Drawing.Size(0, 17);
-            this.validarCedula.TabIndex = 39;
-            // 
-            // RegistroEmpresa
+            // RegistroDeEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -488,7 +415,7 @@
             this.Controls.Add(this.panel3);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "RegistroEmpresa";
+            this.Name = "RegistroDeEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarPersonaNatural";
             this.Load += new System.EventHandler(this.AgregarPersonaNatural_Load);
@@ -508,34 +435,31 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lTitulo;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBoxNombreE;
+        private System.Windows.Forms.TextBox textBoxCedula;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBoxRucE;
+        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxCedula;
-        private System.Windows.Forms.TextBox textBoxApellido2;
-        private System.Windows.Forms.TextBox textBoxApellido;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBoxNombre;
-        private System.Windows.Forms.TextBox textBoxNombre2;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox cbPais;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBoxCorreo;
-        private System.Windows.Forms.TextBox textBoxTelefono;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label validarCedula;
+        private System.Windows.Forms.TextBox textBox8;
     }
 }

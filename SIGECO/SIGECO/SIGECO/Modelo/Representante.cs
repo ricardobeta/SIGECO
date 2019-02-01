@@ -14,14 +14,7 @@ namespace SIGECO.Modelo
     
     public partial class Representante : Persona
     {
-        public Representante()
-        {
-        }
-
-        public Representante(int id, string nombre1, string nombre2, string apellido1, string apellido2, string cedula, string pais, string correo, string telefono) : base(id, nombre1, nombre2, apellido1, apellido2, cedula, pais, correo, telefono)
-        {
-        }
-
+    
         public virtual Empresa Empresa { get; set; }
     }
 }
