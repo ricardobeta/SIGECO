@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SIGECO.Vistas
 {
-    public partial class BuscarProductos : Form
+    public partial class ConsultaComisionEmpleadoMAL : Form
     {
-        public BuscarProductos()
+        public ConsultaComisionEmpleadoMAL()
         {
             InitializeComponent();
         }
@@ -25,18 +25,6 @@ namespace SIGECO.Vistas
             {
                 this.Close();
             }
-        }
-
-        private void bModificar_Click(object sender, EventArgs e)
-        {
-            string mod = "Modificar Producto";
-            RegistrarProductoMAL vista = new RegistrarProductoMAL(mod);
-            vista.Show();
-        }
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-
         }
     }
 }

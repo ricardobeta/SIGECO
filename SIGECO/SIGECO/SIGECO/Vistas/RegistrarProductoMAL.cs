@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace SIGECO.Vistas
 {
-    public partial class BuscarProductos : Form
+    public partial class RegistrarProductoMAL : Form
     {
-        public BuscarProductos()
+        public RegistrarProductoMAL()
         {
             InitializeComponent();
+        }
+
+        public RegistrarProductoMAL(String mod)
+        {
+            InitializeComponent();
+            label1.Text =mod;
+
         }
 
         private void pCerrar_Click(object sender, EventArgs e)
@@ -25,18 +32,6 @@ namespace SIGECO.Vistas
             {
                 this.Close();
             }
-        }
-
-        private void bModificar_Click(object sender, EventArgs e)
-        {
-            string mod = "Modificar Producto";
-            RegistrarProductoMAL vista = new RegistrarProductoMAL(mod);
-            vista.Show();
-        }
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-
         }
     }
 }
