@@ -1,7 +1,4 @@
-﻿using SIGECO.Controlador;
-using SIGECO.Modelo;
-using System;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,9 +12,6 @@ namespace SIGECO.Vistas
 {
     public partial class ModificacionEmpresa : Form
     {
-        ControlEmpresa controlEmpresa;
-        int id, idE;
-        bool b;
         public ModificacionEmpresa()
         {
             InitializeComponent();
@@ -59,6 +53,7 @@ namespace SIGECO.Vistas
         {
 
         }
+
 
         private void textBoxCedula_Leave(object sender, EventArgs e)
         {
@@ -213,7 +208,5 @@ namespace SIGECO.Vistas
             }
             return aux;
         }
-
-
     }
 }
