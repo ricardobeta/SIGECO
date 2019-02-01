@@ -14,6 +14,22 @@ namespace SIGECO.Modelo
     
     public partial class Empresa
     {
+        public Empresa()
+        {
+        }
+
+        public Empresa(int id, string nombre, string ruc)
+        {
+            Id = id;
+            this.nombre = nombre;
+            this.ruc = ruc;
+        }
+
+        public Empresa(int id, string nombre, string ruc, Representante representante) : this(id, nombre, ruc)
+        {
+            Representante = representante;
+        }
+
         public int Id { get; set; }
         public string nombre { get; set; }
         public string ruc { get; set; }

@@ -99,3 +99,15 @@ C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vist
 C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.RegistroClienteNatural.resources
 C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.RegistroDeEmpresa.resources
 C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.RegistroEmpresa.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.ConsultaEmpleado.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.ConsultaOperacion.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.ConsultaRango.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.ConsultarUsuario.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.ListaDepartamento.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.RegistroCobro.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.RegistroDepartamento.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.RegistroEmpleado.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.RegistroOperacion.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.RegistroRango.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.RegistroUsuario.resources
+C:\Users\Asus\Documents\GitHub\SIGECO\SIGECO\SIGECO\SIGECO\obj\Debug\SIGECO.Vistas.EliminacionEmpleado.resources
