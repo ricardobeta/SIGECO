@@ -254,46 +254,6 @@ namespace SIGECO.Vistas
             AbrirFormulario<RegistroCobro>();
         }
 
-        private void registrarToolStripMenuItem3_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<RegistroProducto>();
-        }
-
-        private void consultaToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<ConsultaProducto>();
-        }
-
-        private void modificarToolStripMenuItem3_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<ModificacionProducto>();
-        }
-
-        private void eliminarToolStripMenuItem3_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<EliminacionProducto>();
-        }
-
-        private void modificarToolStripMenuItem12_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<ModificacionUsuario>();
-        }
-
-        private void modificarToolStripMenuItem11_Click_1(object sender, EventArgs e)
-        {
-            AbrirFormulario<ConsultarUsuario>();
-        }
-
-        private void modificarToolStripMenuItem13_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<ModificacionDepartamento>();
-        }
-
-        private void eliminarToolStripMenuItem13_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pMaximizar_Click(object sender, EventArgs e)
         {
             lx = this.Location.X;
