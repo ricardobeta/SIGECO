@@ -15,10 +15,9 @@ namespace SIGECO.Controlador
         {
             conexion = new SqlConnection();
             conexion.ConnectionString =
-                    "Data Source=WIN-UC841MR2LRQ\\SQLpub;" +
-                    "Initial Catalog=nodo1;" +
-                    "User id=sa;" +
-                    "Password=@dminServer123;";
+                    "Data Source=DESKTOP-OVI6PCV\\SQLEXPRESS;" +
+                    "Initial Catalog=SIGECO4;" +
+                    "Integrated Security = True;";
         }
 
 
