@@ -30,7 +30,7 @@ namespace SIGECO.Vistas
         private void bModificar_Click(object sender, EventArgs e)
         {
             string mod = "Modificar Producto";
-            RegistrarProducto vista = new RegistrarProducto(mod);
+            RegistrarProductoMAL vista = new RegistrarProductoMAL(mod);
             vista.Show();
         }
         private void textBox1_TextChanged(object sender, EventArgs e)

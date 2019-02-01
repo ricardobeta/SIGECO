@@ -1,5 +1,4 @@
-﻿using SIGECO.Controlador;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,17 +12,11 @@ namespace SIGECO.Vistas
 {
     public partial class EliminacionEmpresa : Form
     {
-        ControlEmpresa controlEmpresa;
-
         public EliminacionEmpresa()
         {
             InitializeComponent();
             llenarCBTipocliente();
-
-            controlEmpresa = new ControlEmpresa();
-            tabla.DataSource = controlEmpresa.consultaEmpresa("");
-        
-         }
+        }
 
         private void bModificar_Click(object sender, EventArgs e)
         {
@@ -89,5 +82,6 @@ namespace SIGECO.Vistas
         {
 
         }
+    
     }
-    }
+}

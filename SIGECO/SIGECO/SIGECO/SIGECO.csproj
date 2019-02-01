@@ -60,9 +60,7 @@
   <ItemGroup>
     <Compile Include="Controlador\Conexion.cs" />
     <Compile Include="Controlador\ControlCliente.cs" />
-    <Compile Include="Controlador\ControlEmpresa.cs" />
     <Compile Include="DAO\ClienteDAO.cs" />
-    <Compile Include="DAO\EmpresaDAO.cs" />
     <Compile Include="Modelo\ClasesEntidad.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -161,6 +159,30 @@
     <Compile Include="Vistas\ConsultaClienteNatural.Designer.cs">
       <DependentUpon>ConsultaClienteNatural.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\ConsultaCobro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaCobro.Designer.cs">
+      <DependentUpon>ConsultaCobro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ConsultaComisionEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaComisionEmpleado.Designer.cs">
+      <DependentUpon>ConsultaComisionEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ConsultaComisionOperacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaComisionOperacion.Designer.cs">
+      <DependentUpon>ConsultaComisionOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ConsultaComisionVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaComisionVenta.Designer.cs">
+      <DependentUpon>ConsultaComisionVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\ConsultaEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,11 +195,29 @@
     <Compile Include="Vistas\ConsultaEmpresa.Designer.cs">
       <DependentUpon>ConsultaEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\ConsultaFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaFactura.Designer.cs">
+      <DependentUpon>ConsultaFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\ConsultaOperacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\ConsultaOperacion.Designer.cs">
       <DependentUpon>ConsultaOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ConsultaPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaPago.Designer.cs">
+      <DependentUpon>ConsultaPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ConsultaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaProducto.Designer.cs">
+      <DependentUpon>ConsultaProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\ConsultaRango.cs">
       <SubType>Form</SubType>
@@ -185,17 +225,101 @@
     <Compile Include="Vistas\ConsultaRango.Designer.cs">
       <DependentUpon>ConsultaRango.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\ConsultarUsuario.cs">
+    <Compile Include="Vistas\ConsultaRetencion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\ConsultarUsuario.Designer.cs">
-      <DependentUpon>ConsultarUsuario.cs</DependentUpon>
+    <Compile Include="Vistas\ConsultaRetencion.Designer.cs">
+      <DependentUpon>ConsultaRetencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ConsultaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaUsuario.Designer.cs">
+      <DependentUpon>ConsultaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ConsultaVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ConsultaVenta.Designer.cs">
+      <DependentUpon>ConsultaVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\EliminacionClienteNatural.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\EliminacionClienteNatural.Designer.cs">
       <DependentUpon>EliminacionClienteNatural.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EliminacionCobro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminacionCobro.Designer.cs">
+      <DependentUpon>EliminacionCobro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EliminacionComisionEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminacionComisionEmpleado.Designer.cs">
+      <DependentUpon>EliminacionComisionEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EliminacionComisionOperacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminacionComisionOperacion.Designer.cs">
+      <DependentUpon>EliminacionComisionOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EliminacionComisionVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminacionComisionVenta.Designer.cs">
+      <DependentUpon>EliminacionComisionVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EliminacionDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminacionDepartamento.Designer.cs">
+      <DependentUpon>EliminacionDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EliminacionFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminacionFactura.Designer.cs">
+      <DependentUpon>EliminacionFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EliminacionOperacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminacionOperacion.Designer.cs">
+      <DependentUpon>EliminacionOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EliminacionPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminacionPago.Designer.cs">
+      <DependentUpon>EliminacionPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EliminacionProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminacionProducto.Designer.cs">
+      <DependentUpon>EliminacionProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EliminacionRango.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminacionRango.Designer.cs">
+      <DependentUpon>EliminacionRango.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EliminacionRetención.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminacionRetención.Designer.cs">
+      <DependentUpon>EliminacionRetención.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EliminacionUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminacionUsuario.Designer.cs">
+      <DependentUpon>EliminacionUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\EliminacionEmpleado.cs">
       <SubType>Form</SubType>
@@ -208,6 +332,12 @@
     </Compile>
     <Compile Include="Vistas\EliminacionEmpresa.Designer.cs">
       <DependentUpon>EliminacionEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\EliminacionVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EliminacionVenta.Designer.cs">
+      <DependentUpon>EliminacionVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\FormPrincipal.cs">
       <SubType>Form</SubType>
@@ -227,11 +357,95 @@
     <Compile Include="Vistas\ModificacionClienteNatural.Designer.cs">
       <DependentUpon>ModificacionClienteNatural.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\ModificacionCobro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionCobro.Designer.cs">
+      <DependentUpon>ModificacionCobro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ModificacionComisionEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionComisionEmpleado.Designer.cs">
+      <DependentUpon>ModificacionComisionEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ModificacionComisionOperacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionComisionOperacion.Designer.cs">
+      <DependentUpon>ModificacionComisionOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ModificacionComisionVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionComisionVenta.Designer.cs">
+      <DependentUpon>ModificacionComisionVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ModificacionDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionDepartamento.Designer.cs">
+      <DependentUpon>ModificacionDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ModificacionEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionEmpleado.Designer.cs">
+      <DependentUpon>ModificacionEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\ModificacionEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\ModificacionEmpresa.Designer.cs">
       <DependentUpon>ModificacionEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ModificacionFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionFactura.Designer.cs">
+      <DependentUpon>ModificacionFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ModificacionOperacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionOperacion.Designer.cs">
+      <DependentUpon>ModificacionOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ModificacionPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionPago.Designer.cs">
+      <DependentUpon>ModificacionPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ModificacionProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionProducto.Designer.cs">
+      <DependentUpon>ModificacionProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ModificacionRango.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionRango.Designer.cs">
+      <DependentUpon>ModificacionRango.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ModificacionRetencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionRetencion.Designer.cs">
+      <DependentUpon>ModificacionRetencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ModificacionUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionUsuario.Designer.cs">
+      <DependentUpon>ModificacionUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ModificacionVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\ModificacionVenta.Designer.cs">
+      <DependentUpon>ModificacionVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\RegistroClienteNatural.cs">
       <SubType>Form</SubType>
@@ -299,11 +513,29 @@
     <Compile Include="Vistas\RegistroOperacion.Designer.cs">
       <DependentUpon>RegistroOperacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\RegistroPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\RegistroPago.Designer.cs">
+      <DependentUpon>RegistroPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\RegistroProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\RegistroProducto.Designer.cs">
+      <DependentUpon>RegistroProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\RegistroRango.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\RegistroRango.Designer.cs">
       <DependentUpon>RegistroRango.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\RegistroRetencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\RegistroRetencion.Designer.cs">
+      <DependentUpon>RegistroRetencion.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\RegistroUsuario.cs">
       <SubType>Form</SubType>
@@ -311,17 +543,23 @@
     <Compile Include="Vistas\RegistroUsuario.Designer.cs">
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\RegistroVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\RegistroVenta.Designer.cs">
+      <DependentUpon>RegistroVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\VistaCobranzas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\VistaCobranzas.Designer.cs">
       <DependentUpon>VistaCobranzas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\VistaComisionesEmpleados.cs">
+    <Compile Include="Vistas\ConsultaComisionEmpleadoMAL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\VistaComisionesEmpleados.Designer.cs">
-      <DependentUpon>VistaComisionesEmpleados.cs</DependentUpon>
+    <Compile Include="Vistas\ConsultaComisionEmpleadoMAL.Designer.cs">
+      <DependentUpon>ConsultaComisionEmpleadoMAL.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Login.cs">
       <SubType>Form</SubType>
@@ -341,11 +579,11 @@
     <Compile Include="Vistas\RegistrarEmpleado.Designer.cs">
       <DependentUpon>RegistrarEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\RegistrarProducto.cs">
+    <Compile Include="Vistas\RegistrarProductoMAL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\RegistrarProducto.Designer.cs">
-      <DependentUpon>RegistrarProducto.cs</DependentUpon>
+    <Compile Include="Vistas\RegistrarProductoMAL.Designer.cs">
+      <DependentUpon>RegistrarProductoMAL.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\AgregarRetencion.cs">
       <SubType>Form</SubType>
@@ -401,29 +639,95 @@
     <EmbeddedResource Include="Vistas\ConsultaClienteNatural.resx">
       <DependentUpon>ConsultaClienteNatural.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaCobro.resx">
+      <DependentUpon>ConsultaCobro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaComisionEmpleado.resx">
+      <DependentUpon>ConsultaComisionEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaComisionOperacion.resx">
+      <DependentUpon>ConsultaComisionOperacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaComisionVenta.resx">
+      <DependentUpon>ConsultaComisionVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\ConsultaEmpleado.resx">
       <DependentUpon>ConsultaEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\ConsultaEmpresa.resx">
       <DependentUpon>ConsultaEmpresa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaFactura.resx">
+      <DependentUpon>ConsultaFactura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\ConsultaOperacion.resx">
       <DependentUpon>ConsultaOperacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaPago.resx">
+      <DependentUpon>ConsultaPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaProducto.resx">
+      <DependentUpon>ConsultaProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\ConsultaRango.resx">
       <DependentUpon>ConsultaRango.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\ConsultarUsuario.resx">
-      <DependentUpon>ConsultarUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\ConsultaRetencion.resx">
+      <DependentUpon>ConsultaRetencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaUsuario.resx">
+      <DependentUpon>ConsultaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaVenta.resx">
+      <DependentUpon>ConsultaVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\EliminacionClienteNatural.resx">
       <DependentUpon>EliminacionClienteNatural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionCobro.resx">
+      <DependentUpon>EliminacionCobro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionComisionEmpleado.resx">
+      <DependentUpon>EliminacionComisionEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionComisionOperacion.resx">
+      <DependentUpon>EliminacionComisionOperacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionComisionVenta.resx">
+      <DependentUpon>EliminacionComisionVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionDepartamento.resx">
+      <DependentUpon>EliminacionDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionFactura.resx">
+      <DependentUpon>EliminacionFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionOperacion.resx">
+      <DependentUpon>EliminacionOperacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionPago.resx">
+      <DependentUpon>EliminacionPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionProducto.resx">
+      <DependentUpon>EliminacionProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionRango.resx">
+      <DependentUpon>EliminacionRango.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionRetención.resx">
+      <DependentUpon>EliminacionRetención.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionUsuario.resx">
+      <DependentUpon>EliminacionUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\EliminacionEmpleado.resx">
       <DependentUpon>EliminacionEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\EliminacionEmpresa.resx">
       <DependentUpon>EliminacionEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionVenta.resx">
+      <DependentUpon>EliminacionVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
@@ -434,8 +738,50 @@
     <EmbeddedResource Include="Vistas\ModificacionClienteNatural.resx">
       <DependentUpon>ModificacionClienteNatural.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionCobro.resx">
+      <DependentUpon>ModificacionCobro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionComisionEmpleado.resx">
+      <DependentUpon>ModificacionComisionEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionComisionOperacion.resx">
+      <DependentUpon>ModificacionComisionOperacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionComisionVenta.resx">
+      <DependentUpon>ModificacionComisionVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionDepartamento.resx">
+      <DependentUpon>ModificacionDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionEmpleado.resx">
+      <DependentUpon>ModificacionEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\ModificacionEmpresa.resx">
       <DependentUpon>ModificacionEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionFactura.resx">
+      <DependentUpon>ModificacionFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionOperacion.resx">
+      <DependentUpon>ModificacionOperacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionPago.resx">
+      <DependentUpon>ModificacionPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionProducto.resx">
+      <DependentUpon>ModificacionProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionRango.resx">
+      <DependentUpon>ModificacionRango.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionRetencion.resx">
+      <DependentUpon>ModificacionRetencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionUsuario.resx">
+      <DependentUpon>ModificacionUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ModificacionVenta.resx">
+      <DependentUpon>ModificacionVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\RegistroClienteNatural.resx">
       <DependentUpon>RegistroClienteNatural.cs</DependentUpon>
@@ -473,17 +819,29 @@
     <EmbeddedResource Include="Vistas\RegistroOperacion.resx">
       <DependentUpon>RegistroOperacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\RegistroPago.resx">
+      <DependentUpon>RegistroPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\RegistroProducto.resx">
+      <DependentUpon>RegistroProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\RegistroRango.resx">
       <DependentUpon>RegistroRango.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\RegistroRetencion.resx">
+      <DependentUpon>RegistroRetencion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\RegistroUsuario.resx">
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\RegistroVenta.resx">
+      <DependentUpon>RegistroVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\VistaCobranzas.resx">
       <DependentUpon>VistaCobranzas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\VistaComisionesEmpleados.resx">
-      <DependentUpon>VistaComisionesEmpleados.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\ConsultaComisionEmpleadoMAL.resx">
+      <DependentUpon>ConsultaComisionEmpleadoMAL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -494,8 +852,8 @@
     <EmbeddedResource Include="Vistas\RegistrarEmpleado.resx">
       <DependentUpon>RegistrarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\RegistrarProducto.resx">
-      <DependentUpon>RegistrarProducto.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\RegistrarProductoMAL.resx">
+      <DependentUpon>RegistrarProductoMAL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\VistaAdministradorUsuarios.resx">
       <DependentUpon>VistaAdministradorUsuarios.cs</DependentUpon>

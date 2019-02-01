@@ -1,5 +1,4 @@
-﻿using SIGECO.Controlador;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,14 +12,10 @@ namespace SIGECO.Vistas
 {
     public partial class ConsultaEmpresa : Form
     {
-        ControlEmpresa controlEmpresa;
         public ConsultaEmpresa()
         {
             InitializeComponent();
             llenarCBTipocliente();
-
-            controlEmpresa = new ControlEmpresa();
-            tabla.DataSource = controlEmpresa.consultaEmpresa("");
         }
 
         private void bModificar_Click(object sender, EventArgs e)
@@ -57,14 +52,6 @@ namespace SIGECO.Vistas
         private void label6_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            String cedula = textBoxConsulta.Text;
-
-            controlEmpresa= new ControlEmpresa();
-            tabla.DataSource = controlEmpresa.consultaEmpresa(cedula);
         }
     }
 }
