@@ -84,5 +84,10 @@ namespace SIGECO.Vistas
             controlEmpresa= new ControlEmpresa();
             tabla.DataSource = controlEmpresa.consultaEmpresa(cedula);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
