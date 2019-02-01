@@ -166,7 +166,7 @@ namespace SIGECO.Vistas
 
         private void registrarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<RegistroDeEmpresa>();
+            AbrirFormulario<RegistroEmpresa>();
         }
 
         private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -176,17 +176,17 @@ namespace SIGECO.Vistas
 
         private void consultarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<ConsultaClienteNatural>();
+            AbrirFormulario<ConsultaEmpresa>();
         }
 
         private void modificarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<ModificacionClienteNatural>();
+            AbrirFormulario<ModificacionEmpresa>();
         }
 
         private void eliminarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<EliminacionClienteNatural>();
+            AbrirFormulario<EliminacionEmpresa>();
         }
 
         private void bClientes_Click(object sender, EventArgs e)

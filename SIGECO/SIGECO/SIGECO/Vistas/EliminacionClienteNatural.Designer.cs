@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnConsultar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabla = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -41,7 +42,6 @@
             this.textBoxConsulta = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.btnConsultar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabla)).BeginInit();
@@ -66,8 +66,25 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.ForeColor = System.Drawing.Color.White;
+            this.btnConsultar.Location = new System.Drawing.Point(954, 87);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(157, 33);
+            this.btnConsultar.TabIndex = 72;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.tabla);
             this.panel2.Location = new System.Drawing.Point(12, 155);
             this.panel2.Name = "panel2";
@@ -76,9 +93,10 @@
             // 
             // tabla
             // 
+            this.tabla.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabla.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabla.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabla.Location = new System.Drawing.Point(0, 0);
             this.tabla.Name = "tabla";
             this.tabla.ReadOnly = true;
@@ -189,21 +207,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 23);
             this.label1.TabIndex = 67;
-            // 
-            // btnConsultar
-            // 
-            this.btnConsultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultar.ForeColor = System.Drawing.Color.White;
-            this.btnConsultar.Location = new System.Drawing.Point(954, 87);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(157, 33);
-            this.btnConsultar.TabIndex = 72;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = false;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // EliminacionClienteNatural
             // 
