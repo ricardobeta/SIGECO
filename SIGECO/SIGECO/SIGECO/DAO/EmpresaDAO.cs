@@ -113,18 +113,18 @@ namespace SIGECO.DAO
         }
 
         public void eliminarCliente(String cedula,String ruc) {
-            //String eliminarE = "Delete Empresas where ruc  ='" + ruc + "'";
+            String eliminarE = "Delete Empresas where ruc  ='" + ruc + "'";
             SqlCommand myCommand = new SqlCommand();
-            //myCommand.Connection = conexion.Iniciarconexion();
-            //myCommand.CommandText = eliminarE;
-            //myCommand.ExecuteNonQuery();
-            //conexion.CerrarConexion();
-            String eliminarP = "Delete Persona where cedula  ='"+cedula+"'";
-            myCommand = new SqlCommand();
             myCommand.Connection = conexion.Iniciarconexion();
-            myCommand.CommandText = eliminarP;
+            myCommand.CommandText = eliminarE;
             myCommand.ExecuteNonQuery();
             conexion.CerrarConexion();
+            //String eliminarP = "Delete Persona where cedula  ='"+cedula+"'";
+            //myCommand = new SqlCommand();
+            //myCommand.Connection = conexion.Iniciarconexion();
+            //myCommand.CommandText = eliminarP;
+            //myCommand.ExecuteNonQuery();
+            //conexion.CerrarConexion();
         }
 
 

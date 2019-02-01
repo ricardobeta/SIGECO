@@ -183,7 +183,21 @@ namespace SIGECO.Vistas
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-
+            controlEmpresa = new ControlEmpresa();
+            String nombre1 = textBoxNombre.Text, nombre2 = textBoxNombre2.Text, apellido1 = textBoxApellido.Text,
+               apellido2 = textBoxApellido2.Text, cedula = textBoxCedula.Text, correo = textBoxCorreo.Text, telefono = textBoxTelefono.Text
+               , rucE = textBoxRucE.Text, nombreE = textBoxNombreE.Text;
+            if (vVacios(listatb()) && cbP())
+            {
+                String pais = cbPais.SelectedItem.ToString();
+                controlEmpresa.modificarEmpresa(id, idE, nombreE, rucE, nombre1, nombre2, apellido1, apellido2, cedula, pais, correo, telefono);
+                MessageBox.Show("Cliente Modificado Exitosamente");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Error al Ingresar los datos");
+            }
         }
 
         private bool vVacios(List<TextBox> ltb)
