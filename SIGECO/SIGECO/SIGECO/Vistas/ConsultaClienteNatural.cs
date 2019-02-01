@@ -67,5 +67,10 @@ namespace SIGECO.Vistas
             tabla.DataSource =  controlCliente.consultaCliente(cedula);
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
