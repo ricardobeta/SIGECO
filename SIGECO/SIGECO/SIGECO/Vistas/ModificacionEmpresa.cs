@@ -54,6 +54,7 @@ namespace SIGECO.Vistas
 
         }
 
+
         private void textBoxCedula_Leave(object sender, EventArgs e)
         {
 
@@ -207,8 +208,6 @@ namespace SIGECO.Vistas
             }
             return aux;
         }
-
-
 
     }
 }

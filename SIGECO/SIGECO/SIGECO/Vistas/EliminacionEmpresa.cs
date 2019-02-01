@@ -54,6 +54,7 @@ namespace SIGECO.Vistas
 
         }
 
+
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             controlEmpresa= new ControlEmpresa();
@@ -81,7 +82,5 @@ namespace SIGECO.Vistas
         private void button3_Click(object sender, EventArgs e)
         {
 
-        }
-    
     }
 }

@@ -249,6 +249,7 @@
     <Compile Include="Vistas\EliminacionClienteNatural.Designer.cs">
       <DependentUpon>EliminacionClienteNatural.cs</DependentUpon>
     </Compile>
+
     <Compile Include="Vistas\EliminacionCobro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -344,12 +345,6 @@
     </Compile>
     <Compile Include="Vistas\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\ListaDepartamento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\ListaDepartamento.Designer.cs">
-      <DependentUpon>ListaDepartamento.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\ModificacionClienteNatural.cs">
       <SubType>Form</SubType>
@@ -477,29 +472,11 @@
     <Compile Include="Vistas\BuscarVentas.Designer.cs">
       <DependentUpon>BuscarVentas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\RegistroCobro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\RegistroCobro.Designer.cs">
-      <DependentUpon>RegistroCobro.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\RegistroDeEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\RegistroDeEmpresa.Designer.cs">
       <DependentUpon>RegistroDeEmpresa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\RegistroDepartamento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\RegistroDepartamento.Designer.cs">
-      <DependentUpon>RegistroDepartamento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\RegistroEmpleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\RegistroEmpleado.Designer.cs">
-      <DependentUpon>RegistroEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\RegistroEmpresa.cs">
       <SubType>Form</SubType>
@@ -723,6 +700,12 @@
     <EmbeddedResource Include="Vistas\EliminacionEmpleado.resx">
       <DependentUpon>EliminacionEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\ConsultaEmpresa.resx">
+      <DependentUpon>ConsultaEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EliminacionClienteNatural.resx">
+      <DependentUpon>EliminacionClienteNatural.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\EliminacionEmpresa.resx">
       <DependentUpon>EliminacionEmpresa.cs</DependentUpon>
     </EmbeddedResource>
@@ -731,9 +714,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\ListaDepartamento.resx">
-      <DependentUpon>ListaDepartamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\ModificacionClienteNatural.resx">
       <DependentUpon>ModificacionClienteNatural.cs</DependentUpon>
@@ -801,17 +781,8 @@
     <EmbeddedResource Include="Vistas\BuscarVentas.resx">
       <DependentUpon>BuscarVentas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\RegistroCobro.resx">
-      <DependentUpon>RegistroCobro.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\RegistroDeEmpresa.resx">
       <DependentUpon>RegistroDeEmpresa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\RegistroDepartamento.resx">
-      <DependentUpon>RegistroDepartamento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\RegistroEmpleado.resx">
-      <DependentUpon>RegistroEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\RegistroEmpresa.resx">
       <DependentUpon>RegistroEmpresa.cs</DependentUpon>
